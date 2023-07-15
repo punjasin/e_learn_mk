@@ -1,0 +1,36 @@
+*** Variables ***
+${pickpack.input_email}                             id=email
+${pickpack.input_password}                          id=pwd
+${pickpack.btn_submit}                              xpath=//button[@name='submit']
+${pickpack.btn_home}                                xpath=//i[@class="fas fa-home mr-2"]//following-sibling::span[text()="Home"]
+${pickpack.lbl_order_number}                        xpath=//p[text()="Order Number"]
+${pickpack.input_order_number}                      name=order_number
+${pickpack.btn_search}                              xpath=//button[text()="Search"]
+${pickpack.lbl_order_list}                          xpath=//h3[contains(text(), "Order list")]
+${pickpack.btn_pick_order}                          xpath=//td[text()="{{order_number}}"]//following-sibling::td[@class="action"]//button[text()=" Pick Order "]
+${pickpack.btn_pick_all}                            xpath=//a[text()="Pick All"]
+${pickpack.lbl_warning}                             xpath=//h4[text()="Warning!"]
+${pickpack.btn_ok_on_warning}                       xpath=//button[@class="btn btn-danger" and text()="OK"]
+${pickpack.lbl_popup_confirm_pick_all}              xpath=//div[@class="invalid-product-popup"][2]//h4[text()="Confirmation"]
+${pickpack.btn_popup_confirm_pick_all}              xpath=//div[@class="invalid-product-popup"][2]//button[@class="btn btn-danger btn-sm btn btnFind" and text()="Yes"]
+${pickpack.btn_next}                                xpath=//button[text()="Next"]
+${pickpack.lbl_assign_zone}                         xpath=//h2[text()="Assign Zone"]
+${pickpack.input_assign_zone}                       id=exampleStaginglocation2
+${pickpack.input_zone}                              xpath=//input[@placeholder="zones"]
+${pickpack.btn_assign_zone}                         xpath=//button[text()="Assign"]
+${pickpack.txt_assigned_zone}                       xpath=//td[text()="Location"]//following-sibling::td[text()="{{zone}}"]
+${pickpack.btn_finished_pick}                       xpath=//button[text()="Finish Pick"]
+${pickpack.txt_shipping_status}                     xpath=//th[text()="Shipment status"]//following-sibling::td[text()="{{status}}"]
+${pickpack.btn_pack_order}                          xpath=//button[text()="Pack Order"]
+${pickpack.btn_pack_all_into_package}               xpath=//button[text()="Pack All Into Current Package"]
+${pickpack.lbl_popup_confirm_pack_all}              xpath=//div[@class="invalid-product-popup"][1]//h4[text()="Confirmation"]
+${pickpack.btn_popup_confirm_pack_all}              xpath=//div[@class="invalid-product-popup"][1]//button[@class="btn btn-danger btn-sm btn btnFind" and text()="Yes"]
+${pickpack.btn_finished_pack}                       xpath=//button[text()="Finish Pack"]
+${pickpack.btn_ok}                                  xpath=//button[text()="OK"]
+${pickpack.btn_ship_order}                          xpath=//button[text()="Ship Order"]
+${pickpack.lbl_ship_package}                        xpath=//h2[text()="Ship packages"]
+${pickpack.select_carrier}                          id=dLabel
+${pickpack.btn_ship}                                xpath=//button[text()="Ship"]
+${pickpack.btn_mark_as_delivered}                   xpath=//button[text()="Mark As Delivered"]
+${pickpack.lbl_popup_mark_as_delivered}             xpath=//h5[text()="Mark As Delivered"]
+${pickpack.btn_confirm_popup_mark_as_delivered}     xpath=//h5[text()="Mark As Delivered"]/parent::div/following-sibling::div[contains(@class,"modal-footer")]/button[text()="Yes"]

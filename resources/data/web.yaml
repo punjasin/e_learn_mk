@@ -1,0 +1,43 @@
+multistore_data:
+  samaedam_zipcode: 10150
+  samaedam_subdistrict:
+    th: แสมดำ
+    en: Samae Dam
+
+login_web:
+  user1:
+    email:            mangoautomate7@yopmail.com
+    password:         1234567890
+  user2:
+    email:            testpoint1@yopmail.com
+    password:         1234567890
+MAKNET_4037_data:
+  search_keyword:   snack
+
+MAKNET_3859_data:
+  product_name:  เนสกาแฟ
+
+youtube_tab:  โหลดเพื่อ ‘เทิร์นโปร’ พร้อมกันทั่วประเทศ! - YouTube
+
+MAKNET_4042_data:
+  product_brand:  RRS
+
+MAKNET_3987_data:
+  1p_add_amount: 5
+  3p_add_amount: 3 
+
+MAKNET_3794_data:
+  add_amount: 2
+
+MAKNET_3800_data:
+  product_outstock: ที่นอนสัตว์เลี้ยง4 out of stock forever
+
+MAKNET_3802_data:
+  product_1P: เนสกาแฟ กาแฟพร้อมดื่ม เอสเปรสโซ โรสต์ 180 มล. แพ็ค 30 กระป๋อง
+
+MAKNET_2854_data:
+  add_amount: 3
+  credit_number:  4444333322221111
+  credit_holder_name: test
+  credit_expiry:  1225
+  credit_cvv: 123

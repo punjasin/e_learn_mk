@@ -1,0 +1,72 @@
+[Device1]
+tags = set0
+device_info = cloud
+appium_port = 4723
+emulator_name = 10.111.47.53:5555 
+system_port = 8200
+version = 11
+remote_url = 127.0.0.1
+
+[Device2]
+tags = set1
+device_info = cloud
+appium_port = 4723
+emulator_name = 10.111.46.56:5555 
+system_port = 8201
+version = 11
+remote_url = 127.0.0.1
+
+[Device3]
+tags = set2
+device_info = cloud
+appium_port = 4723
+emulator_name = 10.111.41.98:5555
+system_port = 8202
+version = 11
+remote_url = 127.0.0.1
+
+[Device4]
+tags = set3
+device_info = cloud
+appium_port = 4723
+emulator_name = 10.111.44.125:5555
+system_port = 8203
+version = 11
+remote_url = 127.0.0.1
+
+
+[Device5]
+tags = set4
+device_info = cloud
+appium_port = 4723
+emulator_name = 10.111.44.31:5555
+system_port = 8204
+version = 11
+remote_url = 127.0.0.1
+
+[Device6]
+tags = set5
+device_info = cloud
+appium_port = 4723
+emulator_name = 10.111.45.234:5555
+system_port = 8205
+version = 11
+remote_url = 127.0.0.1
+
+[Device7]
+tags = set6
+device_info = cloud
+appium_port = 4723
+emulator_name = 10.111.44.130:5555
+system_port = 8206
+version = 11
+remote_url = 127.0.0.1
+
+[Device8]
+tags = set7
+device_info = cloud
+appium_port = 4723
+emulator_name = 10.111.46.203:5555
+system_port = 8207
+version = 11
+remote_url = 127.0.0.1

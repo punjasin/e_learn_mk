@@ -1,0 +1,100 @@
+pipeline {
+   agent { label 'agent75_m1'}
+   environment {
+      JOB_GIT_URL= 'https://gitlab.com/doppiotech/dumbledore.git'
+      JOB_GIT_BRANCH= 'main'
+      GIT_CREDENTIAL= 'jenkins_makro_sso'
+   }
+   stages {
+      stage('RUN_TEST') {
+         steps {
+            script{
+                  String retryprefix = "--prerunmodifier DataDriver.rerunfailed:output.xml  --output rerun.xml -r rerunreport.html"
+                  echo "Start testing api"
+
+                  // sh "pabot --pabotlib --pabotlibport 0 --processes 4 --resourcefile ./resources/devices/android_farm_value_set.dat -v doppio_farm:True -v chromedriverExecutable:None -i ${env.INCLUDE} -e ${env.EXCLUDE} ./tests/backend/api"
+                  // sh 'echo "finish running 1st round"'
+               try {
+                  sh "pabot --pabotlib --pabotlibport 0 --processes 4 -v doppio_farm:True -v chromedriverExecutable:None -i ${env.INCLUDE} -e ${env.EXCLUDE} ./tests/api"
+                  sh 'echo "finish running 1st round"'
+               }
+               catch (err) {       //if test failed
+                  def max_retry = 1
+                  def needRetry = true
+                  for(int i =0; i<max_retry; i++){
+                     if (needRetry){
+                        try {
+                           echo "Running retry logic ${i}"
+                           sh "pabot --pabotlib --pabotlibport 0 --processes 4 ${retryprefix} -v doppio_farm:True -v chromedriverExecutable:None ./tests/api"
+                           needRetry = false
+                        }
+                        catch (err2){
+                           echo "Nothing need to implement"
+                        }
+                        try {
+                           sh 'rebot -r final_report -o final_report --merge output.xml  rerun.xml'
+                        }
+                        catch (err3) {
+                           echo "Nothing need to implement"
+                        }
+                        try {
+                           sh """
+                           echo 'Merged result done'
+                           mv report.html ${i}_report.html
+                           mv output.xml ${i}_output.xml
+                           mv final_report.xml output.xml
+                           mv final_report.html report.html
+                           echo 'Rename result done'
+                           """
+                        }
+                        catch (err4){
+                           echo "nothing to rename"
+                        }
+                     }
+                  }
+               } 
+            robot(
+               outputPath: './',
+               outputFileName: 'output.xml',
+               reportFileName: 'report.html',
+               logFileName: 'log.html',
+               disableArchiveOutput: false,
+               passThreshold: 100.0,
+               unstableThreshold: 100.0,
+               otherFiles: '*.png,*.jpg'
+            )
+            script {
+               String prefix = ":white_check_mark:"
+               env.ROBOT_MAKNET = sh(script: "python3 ./tags.py output.xml", returnStdout: true).trim()
+               echo env.ROBOT_MAKNET
+               if (tm('${ROBOT_FAILED}').toInteger() > 0) {
+                  prefix = ":firecracker:"
+               }
+               String robotlog = tm('${BUILD_URL}/robot/report/log.html')
+               echo "${robotlog}"
+               slackSend(channel: "#maknet-code-review", message:  "${prefix}  ${JOB_NAME}  #${BUILD_NUMBER} \n *INCLUDED* : ${env.INCLUDE} \n ${ROBOT_MAKNET} \n after ${currentBuild.durationString} \n (<${robotlog}|Report>)")
+            }
+         }
+      }
+      post {
+         always {       
+            //    script {
+            //          try {
+            //          // -- Download GIT Code Dumbledore 
+            //          echo "Downloading GIT Code from: ${JOB_GIT_URL}. Branch: ${JOB_GIT_BRANCH}"
+            //          checkout([$class: "GitSCM", branches: [[name: "${JOB_GIT_BRANCH}"]], doGenerateSubmoduleConfigurations: false, 
+            //          extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: "${GIT_CREDENTIAL}", 
+            //          url: "${JOB_GIT_URL}"]]])
+            //          } catch (err) { 
+            //          echo "The Download GIT Code Stage failed"
+            //       }
+            //     sh 'python3 ./robotframework_parser.py  "${JOB_NAME}"'
+            //    }
+            // clean workspace
+            echo "Clean Workspace"
+            cleanWs()
+         }
+      }
+      }
+   }
+}

@@ -1,0 +1,23 @@
+automationName                    : UiAutomator2
+remoteUrl                         : http://127.0.0.1:4723/wd/hub
+platformName                      : ios
+platformVersion                   : '16'
+systemPort                        : 8201
+global_timeout                    : 60s
+appium_timeout                    : 20s
+default_scroll_view               : //XCUIElementTypeWindow
+bundleId                          : com.icemobile.makromangoapp.qa
+time_scroll                       : 1.5s
+long_timeout                      : 30s
+short_timeout                     : 5s
+very_short_timeout                : 2.5s
+very_veryshort_timeout            : 1.25s
+long_long_timeout                 : 240s
+deviceName                        : iPhone 14 Pro Max
+remoteUrlBrowserstack             : http://jirawatkhumsiri_WbP3OK:AqBaFNqaqEp79cgoyGyc@hub.browserstack.com:80/wd/hub
+app                               : bs://b397454567cf316d73886dc65541071022f03581
+"bstack:options":
+                                    projectName : MakroPro iOS
+                                    local : true
+                                    networkLogs : true
+"browserstack.idleTimeout": "300"

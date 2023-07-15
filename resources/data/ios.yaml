@@ -1,0 +1,11 @@
+user_os:
+  userforFavourite_scenario:
+    email: favourite1.ios@yopmail.com
+    password: 1234567890
+  userforregister_userdate_email:
+    mail_password: P@$$w0rd1010
+    update_email: automatedoppioxmakro_ios@outlook.com
+
+product_data_os:
+  3P_consignment: เอโร่ ลูกเกดดํา 1000 กรัม
+  product_out: กำไลทอง หอมเจียว 500 กรัม

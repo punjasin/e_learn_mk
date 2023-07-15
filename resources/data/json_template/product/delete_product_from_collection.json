@@ -1,0 +1,9 @@
+{
+    "query": "mutation collectionRemoveProducts($id: ID!, $productIds: [ID!]!) {\n  collectionRemoveProducts(id: $id, productIds: $productIds) {\n    userErrors {\n      field\n      message\n    }\n  }\n}\n",
+    "variables": {
+        "id": "gid://shopify/Collection/295058931862",
+        "productIds": [
+            "gid://shopify/Product/7277218758806"
+        ]
+    }
+}

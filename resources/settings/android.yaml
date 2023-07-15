@@ -1,0 +1,28 @@
+automationName                    : UiAutomator2
+remoteUrl                         : http://127.0.0.1:4723/wd/hub
+udid                              : emulator-5554
+platformName                      : android
+platformVersion                   : '11'
+androidVersion                    : '11.0'
+systemPort                        : 8201
+global_timeout                    : 60s
+appium_timeout                    : 20s
+default_scroll_view               : class=android.widget.ScrollView
+appPackage                        : com.makromangoapp.qa
+appActivity                       : com.makromangoapp.MainActivity
+time_scroll                       : 1.5s
+long_timeout                      : 30s
+short_timeout                     : 5s
+very_short_timeout                : 2.5s
+very_veryshort_timeout            : 1.25s
+long_long_timeout                 : 240s
+chromedriverExecutable            : /Users/doppiomac/Desktop/Mango/chromedriver
+remoteUrlBrowserstack             : http://jirawatkhumsiri_WbP3OK:AqBaFNqaqEp79cgoyGyc@hub.browserstack.com:80/wd/hub
+"app"                             : bs://4251fd93121148046f6b945134825f70a6b10398
+"deviceName"                      : Samsung Galaxy S21 Ultra
+"bstack:options":
+                                    projectName : MakroPro Android
+                                    interactiveDebugging : true
+                                    local : true
+                                    networkLogs : true
+"browserstack.idleTimeout": "300"                                

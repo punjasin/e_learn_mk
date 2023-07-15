@@ -1,0 +1,60 @@
+web_additional:
+  basket:
+    add: Add to Basket
+    noBasket: No items in your basket
+    button:
+      checkout: Checkout
+      makePayment: Make Payment
+      removeAndProceed: Remove and Proceed
+      goBackToBasket: Go back to Basket
+    header:  Basket
+    makePayment:  Make Payment
+    seller:
+      soldby: Sold by
+  banner:
+    bannerNescafe: 'banner - PDP : เนสกาแฟ - en'
+    bannerInfo: 'banner-info'
+    bannerYoutube: 'Banner : External Link en'
+    bannerCollection:  'banner collection : import SKU product by QA'
+  url:
+    partnerPromotion: partner-promotion
+  mainCategory:
+    fruiteVeggies: Fruits & Vegetables
+    kitchenSupplies:  Kitchen supplies & disposables
+  subCategory:
+    fruiteVeggies: Fruits & Vegetables
+    containers:  Containers
+  search:
+    seeAll:  See all
+  global_text:
+    login:  login
+    search: search
+    loading: Loading
+    youtube:   www.youtube.com
+    makropro:  MakroPRO
+  homeCategory:
+    lastPromotion: Last promotion
+  timeslots:  timeslot
+  2c2p:
+    verifyOTPHeader: Verify OTP
+    backToMerchant:  Back to Merchant
+    submit:  Submit
+  productlist:
+    label:
+      selectQuantity: Select quantity
+    button:
+      addToBasket: Add to basket
+  payment:
+    selectPaymentChannel: Select a Payment Method
+    creditDebit: New Credit/Debit Card
+    bankTransfer: Bank Transfer
+    trueMoneyWallet:  TrueMoney Wallet
+    payAmount:  Pay {{amount}}
+    paymentWasDecline:  Your payment was declined
+    backToMerchant: Back To Merchant
+  checkout:
+    deliveryByMakroPro: Delivered by Makro Pro
+    deliveredBy: Delivered by
+  orderhistory:
+    paymentCredit: 'Payment method: credit card/debit card'
+    paymentSuccess: 'Status: success'

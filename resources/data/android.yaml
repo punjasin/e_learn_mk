@@ -1,0 +1,12 @@
+user_os:
+  userforFavourite_scenario:
+    email: favourite1@yopmail.com
+    password: 1234567890
+  userforregister_userdate_email:
+    update_email: makroproautomation@gmail.com
+    mail_password: qerhdlyvjijmnnxd
+    mail_browser_password: P@$$w0rd1010
+
+product_data_os:
+  3P_consignment: อบเชย 500 กรัม ตราพานทอง Cinnamon stick
+  product_out: ที่นอนสัตว์เลี้ยง4 out of stock forever

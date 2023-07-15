@@ -1,0 +1,614 @@
+mobile_additional:
+  contacts:
+    lbl_customer_service: 'You can contact Makro PRO Contact Center every day via phone (1432, press 2) from 9:00 - 20:00 or via line from 7:00 - 21:00'
+
+  account:
+    label:
+      enterYourEmail: provide your email 
+    message:
+      provideEmailTitle: Please provide your email. 
+      provideEmailMessage: to receive updates on order status more conveniently and quickly 
+
+  basket:
+    total: Total {{total}} ฿
+    subtotal: Subtotal {{total}} ฿
+    checkout_summary: Subtotal {{subtotal}} ฿ Delivery {{deliverfee}} ฿ Total {{total}} ฿
+    discount: Subtotal {{subtotal}} ฿ Discount -{{discount}} ฿ Delivery {{deliverfee}} ฿ Total {{total}} ฿
+    cannot_order: Minimum order of 499 ฿ for ordering
+    expected_price: Total {{expected_price}} ฿
+    label:
+      unavailableItems: Swipe left to remove and proceed 
+      basket: Basket 
+      success: Done
+    button:
+      ctaBrowseCategory: Browse Categories
+      addToBasket: Add to basket 
+    message:
+      empty: No items in your basket  
+      deleteItemSwipeInfo: New! Swipe to the left to remove the product 
+      # deliveryFeeMessage: Order as many items you want, you will only pay 70 baht for the delivery. 
+      # deliveryFeePopupDescription: Get free delivery for orders from 1000 ฿
+      deliveryFee1: Minimum order 1000.00 ฿ 
+      deliveryFee2: 1000.00 ฿ — 3000.00 ฿ 
+      deliveryFee3: more than 3000.00 ฿ 
+      deliveryHandledByPartnerDescriptionLine2: ฏelivery by this partner making it impossible to choose a delivery date or control delivery
+      # deliveryHandledByBrandTitle: Delivery handled by Maknet 
+      choosing_different_address: Choosing a different address may affect the contents of your basket.
+      by: Sold by
+      delivery: Delivery between
+      itemsAddedToBasket: Items successfully added to the basket 
+      minimum_amount: Minimum order 499 ฿
+      shipping_fee: 50.00 ฿
+      sent_by_makro_pro: Delivered by Makro PRO, select delivery date and time in the next step.
+      sent_within: By {{sellername}} Delivery between {{min_delivery}} {{min_month}} - {{max_delivery}} {{max_month}}
+    feeBanner: 
+      # currencyTHB: ฿ 
+      clear_storage: Clear Storage
+      clear: CLEAR
+
+  category:
+    title: Shop in categories 
+
+  more:
+    start_your_business: Join Makro PRO as a seller
+    become_a_seller: Join Makro PRO as a seller
+    call_with_us: Call us by phone (1432, press 2)
+    privacySettings: Privacy Settings
+    label:
+      register_now: Sign up now
+      search_product: Search for products
+      logout: Logout
+      my_account: My account 
+
+  order: 
+    label:
+      # open: Open Order {{ orderId }} 
+      orderCompleteBanking: Please complete within 4 hours you can check the QR code for payment at My Orders menu.
+      orderDetails: Order details 
+      # payByDate: Pay before {{date}} 
+      total: Total
+      pay_within_date: 'Pay before: {{day_week}}, {{date}} {{month}} {{year_thai}} {{time}}'
+      pay_within_new_date: 'Pay before: {{date_new_thai}}, {{day_new}} {{month_in_thai_new}} {{year_thai_new}} {{time_expire}}'
+      order: 'Order #'
+      total_textview: ยอดรวม
+      pay_within: Pay before
+      search_by_category: Browse Categories
+      order_id: 'Order #{{order_id}}'
+      total_seller: Delivery handled by {{total_seller}} Seller
+      order_tracking: Order \#{{order_number}}
+      showOrderSummary: Show order summary
+      payment_status: 'Status: {{payment_status}}'
+      list: items
+      makroPro: Makro PRO
+      recent_price: 'Total: '
+    button:
+      placeOrder: order 
+      hide_summary_order: Hide order summary
+      remove_voucher: remove discount
+    message:
+      addedUnavailablePopupTitle: We were not able to add all items to your basket
+      txt_order_success: Delivered
+      back_to_store: back to the store
+      seller: 'Seller:'
+
+  product:  
+    label:
+      sub_category_list: '{{items}} รายการ'
+      see_more: See shop
+      product_discontinued: Sorry, this product has been discontinued
+      already_removed: You can’t see information for this product because it was removed from our assortment.
+      best_seller_this_month: Valued from Bestsellings
+      fresh_products: Fresh
+      search_product: Search for products
+      discount: Flat Discount
+      sold_by_makro:  MAKRO
+
+    message:
+      fulfilledByBrand: Delivered by 
+      soldBy: Sold by 
+      morethan_stock: Your selected quantity is higher than stock available. Please lower quantity.
+      zero_list: 0 items
+      warning_msg_out_of_delivery: This item is unavailable in the area you selected
+
+  promotions:
+    label:
+      search_product: Search for products
+      latest_promotion: Last promotion See all
+      latest_promotion_only: Last promotion
+
+  favourites:
+    message:
+      search_form_category: Browse Categories
+      out_of_area: Unavailable
+      login: Login
+      create_new_account: Create account
+      create_new_list: Create new list
+      basket: Basket
+      save_to_list: Saved to {{number}} lists
+    button:
+      delete: Delete
+
+  login:
+    label:
+      sent_otp: Send OTP code
+      create_account: Create account 
+      create_new_password: Create new password
+      update_new_password: Update password
+      phone_number: Phone number
+      please_specify: required field
+    message:
+      # welcome: Maknet Welcome to all in one marketplace! 
+      verifyCodeMessage: You have verified invalid code more than {{times}} times. Please try again in {{min}} mins. We will let you know when available.
+      forgot_your_password: Forgot your password?
+      reset_your_password: Reset your password
+      fix_info: 'Please revise the following information.:'
+      invalid_info: Email or password is incorrect.
+      please_login: In order to see your orders, please login.
+      select_login: Please select your method to login
+      please_fill_out: Enter your details
+      name_surname: Contact Name*
+      phone_number: Phone Number*
+      policy: By tapping "Create account" you agree to the terms of use.
+      txt_please_valid_phone_number: Enter a valid mobile number
+      authenticate: Verification
+      fill_otp: Enter OTP Code
+      verify_password: Verify
+      sent_otp_again: Resend code
+      invalid_otp: Invalid code
+      please_specify_phone_number: Enter phone number
+      continue_with_phone_number: Continue with this phone number
+    button:
+      sendOTPCode: Send OTP code
+      login: sign in
+
+  confirmOTP:
+    message:
+      secondsSign: seconds 
+
+  feedback:
+    label:
+      txt_your_comment_success: ขอบคุณ ความเห็นของคุณช่วยพัฒนาประสบการณ์ซื้อสินค้าของคุณให้ดีขึ้น สำเร็จ
+      enjoying_maknet: Enjoying Maknet?
+      rating: Rating
+      not_now: Not Now
+      comment_sent: comment send
+      success: Done
+
+  voucher:
+    label:
+      use_vouchers: Use Voucher
+      error_for_reduction_code: Enter a valid discount code
+      show_summary: Show order summary
+      hide_summary: Hide order summary 
+      voucher_not_ready: Currently unavailable
+      voucher_conditions_not_met: conditions not met
+    message:
+      voucherApplied_b: code "{{code}}" has been used successfully you get a discount "{{discount}} ฿"
+      voucher_not_ready: Voucher {{code}} Currently unavailable
+      sale_price_1: Show order summary original price ฿{{beforediscount}} price during sale ฿{{afterdiscount}}
+      sale_price_2: Hide order summary original price ฿{{beforediscount}} price during sale ฿{{afterdiscount}}
+      conditions_not_met: Voucher {{code}} conditions not met
+      discount: discount code {{code}} -{{discount}} ฿
+    button:
+      removed_voucher: remove discount
+
+  search:
+    label:
+      # couldNotFindResults: We could not find results for "{{searchText}}". You could try using our categories. 
+      clearFilters: Clear 
+      searching_from_product_category: You could try using our categories.
+      no_result: We could not find results for "{{searching}}" You could try using our categories.
+      product: Products
+      bonus_plam_oil: โบนัส น้ำมันปาล์ม ถุงเติม 1 ลิตร x 12 ถุง ยกลัง
+      replenished_soon: Your selected product stock is not available at the moment.\nWe will refill shortly
+      out_of_stock: Out of stock
+      searchtotal_list: '{{searchtotal}} Result'
+      list: Items
+    button:
+      searching: search
+
+  maintenance:
+    label:
+      maintenanceDone: Maintenance Maknet completed! 
+
+  privacy:
+    success: Done
+    consent: Please Consent
+    details: See additional details on Makro PRO privacy policy
+    main_content: Privacy policy external organization for subscription application customers Makro PRO
+    get_deal: I agree {{content_name}}
+
+  multistore:
+    title:
+      zipcode: Your zip code
+
+  checkout:
+    message:
+      showOrderSummary: Show order summary
+      proceedToDelivery: Proceed to the shipping page.
+      step1of3: Step 1 from 3
+      step2of3: Step 2 from 3
+      step3of3: Step 3 from 3
+      same_as_shipping_address: same address as shipping address
+      use_other_for_tax_invoices: Use a different address for issuing tax invoices.
+      complete_your_order: Complete your order
+      select_payment: Choose a payment method
+      change_address_for_delivery: Change shipping address
+      use_new_address: use new address
+      change_date_and_time: Change delivery time and date
+      confirm_order:  Confirm order
+      basket_are_out_of_stock: Some items in the basket are out of stock. Please check and remove to make a new transaction.
+      zerozero: :00
+      service_area: Service area, we currently provide services only in Bangkok and Samut Prakan.
+      delivery_round_is_fully_booked: Very sorry The delivery slot is fully booked.
+      select_delivery_slot: Select delivery slot
+      address_details: Address details
+      address_has_been_updated: Address has been updated
+      pin_your_location_on_map: Pin your location
+      address_saved: Address saved
+      add_new_address: Add new address
+      belowMinimumBasketSize: The total price is lower than {{basket_size}} 
+      check_pin_area: Check pins, web dialog
+      map: Map
+      pin_your_location: Pin your location, web dialog
+      address_for_delivery: Address for delivery
+      day: Days
+      company_name: Company (Optional)
+      tax_id: Tax ID (Optional)
+      address_for_payment: Choose a billing address
+      error_msg:    Please enter a 10 or 13 digit tax ID number.
+      name_address: Address name
+      apartment: Apartments, suites, etc. (Optional)
+      zip_code: Postal code
+      name: Name
+      advice: delivery instructions
+      statictext_phone: Please enter your phone number.
+      statictext_phone_completed: Please enter a valid phone number.
+      branch_code: branch number (Optional)
+    button:
+      saveAndContinue: Save and continue.
+      completeOrder: Complete your order
+      confirmed_address: Confirm your location
+      goToPayment: Go to payment
+
+  ## To be confirm ## 
+  message:
+    please_confirm_your_pin: Please check the address you have. and fix the pin to make sure the position is correct. to process your order
+    privacy_policy: Privacy Policy on the digital system of Siam Makro Public Company Limited
+    check_pin_area: Check the placement of the pins, web dialog
+
+  button:
+    edit_pin: Edit pin
+    noted: Accept
+    continue_payment: continue with payment
+    confirmed_address: Confirm your location
+    cancel_and_logout: Cancel logout
+    accept_all: Accept all
+    back: Go back
+
+  text_banner:
+    cookie_policy: Cookie policy
+    settings: Settings
+    cookies_banner: cookies (cookies)
+
+  2c2p:
+    credit_debit: Credit/Debit Card
+    card_number: หมายเลขบัตร
+    exp_date: วันหมดอายุ (ดด/ปป)
+    cvv: CVV
+    namecard: ชื่อผู้ถือบัตร
+    continue: ดำเนินการต่อ
+    loading: Loading
+    proceed: Proceed
+    btn_cancel: Cancel
+    btn_txt_cancel: CANCEL
+    payment_has_been_declined: การชำระเงินของคุณถูกปฏิเสธ
+    transaction_successful: Transaction is successful
+    customer_cancellation: Customer Cancellation
+    back_to_merchant: back to merchant
+    txt_successful: Done
+    bank_transfer: Bank Transfer
+    select_bank: เลือกธนาคาร
+    kasikorn_bank: Kasikorn Thai
+    bankoption: bankoption
+    true_wallet: Truemoney Wallet
+    btn_verify: Verify
+    btn_simulate_success: Simulate Success
+    bank_name: Siam Makro Public Company Limited (Makro Marketplace)
+    global_card: GLOBAL CARD
+    digital_payment: DIGITAL PAYMENT
+    continue_payment: CONTINUE PAYMENT
+    delete: Delete
+    return_to_merchant: Return to Merchant
+    main: main
+
+
+  cookie:
+    cookies_consent: สวัสดีค่ะ บริษัทฯ ขออนุญาตเก็บคุกกี้จากท่าน เพื่อนำข้อมูลไปวิเคราะห์และพัฒนาการให้บริการของแอปพลิเคชัน ให้ตรงใจท่าน หากท่านต้องการข้อมูลเพิ่มเติม กรุณาคลิ๊กที่
+    privacy_popup_on_web: ความเป็นส่วนตัว, หน้าต่างโต้ตอบการเตือนบนเว็บ
+    close: close
+    accept_all_cookie: Accept all cookie
+    web_alert_dialog: web alert dialog
+    clear_basket: Clear Basket Data Clear
+    clear_storage: Clear Storage Clear
+    clear: Clear
+    ok: OK
+
+  debug:
+    build: build
+    simulate_jailbreak: Simulate jailbreak
+    for_safe: For your safety
+    makro_pro_will_close: To proceed, please use a phone without system modifications. For your safety, the Makro PRO app will be closed.
+    invalidate: INVALIDATE
+    for_your_safety: for your safety To proceed, please use a phone without system modifications. For your safety, the Makro PRO app will be closed.
+    clear_basket: Clear Basket Data
+    ok: OK
+    clear: Clear
+    clear_storage: Clear Storage
+    popup_confirm:  Are you sure?
+    prevent_screenshots:  Prevent screenshots
+    searchLocalization:  search_localization_enabled
+    forcenewcheckoutflow:  force_new_checkout_flow
+  forgot_password:
+    sent: sent
+
+  kyc:
+    name_surname: Name-Lastname
+    business_name: Business name
+    phone_number: Phone number
+    phone_number_must_be: Phone number must be 9 to 10 digits
+    continue: Continue
+    received_your_business_details: We have received your business details. Enjoy your shopping!
+    unnecessary: Optional
+    thank_received_your_business_details: Thank You! We have received your business details. Enjoy your shopping!
+    please_specify_not_required: Please specify Optional
+    average_seat:
+      less_than_20: น้อยกว่า 20 ที่นั่ง
+    branch:
+      1_branch: มีสาขาแค่ที่นี่ที่เดียว
+      more_than_1:
+        more_1_branch: มีสาขาอื่นด้วย
+        number_branch: 99
+    catering:
+      business_catering: จัดเลี้ยง
+      catering_detail_l1: ประเภทอาหาร
+      catering_detail_l2: จำนวนคนเสิร์ฟต่อเดือน
+      catering_detail_l3: ยอดซื้อของลูกค้าต่อคนโดยเฉลี่ย
+    customer_pay:
+      less_than_50: น้อยกว่า 50 บาทต่อคน
+    foodtype:
+      bakery: เบเกอรี่
+      drinks: กาแฟ เครื่องดื่ม และของว่าง
+    hotel:
+      business_hotel: โรงแรมและที่พัก
+      hotel_detail_l1: จำนวนสาขา
+      hotel_detail_l2: จำนวนห้องพัก
+      hotel_detail_l3: ระดับโรงแรมหรือที่พักของท่าน
+    restaurant:
+      business_restaurant: ร้านอาหาร
+      restaurant_detail_l1: ประเภทอาหาร
+      restaurant_detail_l2: จำนวนสาขา
+      restaurant_detail_l3: ที่นั่งภายในร้านอาหารโดยเฉลี่ย
+      restaurant_detail_l4: ยอดซื้อของลูกค้าต่อคนโดยเฉลี่ย
+    rooms:
+      less_than_10: น้อยกว่า 10 ห้อง
+    served_per_month:
+      21_to_40: 21 - 40 ที่นั่ง
+    stars:
+      less_than_2: 1-2 ดาว
+    
+  my_account: 
+    account_details: Details
+    specify_info: Specify info
+    change_phone_number: Change phone number
+    name: Name*
+    surname: Lastname*
+    name_surname: Name-Lastname*
+    want_to_cancel: You want to cancel?
+    save_success: Your details was successfully changed
+    specify_valid: Enter a valid email address
+    toast_success: Changed account details successfully!
+    please_specify: This field is mandatory
+    success: Success
+    my_address: My addresses
+
+  my_address:
+    my_address: My addresses
+    add_new_address: Add new address
+    success_deleted_address: Address was successfully deleted
+    success_saved_changes: Changes were successfully saved!
+    save: Save
+    edit_address: Edit address
+    bussiness_name: Business name
+    contact_name: Contact first name
+    contact_surname: Contact last name
+    contact_phone_number: Contact number*
+    address: Address*
+    room_number: Apartment number
+    zipcode: Postal code*
+    tax_id: Tax ID
+    default_address: Use as my default address
+    want_cancel: Are you sure you want to cancel?
+    your_information_not_save: Any changes you made will not be saved
+    no: No
+    delete_address: Delete address
+    want_to_delete_address: Want to delete this address?
+    have_customer_address: Already has an address for the customer
+
+  jt_tracking: 
+    caim_next_day: Claim fast the next day.
+
+  order_history:
+    unpaid: Check your e-mail for payment instructions, unpaid orders will be cancelled automatically.
+
+  home:
+    working_on_expanding_delivery_area: We are working on expanding our delivery areas!
+    see_all: See all
+    btn_accept_terms_and_conditions: Accept
+    btn_continue_on_out_of_delivery_area: Continue
+
+  onboarding:
+    back: Back
+    start: Get started
+    consent: Choose how the Company collect, use, disclose or process your personal data
+    register_now: Register now
+    after_ok: After pressing "OK" you confirm the privacy policy. Become a seller with Magnet
+
+  register:
+    create_account: Create account
+    create_new_account: Create account
+    name: Name
+    surname: Lastname
+    txt_taxid: Tax ID
+    create: Create
+    password_length_error: Password must be at least 8 characters long.
+    password: password
+    accept: Accept
+    popup_title_terms_and_conditions: Terms and Conditions
+    individual: Individual
+    business: Business
+    selectBusinessType: Select my business*
+    business_type_list:
+    - Distributor
+    - Food & Non-food W/S
+    - Food & Non-food wholesaler
+
+  tnc:
+    digital_services: Makro Digital Services (Services via online channels of Siam Makro Public Company Limited)
+    popup_title_terms_and_conditions: Terms and Conditions
+    popup_desc_terms_and_conditions: Privacy Policy on the digital system of Siam Makro Public Company Limited
+
+  common:
+    mylist: My list
+    shopping: Shopping
+    welcome_to_chrome: Welcome to Chrome
+    browse_faster: Browse faster. Use less data.
+    turn_on_sync: Turn on sync?
+    chrome: Chrome
+    open_with_chrome: Open with Chrome
+    basket: Basket
+    more: More
+    done: Done
+    do_not_allow: Don’t Allow
+
+  ## Others ##
+  other_label:
+    company_name: Siam Makro Public Company Limited (Makro Marketplace)
+    company_name_upper_text: CP AXTRA PUBLIC COMPANY LIMITED
+    platform_choosed: Bank Transfer
+    qr_code: Qr Code
+    payment_code_1: Payment Code (Ref.1)
+    payment_amount: Amount ( THB )
+    payment_ref: 1-2-3 Service
+    payer_name: PAYER NAME
+    clear_storage: Clear Basket Data
+    zipcode_selector: location-selector-zipcode
+    locator_selector: location-selector
+    subdristrict_selector: zipcode_subdistrict_dropdown
+    subdristict_banner: subdistrict_txt
+    payment_alert: '*Please pay before'
+    2c2p_label: 2c2p Plus
+    product_item_gid: product_item_gid
+    branch_error_msg: โปรดระบุรหัสสาขาเป็นตัวเลข 5 หลัก
+
+  other_button:
+    continue_payment: CONTINUE PAYMENT
+    back_to_merchant: BACK TO MERCHANT
+    return_to_merchant: Return to Merchant
+    clear_button: CLEAR
+    clear_button_lower_case: Clear
+    clear_basket_data: Clear Basket Data Clear
+    save_zipcode: zipcode-save
+    confirm_login_with_email: login_with_email_login_button_enabled
+    map: Map
+    icon_button: icon_button
+
+  other_textbox:
+    email: EMAIL ADDRESS
+    phone_number: PHONE NUMBER
+    zipcode: input_zipcode
+    search: searchInput
+    login_with_input_email: login_with_email_input_email
+    login_with_input_password: login_with_email_input_password
+
+  delivery time 1P:
+    title: delivery time
+    sub_title: Delivery in 24 hr
+    description1: Order before 11PM today, fastest delivery within tomorrow from 8:00 AM - 8:00 PM.
+    description2: Order after 11PM today, fastest delivery 2 days after order placed from 8:00 AM - 8:00 PM.
+
+  main_category:
+    dry food:  Dry & canned foods
+    cleaning utilities: Cleaning supplies & equipment
+    snacks:    Snacks, cookies & chocolate
+    kitchen utilities:  Kitchen supplies & disposables
+    office utilities:   Store & office supplies
+    promotion page:  โปรโมชั่น Promotion ลด 5% min 9฿ ส่ง J&T
+    pet accessories:    Pet Accessories
+    fresh_food:  Fruits & Vegetables
+    lots_of_product:  Lots of product
+    multi_store_product: Multi Store product
+    regressionGroup:   Regression grouping collection
+    storeExtension:   Store extension
+    meat:   Meat
+    slabPrice: Slab price
+
+  sub_category:
+    vinegar and oils:     Vinegar & oil .
+    rices:                Rice
+    spices:               Spices, sugar, salt & pepper
+    laundry:              Fabric Softeners & Dryer Sheets
+    snacks:               Snacks
+    kitchen utilities:    Cooking equipment
+    furniture:            Furniture
+    one time use:         Disposables
+    doggogogo:            Doggogogo
+    unshown_collection:   Unshown collection
+    fruitgogogo:  Fruitgogogo
+    sim_st8:    SIM ST8
+    st8_only:   Store 8 only product
+    sunny_collection:   "Sunny's Collection"
+    pet_bedding:  Pet Bedding
+    fruite_veggie:        Fruits & Vegetables
+    3pOwn:   3P own fleet
+    soda: collection ร็อคเมาเท็น
+    beef:     Beef
+    chilled:  Chilled
+
+  banner:
+    bannerPDP:  'banner - PDP : เนสกาแฟ - en_7'
+    bannerInfo: 'banner-info_9'
+    bannerYoutube: 'Banner : External Link en_5'
+    bannerCollection:  'banner collection : import SKU product by QA_1'
+    bannerNescafe:  'เนสกาแฟ กาแฟพร้อมดื่ม เอสเปรสโซ โรสต์ 180 มล. แพ็ค 30 กระป๋อง'
+
+  notification:
+    lbl_order:         'คำสั่งซื้อ'
+    lbl_payment_done:  'ชำระเงินเรียบร้อยแล้ว'
+    lbl_thank_you:     'ขอบพระคุณที่สั่งซื้อจาก Maknet ดูสถานะของสินค้าได้ง่ายๆ เลยที่หน้าคำสั่งซื้อของคุณ'
+    lbl_pickup_title:        'กำลังอยู่ระหว่างจัดส่ง!'
+    lbl_pickup_body:         'เรากำลังนำส่งสินค้าของคุณ'
+    lbl_delivered_title:     'ได้ถูกจัดส่งแล้ว!'
+    lbl_delivered_body:      'ขอบพระคุณที่สั่งซื้อจาก Maknet หากคุณมีข้อสงสัยเกี่ยวกับคำสั่งซื้อ ติดต่อเราได้เลย' 
+    lbl_canceled:      'ถูกยกเลิกแล้ว'
+  
+  email_info:
+    lbl_order: รายการจากคำสั่งซื้อของคุณ
+    lbl_delivered: ถูกส่งไปยังที่อยู่ของคุณเรียบร้อยแล้ว
+    lbl_info1: หากคุณต้องการความช่วยเหลือใดๆ โปรดติดต่อฝ่ายบริการลูกค้าของเรา
+    lbl_info2: ขอบคุณและเราหวังเป็นอย่างยิ่งว่าคุณจะเพลิดเพลินกับการสั่งซื้อของคุณ
+  
+  filter_type:
+    price: Price
+    category: Category
+    available: Availability
+    brand: Brand
+    promotion: Promotions
+
+  slab_price:
+    lbl_info1: Buy 1 - 9 units
+    lbl_info2: Buy 10 - 14 units
+    lbl_info3: Buy 15+ units
+    lbl_info4: Buy 1 - 4 units
+    lbl_info5: Buy 5 - 9 units
+    lbl_info6: Buy 10+ units

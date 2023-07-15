@@ -1,0 +1,55 @@
+ROOT_URL: 
+  MANNGO QA:      https://marketplace.mango-qa.siammakro.cloud/marketplace/api/v1
+  Mirakl:         https://siammakroth1-preprod.mirakl.net
+  Mirakl_seller_token:    8d205062-8046-499d-8c3a-ebe6a0c3b4eb
+  Mirakl_operator_token:  47d6c0da-023c-4d6c-8b8d-479d8ee2c49e
+  Shopify:        https://mango-store-qa.myshopify.com/admin
+  Shopify_graphql:    https://mango-store-qa.myshopify.com/admin/api/2021-07/graphql.json
+  Shopify_token:   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
+  Mango_app_qa:   http://marketplace-api.marketplace.mango-qa.internal:8080
+  Cognito:  https://cognito-idp.ap-southeast-1.amazonaws.com
+  Algolia: https://testing8m7nkjikm2-1.algolianet.com/
+  Typesense:  https://search.mango-qa.siammakro.cloud
+  Product_graphql:    https://marketplace.mango-qa.siammakro.cloud/product/api/v1
+  RM3:  https://rm3-calculation-api.makroclickdev.com
+
+file_path:
+  shopify_3p_product:     /product/3pdropship_shopify.json
+  mirakl_3P_offer_discount:     /product/3pdropship_discount_mirakl.json
+  mirakl_3P_offer_nondiscount:  /product/3pdropship_nondiscount_mirakl.json
+  product_status_shopify:   /product/product_status_shopify.json
+  collection_product:   /product/collection_product.json
+  delete_product_graphql:   /product/delete_product_from_collection.json
+  product_detail:   /product/product_details.json
+  rm3_price_v1: /rm3/price_v1.json
+  synchronization_mirakl: /product/synchronization_mirakl.json
+  medusa_admin_account:   /auth/medusaLogin.json
+
+otp_url:      http://125.26.15.143:5400
+
+shopify_api:
+  endpoint: 'https://mango-store-qa.myshopify.com/admin/api/2021-10/customers/search.json'
+  shopify_token: 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
+  url_user: https://55581f92c9ffd49839ccc94fb022005e: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@mango-store-qa.myshopify.com/admin/api/2021-10/customers/shopify_id.json
+  key: 55581f92c9ffd49839ccc94fb022005e
+  password: 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
+
+medusa_api:
+  url:              https://medusa-api.mango-qa.siammakro.cloud/admin
+  email:            mango.2.automate@gmail.com
+  access_token:     MEDUSA_2022@
+  column_q:         q
+  column_customer_id:   customer_id
+  endpoint_customers:    /customers
+  endpoint_orders:      /orders
+  endpoint_admin:     /auth
+  url_order_status:   /orders?expand=shipping_address&fields=id%2Cstatus%2Cdisplay_id%2Ccreated_at%2Cemail%2Cfulfillment_status%2Cpayment_status%2Ctotal%2Ccurrency_code%2Cmetadata&status[0]={{order_status}}&offset=0&limit=15&q={{email}}
+  url_order_detail:   /orders/{{order_url}}?expand=customer%2Cbilling_address%2Cshipping_address%2Cdiscounts%2Cdiscounts.rule%2Cshipping_methods%2Cpayments%2Cfulfillments%2Cfulfillments.tracking_links%2Creturns%2Cclaims%2Cswaps%2Cswaps.return_order%2Cswaps.additional_items%2Cedits
+  order_status:
+    pending:  pending
+    cancel: canceled
+
+product_api:
+  endpoint_graphql: /graphql
+  
+url_price: /v2/get-price-info

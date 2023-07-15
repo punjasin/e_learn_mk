@@ -1,0 +1,243 @@
+query:
+  TH: น้ํามันคาโนล่าผสมน้ํามันทานตะวัน
+  EN: Big Pack
+  mixed:  เคลือบเงา ขนาด 3800มล. 2 แกลลอน ( Floor Shiny )
+  predict: Aro
+  predict keyword: Aroma
+  product name keyword: น้ำมัน
+  product name keyword2: กล่อง
+  brand keyword: Bonus
+  collection keyword: คุ้กกี้
+  synonym keyword: น้ำมันหอย
+  brand_1P_keyword: NESCAFE
+  brand_1P_product: nescafe test
+  brand_3P_SOD: กรตะวัน
+  brand_3P_FBM: Dshow
+  many topic keyword:   ปลา
+  non-related keyword:  คอมพิวเตอร์
+  keyword_outofstock:   ที่นอน out
+  sku keyword: qsms9yzo
+
+search engine :
+  typesense: 
+    neme : typesense
+    search option:
+      basic: without filter and sort
+      filter:
+        price: priceRange
+        price_from_0: 0
+        price_to_500: 500
+        collection: collections
+        collection_1: ช้อปของครบ จบทุกความต้องการ
+        collection_2: thiiekbkh-ng
+        availability: availability 
+        brand: brands
+        brands_1: Eva Solo
+        brands_2: ดีโชว์
+        brands_3: RRS
+        brands_4: กรตะวัน
+        promotion: promotions
+      sort: sort
+      sort_by_relevance : RELEVANCE
+      sort_by_price_lowToHigh : PRICE_ASC
+      sort_by_price_highToLow : PRICE_DESC
+      sort_by_promotion : PROMOTIONS
+      sort_by_recently : RECENTLY_ADDED
+      filter and sort: with filter and sort
+
+search_api:
+  endpoint: https://search.mango-qa.siammakro.cloud/search/api/v1/indexes/products/search
+  payload:
+    search_api_payload1:
+      q: "เอโร่ เม็ดมะม่วงหิมพานต์ 2000 กรัม"
+      size: 2
+      filters:
+        priceRange:
+          from: 500
+          to: 1000
+        availability: true
+    search_api_payload2:
+      q: "*"
+      size: 10
+      filters:
+        priceRange:
+          from: 1000
+          to: 2000
+        availability: true
+        storeCode: 2003
+    #please not use automation check sod for checkout
+    search_api_payload_SOD:
+      q: "check sod"
+      size: 5
+    search_api_payload_1P:
+      q: "*"
+      size: 5
+      filters:
+        seller: "Commercial Test 1P MAKRO"
+        storeCode: 804
+        priceRange:
+            from: 350
+            to: 1500
+      sortBy: "PRICE_ASC"
+    search_api_payload_FBM:
+      q: "check fbm"
+      size: 5
+    search_api_SOD_fix_discount:
+      q: "ออโตเมท เช็ค sod 2"
+      size: 5
+    search_api_FBM_fix_discount:
+      q: "Coconut FBM"
+      size: 5
+    search_api_payload_collection:
+      q: "*"
+      size: 5
+      filters: 
+        collections: [
+          Sunny's Collection
+        ]
+    search_api_payload_suggestions:
+      q: "เอโร่ เม็ดมะม่วงหิมพานต์"
+      size: 10
+      querySuggestions: true
+    search_api_payload_dog_collection:
+      q: "ที่นอนสัตว์เลี้ยง"
+      size: 10
+      filters: 
+        categories: [
+          pet-accessories/pet-bedding
+        ]
+        categoryIds: [
+          "7013",
+          "5710107"
+        ]
+    search_api_fresh_badge_has_promotion:
+      q: "*"
+      filters:
+          primaryCategoryId: Automation
+          collections: [
+              "Fresh via badge"
+          ]
+          filterStoreCode: [
+            "3P"
+          ]
+          badges: [
+            name: "fresh",
+            handle: "fresh-badge"
+          ]
+          priceRange:
+            from: 400
+            to: 1000
+          inStock: 1
+          hasPromotions: 1
+          status: "active"
+      sortBy: "PRICE_DESC"
+    search_api_fresh_badge_no_promotion:
+      q: "*"
+      filters:
+          collections: [
+              "Fresh via badge"
+          ]
+          inStock: 1
+          hasPromotions: 0
+          status: "active"
+    search_api_vegetable_collection:
+      q: "*"
+      filters:
+        collections: [
+            "Fresh via badge"
+        ]
+        categories: [
+          "fruits-vegetables",
+          "fruits-vegetables/fruits-vegetables"
+        ]
+        badges: [
+          name: "fresh",
+          handle: "fresh-badge"
+        ]
+        inStock: 1
+        status: "active"
+    search_api_collection_name:
+      q: "Loyalty Collection"
+      page: 1
+      size: 20
+      querySuggestions: true
+      sizeOfSuggestions: 5
+      filters:
+        storeCode: "804"
+    search_api_product_name:
+      q: "กาแฟ"
+      page: 1
+      size: 20
+      querySuggestions: true
+      sizeOfSuggestions: 5
+      filters:
+        storeCode: "804"
+    search_api_synonym:
+      q: "น้ำมันหอย"
+      page: 1
+      size: 20
+      querySuggestions: true
+      sizeOfSuggestions: 5
+      filters:
+        storeCode: "804"
+    search_api_curation:
+      q: "Nescafe"
+      page: 1
+      size: 20
+      querySuggestions: true
+      sizeOfSuggestions: 5
+      filters:
+        storeCode: "804"
+    search_api_sku:
+      q: "h6bvv0qd"
+      page: 1
+      size: 20
+      querySuggestions: true
+      sizeOfSuggestions: 5
+      filters:
+        storeCode: "804"
+    search_api_by_price_filters_under_200:
+        q: "*"
+        size: 10
+        querySuggestions: true
+        filters: 
+            priceRange: 
+                from: 150
+                to: 200
+    search_api_by_price_filters_under_2000:
+        q: "*"
+        size: 10
+        querySuggestions: true
+        filters: 
+            priceRange: 
+                from: 1000
+                to: 2000
+    search_api_product_1P:
+      q: "ผักชี 300 กรัม"
+      page: 1
+      size: 20
+      querySuggestions: true
+    search_api_product_3P_fbm:
+      q: "Banana FBM"
+      page: 1
+      size: 20
+      querySuggestions: true
+    search_api_product_3P_sod:
+      q: "Apple sod"
+      page: 1
+      size: 20
+      querySuggestions: true
+    search_api_product_3P_ood:
+      q: "product 3PSOD2211M02"
+      page: 1
+      size: 20
+      querySuggestions: true  
+    search_api_payload_3P:
+      q: "3P"
+      size: 10
+    search_api_payload_soda_category:
+      q: "โซดา"
+      filters:
+        collections:
+          - variant title contain notcontain
+          - regression status

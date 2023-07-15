@@ -1,0 +1,25 @@
+pipeline {
+    agent { label 'agent75_m1_dryrun'}
+    post {
+      failure {
+        updateGitlabCommitStatus name: 'dryrun', state: 'failed'
+      }
+      success {
+        updateGitlabCommitStatus name: 'dryrun', state: 'success'
+      }
+    }
+    stages {
+        stage('web') {
+            steps {
+                echo 'Dryrun Web'
+                sh "robot -v doppio_farm:False --dryrun -d logdryrun -v chromedriverExecutable:None --outputdir testResultWeb -v browserstack:False --loglevel DEBUG tests/web"
+            }
+            post {
+            always {
+               echo "Publish Robot Framework test results"
+               robot logFileName: 'log.html', outputFileName: 'output.xml', outputPath: './testResultWeb', reportFileName: 'report.html'
+               }
+            }
+        }
+    }
+}

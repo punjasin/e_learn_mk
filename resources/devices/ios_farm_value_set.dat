@@ -1,0 +1,36 @@
+[Set0]
+tags = set0
+device_info = Mango01
+appium_port = 4850
+emulator_name = C476A55A-F07A-4125-B69B-F18B37D446E2
+system_port = 8307
+version: 14.5
+remote_url = localhost
+
+
+[Set1]
+tags = set1
+device_info = Mango02
+appium_port = 4852
+emulator_name = 4A48F37C-1DB8-4CE3-83E9-D68D0AD85F72
+system_port = 8309
+version: 14.5
+remote_url = localhost
+
+[Set2]
+tags = set2
+device_info = Mango03
+appium_port = 4856
+emulator_name = 4E671CC9-4D3F-42D7-85D0-C970F8EFDD5F
+system_port = 8301
+version: 14.5
+remote_url = localhost
+
+[Set3]
+tags = set3
+device_info = Mango04
+appium_port = 4858
+emulator_name = 581C3756-228D-411A-8FCE-B7FD4B8BF179
+system_port = 8303
+version: 14.5
+remote_url = localhost

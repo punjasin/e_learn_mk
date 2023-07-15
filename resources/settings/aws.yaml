@@ -1,0 +1,3 @@
+aws_cognito:
+  profile_name:  PowerUser-677633034380
+  UserPoolId: 'ap-southeast-1_yy5xs6Nmp'

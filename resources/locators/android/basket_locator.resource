@@ -1,0 +1,111 @@
+***Settings***
+Variables       ../../localisation/mobile/${lang}.yaml
+Variables       ../../localisation/mobile/${lang}_additional.yaml
+
+*** Variables ***
+${basket.txt_empty_basket}                         xpath=//android.widget.TextView[@text='${mobile['basket']['message']['noItems']}']
+${basket.txt_popup_swipe_delete}                   xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deleteItemSwipeInfo']}']
+${basket.btn_close_popup_swipe_delete}             xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deleteItemSwipeInfo']}']/following-sibling::android.view.ViewGroup
+${basket.btn_checkout}                             xpath=//android.view.ViewGroup[android.widget.TextView[@text='${mobile['basket']['button']['checkout']}']]
+${basket.btn_basket}                               xpath=//android.view.ViewGroup/android.widget.TextView[@text='${mobile['basket']['title']}']
+${basket.txt_product_list}                         xpath=//android.view.ViewGroup[contains(@content-desc, "basket_list_item")]//android.widget.TextView[@text='{{productname}}']
+${basket.product_qty}                              xpath=//android.widget.TextView[@text='{{productname}}']/following-sibling::android.view.ViewGroup//android.widget.EditText[@content-desc="qty_input"]
+${basket.product_increment_qty}                    xpath=//android.widget.TextView[@text='{{productname}}']/following-sibling::android.view.ViewGroup//android.view.ViewGroup[@content-desc="increment_btn_wrapper"]
+${basket.product_decrement_qty}                    xpath=//android.widget.TextView[@text='{{productname}}']/following-sibling::android.view.ViewGroup//android.view.ViewGroup[@content-desc="decrement_btn_wrapper"]
+${basket.txt_basket_qty}                           //android.widget.TextView[@text="{{productname}}"]/following-sibling::android.view.ViewGroup/android.widget.EditText[@content-desc="qty_input"]
+${basket.txt_productname}                          xpath=//android.widget.TextView[@text='{{name}}']
+${basket.txt_product_qty}                          xpath=//android.widget.TextView[@text='{{name}}']/following-sibling::android.view.ViewGroup//android.widget.EditText[@text='{{qty}}']
+${basket.txt_orignal_price}                        xpath=//android.widget.TextView[@text='{{productname}}']/following-sibling::android.view.ViewGroup/android.widget.TextView[contains(@text,'{{orignalprice}}')]
+${basket.txt_productname_orignal_price}            xpath=//android.widget.TextView[@text='{{productname}}']/following-sibling::android.widget.TextView[contains(@text,"{{orignalprice}}")]
+${basket.txt_discount_price}                       xpath=//android.widget.TextView[@text='{{productname}}']/following-sibling::android.view.ViewGroup/android.widget.TextView[contains(@text,'{{discountprice}}')]
+${basket.txt_discount_percent}                     xpath=//android.widget.TextView[@text='{{productname}}']/following-sibling::android.view.ViewGroup/android.widget.TextView[contains(@text,'-{{discountpercent}}')]
+${basket.txt_discount_total}                       xpath=//android.widget.TextView[@text='${mobile['basket']['label']['discount']}']/following-sibling::android.widget.TextView[contains(@text,'-{{total}}')]
+${basket.txt_product_discount_label}               xpath=//android.widget.TextView[@text='${mobile['basket']['label']['discount']}']
+${basket.txt_product_discount}                     xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_discount_field"]/android.widget.TextView[2]
+${basket.txt_summary_voucher_badge}                xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_voucher_badge"]/android.view.ViewGroup/android.widget.TextView[contains(@text,'{{code}}')]
+${basket.txt_summary_voucher_field}                xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_voucher_field"]/android.widget.TextView[contains(@text,'-{{total}}')]
+${basket.txt_total}                                xpath=//android.widget.TextView[@text='${mobile['basket']['label']['total']}']/following-sibling::android.widget.TextView[contains(@text,'{{total}}')]
+${basket.txt_subtotal}                             xpath=//android.widget.TextView[@text='${mobile['basket']['label']['subtotal']}']/following-sibling::android.widget.TextView[contains(@text,'{{total}}')]
+${basket.txt_basket_header}                        xpath=//android.widget.TextView[@text='${mobile['basket']['title']}']
+${basket.txt_disable_checkout}                     xpath=//android.view.ViewGroup[@enabled='false']/android.widget.TextView[@text='${mobile['basket']['button']['checkout']}']
+${basket.txt_enable_checkout}                      xpath=//android.view.ViewGroup[@enabled='true']/android.widget.TextView[@text='${mobile['basket']['button']['checkout']}']
+${basket.txt_cannot_order}                         xpath=//android.widget.TextView[@text='${mobile_additional['basket']['cannot_order']}']
+${basket.input_product_qty}                        xpath=//android.widget.TextView[@text='{{productname}}']//following-sibling::android.view.ViewGroup//android.widget.EditText[@content-desc="qty_input"]
+${basket.txt_global_delete}                        xpath=//android.widget.TextView[@text='${mobile['global']['delete']}']
+${basket.txt_remove_product}                       xpath=//android.view.ViewGroup/android.widget.TextView[@text='${mobile['basket']['message']['productRemoved']}']
+${basket.view_basket}                              xpath=//android.view.View[@text='${mobile['basket']['title']}']
+${basket.txt_basket}                               xpath=//android.widget.Button/android.widget.TextView[@text='${mobile['basket']['title']}']
+${basket.delivery_by_1P_brand_title}               xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deliveredBy']}']
+${basket.delivery_handle_by_1P_brand_title}        xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deliveryHandledByBrandTitle']}']
+${basket.delivery_by_3P_brand_title}               xpath=//android.widget.TextView[@text='${mobile['basket']['message']['soldBy']}']
+${basket.delivery_range_date}                      xpath=//android.widget.TextView[@text="${mobile['basket']['message']['soldBy']}"]/following-sibling::android.widget.TextView
+${basket.choose_delivery_date}                     xpath=//android.widget.TextView[@text='${mobile['basket']['message']['chooseDeliveryDate']}']
+${basket.info_tooltip_icon}                        xpath=//android.widget.TextView[@text="${mobile['basket']['message']['deliveredBy']}"]/following-sibling::android.view.ViewGroup[@content-desc="shipment_info_icon_in_basket"]/android.view.ViewGroup
+${basket.info_3P_tooltip_icon}                     xpath=//android.widget.TextView[@text="${mobile['basket']['message']['soldBy']}"]/following-sibling::android.view.ViewGroup[@content-desc="shipment_info_icon_in_basket"]/android.view.ViewGroup
+${basket.btn_close_tooltip}                        xpath=(//android.widget.TextView[@text='${mobile['basket']['message']['deliveryHandledByBrandTitle']}']/parent::android.view.ViewGroup/parent::android.view.ViewGroup/android.view.ViewGroup)[1]
+${basket.btn_close_3P_tooltip}                     xpath=(//android.widget.TextView[@text='${mobile['basket']['message']['deliveryHandledByPartnerTitle']}']/parent::android.view.ViewGroup/parent::android.view.ViewGroup/android.view.ViewGroup)[1]
+${basket.delivery_brand_description}               xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deliveryHandledByBrandDescription']}']
+${basket.delivery_brand_description_viewgroup}     xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deliveryHandledByBrandDescription']}']/ancestor::android.view.ViewGroup/android.view.ViewGroup
+${basket.by_sellername}                            xpath=//android.widget.TextView[@text='${mobile_additional['basket']['message']['by']} {{sellername}}']
+${basket.sent_within}                              xpath=//android.widget.TextView[contains(@text,'${mobile_additional['basket']['message']['delivery']}')]
+${basket.sellername_viewgroup}                     xpath=//android.widget.TextView[@text='${mobile_additional['basket']['message']['by']} {{sellername}}']/following-sibling::android.view.ViewGroup/android.view.ViewGroup
+${basket.delivery_partner_title}                   xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deliveryHandledByPartnerTitle']}']
+${basket.delivery_partner_description}             xpath=//android.widget.TextView[contains(@text,'${mobile['basket']['message']['deliveryHandledByPartnerDescription']}')]
+${basket.delivery_partner_description_line_2}      xpath=//android.widget.TextView[contains(@text,'${mobile_additional['basket']['message']['deliveryHandledByPartnerDescriptionLine2']}')]
+${basket.delivery_partner_title_viewgroup}         xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deliveryHandledByPartnerTitle']}']/ancestor::android.view.ViewGroup/android.view.ViewGroup
+${basket.txt_total}                                xpath=//android.widget.TextView[@text='${mobile['basket']['label']['total']}']
+${basket.add_to_basket_success}                    xpath=//android.widget.TextView[@text='${mobile_additional['basket']['message']['itemsAddedToBasket']}']
+${basket.product_name_list}                        xpath=//android.widget.TextView[@text="{{product_name_list}}[{{i}}]"]
+${basket.qty_input}                                xpath=//android.widget.EditText[@content-desc=‘qty_input’]
+${basket.basket_list}                              xpath=//android.widget.ScrollView[@content-desc="basket_list"]
+${basket.basket_summary_section_total_field}       xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_total_field"]
+${basket.fee}                                      xpath=//android.widget.TextView[@text='${mobile['basket']['label']['delivery']}']/following-sibling::android.widget.TextView[contains(@text, '{{fee}}')]
+${basket.last_fee}                                 xpath=//android.widget.TextView[@text='${mobile['basket']['label']['delivery']}']/following-sibling::android.view.ViewGroup[last()]
+${basket.title_desc}                               xpath=//android.widget.TextView[@text='{{title}}']/following-sibling::android.widget.TextView[@text='{{desc}}']
+${basket.txt_toast_warning}                        xpath=//android.view.ViewGroup[@content-desc="toast_warning"]/following-sibling::android.widget.TextView[@text="${mobile['basket']['message']['quantityExceed']}"]
+${basket.toast_warning}                            xpath=//android.view.ViewGroup[@content-desc="toast_warning"]
+${basket.basket_section}                           xpath=//android.view.ViewGroup[@content-desc="basket_section"]//android.widget.TextView[contains(@text,'{{seller_name}}')]/following-sibling::android.widget.TextView
+${basket.txt_product_contains}                     xpath=//android.widget.TextView[contains(@text, '{{product}}')]
+${basket.txt_product_unit}                         xpath=//android.widget.TextView[@text="{{productname}}"]/following-sibling::android.widget.TextView[@text="{{unit}}"]
+${basket.name_contains}                            xpath=//android.widget.TextView[contains(@text, '{{name}}')]
+${basket.basket_summary_section_subtotal_field}    xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_subtotal_field"]/android.widget.TextView[2]
+${basket.txt_fee}                                  xpath=//android.widget.TextView[@text='${mobile['basket']['label']['delivery']}']/following-sibling::android.widget.TextView
+${basket.basket_summary_section_discount_field}    xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_discount_field"]//android.widget.TextView[contains(@text,"฿")]
+${basket.choosing_different_address}               xpath=//android.view.View[@text='${mobile_additional['basket']['message']['choosing_different_address']}']
+${basket.warningChangeLocationPopupDescription}    xpath=//android.view.View[@text='${mobile['multistore']['label']['warningChangeLocationPopupDescription']}']
+${basket.unavailableItems}                         xpath=//android.widget.TextView[@text='${mobile['basket']['label']['unavailableItems']}']
+${basket.trash_btn_icon}                           xpath=//android.widget.TextView[@text='{{name}}']/following-sibling::android.view.ViewGroup//android.view.ViewGroup[@content-desc="trash_btn_icon"]
+${basket.checkout_viewgroup}                       xpath=//android.view.ViewGroup/android.widget.TextView[@text='${mobile['basket']['button']['checkout']}']/parent::android.view.ViewGroup
+${basket.ctaBrowseCategory}                        xpath=//android.widget.TextView[@text='${mobile_additional['basket']['button']['ctaBrowseCategory']}']
+${basket.addedUnavailablePopupTitle}               xpath=//android.widget.TextView[@text="${mobile['basket']['message']['addedUnavailablePopupTitle']}"]
+${basket.okay}                                     xpath=//android.widget.TextView[@text='${mobile['global']['okay']}']
+${basket.txt_product_qty_input}                    //android.widget.TextView[@text='{{product}}']/following-sibling::android.view.ViewGroup//android.widget.EditText[@content-desc='qty_input']
+${basket.txt_product_price}                        xpath=//android.widget.TextView[@text="{{productname}}"]/parent::android.view.ViewGroup//following-sibling::android.view.ViewGroup/android.widget.TextView
+${basket.txt_total_price}                          xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_total_field"]/android.widget.TextView[2]
+${basket_feature.txt_total_price}                  xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_total_field"]/android.widget.TextView[3]
+${basket.delivery_fee_part}                        xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_icon_on_delivery_fee_part"]
+${basket.fee_popup_description}                    xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deliveryFeePopupDescription']}']
+${basket.txt_minimum_amount}                       xpath=//android.widget.TextView[@text='${mobile_additional['basket']['message']['minimum_amount']}']
+${basket.shipping_fee}                             xpath=//android.widget.TextView[@text='${mobile_additional['basket']['message']['shipping_fee']}']/parent::android.view.ViewGroup
+${basket.delivery_fee_popup}                       xpath=//android.widget.TextView[@text='${mobile['basket']['message']['deliveryFeePopupDescription']}']/preceding-sibling::android.view.ViewGroup
+${basket.txt_delivery}                             xpath=//android.widget.TextView[@text='${mobile['basket']['label']['delivery']}']
+${basket.basket_summary_section_shipping_fee_field}     xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_icon_on_delivery_fee_part"]/following-sibling::android.widget.TextView
+${basket.txt_badge_product}                        xpath=//android.widget.TextView[@text="{{badge_name}}"]/following-sibling::android.widget.TextView[@text="{{product_name}}"]
+${basket.txt_minimum_order_warning}                xpath=//android.widget.TextView[@text='${mobile['basket']['message']['minimumSpend']}']
+${basket.txt_point_add_success}                    xpath=//android.widget.TextView[@text='${mobile['points']['message']['pointsRedeeemed']}']
+${basket.btn_makro_point_expand}                   xpath=//android.view.ViewGroup[@content-desc="points_form"]/android.view.ViewGroup[@content-desc="icon_button"]
+${basket.txt_total_point}                          xpath=//android.view.ViewGroup[@content-desc="points_form"]/android.widget.TextView[@text='${mobile['points']['label']['totalPoints']}']
+${basket.txt_pay_by_point}                         xpath=//android.view.ViewGroup[@content-desc="points_form"]/android.widget.TextView[@text='${mobile['points']['label']['redeemPoints']}']
+${basket.arrow_point_symbol}                       xpath=//android.widget.TextView[@text='${mobile['points']['label']['redeemPoints']}']/preceding-sibling::android.view.ViewGroup
+${basket.btn_makro_point_confirm}                  accessibility_id=points_apply_button
+${basket.txt_point_input}                          accessibility_id=points_input
+${basket.txt_remove_point_for_use_coupon}          xpath=//android.widget.TextView[@text='${mobile['points']['label']['messageDiscount']}']
+${basket.txt_makro_pro_point}                      xpath=//android.widget.TextView[@text='${mobile['points']['label']['makroPoints']}']
+${basket.txt_amount_thb_point}                     xpath=//android.view.ViewGroup[@content-desc="points_form"]/android.widget.TextView[@text='-{{total_amount}} ฿']
+${basket.btn_delete_point}                         accessibility_id=points_delete_button
+${basket.btn_close_icon_input}                     xpath=//android.widget.EditText[@content-desc="points_input"]/following-sibling::android.view.ViewGroup[@clickable="true"]
+${basket.txt_point_amount_placeholder}             xpath=//android.widget.TextView[@text='${mobile['points']['input']['placeholder']}']
+${basket.txt_point_delete_success}                 xpath=//android.widget.TextView[@text='${mobile['points']['message']['pointsRestored']}']
+${basket.basket_list_item}                         xpath=//android.view.ViewGroup[contains(@content-desc,"basket_list_item")]
+${basket.txt_basket_list_item}                     //android.view.ViewGroup[contains(@content-desc,"basket_list_item")]
+${basket.basket_list_item_textview_index}          xpath=(//android.view.ViewGroup[contains(@content-desc,"basket_list_item")])[{{i}}]/android.widget.TextView

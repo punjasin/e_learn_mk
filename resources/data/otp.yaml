@@ -1,0 +1,7 @@
+url_request_otp:    /get_sms
+update_otp:
+  sms_text:   $..sms_text
+server_error_response: 500
+imap_outlook:
+  host: imap-mail.outlook.com
+  sender_address: makropro-noreply-qa@siammakro.co.th

@@ -1,0 +1,35 @@
+[Set0]
+tags = set0
+device_info = Mango01
+appium_port = 4601
+emulator_name = emulator-5554
+system_port = 5510
+version = 11
+remote_url = 127.0.0.1
+
+[Set1]
+tags = set1
+device_info = Mango02
+appium_port = 4602
+emulator_name = emulator-5556
+system_port = 5511
+version = 11
+remote_url = 127.0.0.1
+
+[Set2]
+tags = set2
+device_info = Mango01
+appium_port = 4601
+emulator_name = emulator-5554
+system_port = 5510
+version = 11
+remote_url = 10.88.9.127
+
+[Set3]
+tags = set3
+device_info = Mango02
+appium_port = 4602
+emulator_name = emulator-5556
+system_port = 5511
+version = 11
+remote_url = 10.88.9.127

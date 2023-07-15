@@ -1,0 +1,44 @@
+mobile_test_data:
+  maknet-2348:
+    add_qty_list:
+    - '0'
+    - '4'
+  maknet-1369:
+    add_qty_list:
+    - '0'
+    - '0'
+    price_minimun: 
+    - '100'
+    - '2000'
+    brand_list:
+    - 'MAKRO'
+    - ''
+  maknet-2922:
+    order_1:
+      cancel_reason:
+        en: Cancelled by {{seller_name}}
+        th: ถูกยกเลิกโดย {{seller_name}}
+      order_number: '#{{order_number}}'
+      payment_status:
+        en: 'Status: success'
+        th: 'สถานะ: ชำระเงินเรียบร้อย'
+      payment_type:
+        en: 'Payment method: credit card/debit card'
+        th: 'ช่องทางการชำระเงิน: บัตรเครดิต/ บัตรเดบิต'
+      seller_name: '#{{seller_name}}'
+    order_2:
+      cancel_reason:
+        en: Unsuccessful payment
+        th: การชำระเงินไม่สำเร็จ
+      order_number: '#{{order_number}}'
+      payment_status:
+        en: 'Status: unpaid'
+        th: 'สถานะ: ต้องชำระเงิน'
+      payment_type:
+        en: 'Payment method: bank transfer'
+        th: 'ช่องทางการชำระเงิน: โอนเงินผ่านธนาคาร'
+      seller_name: '{{seller_name}}'
+  maknet-6259:
+    user:
+      email:      orderhistory93@gmail.com
+      password:   1234567890

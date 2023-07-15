@@ -1,0 +1,804 @@
+web:
+    drawer:
+        downloadapp: Download the app
+        smalltext: Everyday 06.00-20.00
+    footerMenu:
+        faq: FAQ
+        contactUs: Contact Us
+        makroProPoint: Makro PRO Point
+        privacySettings: Privacy Settings
+        termsAndConditions: Terms and Conditions
+        joinMaknetAsSeller: Join Makro PRO as a Seller
+    copyRightContent: Copyright © 2023 Siam Makro Plc. All rights reserved.
+    global:
+        hi: Hi, <0>{{name}}</0>
+        required: Required
+        example: Example
+        select: Select
+        done: Done
+        cancel: Cancel
+        confirm: Confirm
+        remove: Remove
+        settings: Settings
+        acceptAll: Accept All
+        accept: Accept
+        next: Next
+        email: Email
+        phone: Phone number
+        ok: OK
+        okay: Okay
+        delete: Delete
+        save: Save
+        noAndGoBack: No, go back
+        yesAndConfirm: Yes, confirm
+        verify: Verify
+        verifyNow: Verify Now
+        verfied: Verified
+        update: Update
+        in: In
+        products: Products
+        items: Items
+        seeAll: See all
+        seeDetails: See details
+        apply: Apply
+        thankForShopping: Thank you for shopping!
+        ourAssortment: Our assortment
+        fresh: Fresh
+        call: Call
+        backToHomePage: Back to homepage
+        changeNow: Change now
+        soon: Soon
+        notDeliverable: Not Deliverable
+        deliveryAreaBy: Delivery area <br/>by MakroPRO
+        message:
+            unknownError: Unknown Error
+            serviceNotAvailable: Sorry, {{appName}} service is not available right now. Please try again later
+            somethingWentWrong: Oops, something went wrong
+            noInternet: No internet connection. Please go online and try again
+            maxCharError: '{{input}} must contain no more than {{maximumChar}} characters'
+            jailbreakDetected: "Unfortunately, our app is incompatible with your current software version.\nPlease try on another phone. (code: ROOTED_DEV)"
+            wasProblem: Something went wrong
+            updateRequired: Update Required
+            downloadNewVersion: To keep using application, please download our latest version.
+            httpLinkNotSupported: Open link in default browser is not supported
+            serverError: Sorry, {{appName}} service is not available right now
+            comeBackLater: Please come back later, we will have everything sorted out.
+            securityAlert: Security alert
+            securityMessage: To use the {{appName}} app please use a non jailbroken/rooted device. For your safety the app will close automatically.
+            loginToContinue: Login to continue
+            sessionExpired: Your session expired. Please log in again.
+            noMembershipFound: No Makro membership found
+            noMembershipFoundSubtitle: "You need a Makro membership ID to join the Makro PRO Points campaign. \n \n Online application coming soon or \nContact customer service"
+            syncMakroClickToMakroPro: Sync your membership card easily by logging in with your MakroClick phone number or email.
+            invalidTaxId: Please fill in correct Tax ID format (10 or 13 digits in numeric)
+            invalidBranchId: Please fill in correct Branch ID with 5 digits in numeric
+        button:
+            updateApp: Update the app
+        edit: Edit
+    seo:
+        title: Shopping Online, enjoy wide variety with the best deals
+        description: 'Delivery service for raw materials, fresh products, dry products, complete products, quality assurance, can be ordered 24 hours, delivered directly to the store Fast delivery, great price, quality assurance Brands: aro, Savepak, Makro'
+        categoryDescription: Buy {{categoryName}} products online at low prices. Get delivery in just a few days! Wholesale and bulk too!
+    header:
+        home: Home
+        aboutus: About Us
+        allcategories: All Categories
+        back: Go back
+        search: Search for products
+        categories: Categories
+        promotions: Promotions
+        earnPoints: Makro PRO points
+        shopAll: Shop all category
+        shopNow: Shop now
+        seeAllSubCategory: See all
+    menu:
+        noItemInList: No Items in the list
+    login:
+        label:
+            forgotPassword: Forgot password?
+            createAccount: Create account
+            password: Password
+            login: Login
+            email: Email
+            mobile: Mobile
+        message:
+            welcome: All in one marketplace!
+            dontHaveAnAccount: Don’t have an account?
+            oopsTryAgain: Oops, something went wrong. Please try again.
+            loginFailed: "Your email or password are incorrect.\nPlease try again."
+            methodToLogin: Please select your method to login
+            verifyingOTP: Verifying OTP Code...
+            passwordIsRequired: Password is a required field
+            loginWithEmail: This account is not ready to login with phone, please login with email
+            makroClickUserNotExistWithPhoneTitle: This phone number is not registered with us yet
+            makroClickUserNotExistWithEmailTitle: This email is not registered with us yet
+            weAreSorry: We are sorry
+            couldNotProceed: We couldn't proceed the process due to an unexpected error. Pls try again
+            iAgreeWith: I agree with the
+            loggedInSuccessfully: Logged in successfully
+            hasNotVerified: You're account hasn't been verified, Please verify first through the method that you use to create an account
+            accountSetupSuccessfully: Account is setup successfully!
+        button:
+            sendOTPCode: Send OTP code
+    register: Register
+    createAccount: Create Account
+    labels:
+        outOfStock: Out of stock
+        unavailable: Unavailable
+        current: (current)
+    showMore: See More
+    showLess: See Less
+    search:
+        label:
+            showAll: Show All
+            flatDiscount: Flat Discount
+            viewAll: View All
+            inStockOnly: In Stock
+            notFoundTitle: We’re sorry
+            filterProductsNotFound: We could not find results that match your filters
+            resultNotFound: We could not find results for your search
+        result: Search result
+        filter: Filter
+        sortBy: Sort By
+        clearfilter: Clear Filter
+        showResults: Show Results
+        relevance: Relevance
+        priceHighToLow: High Price to Low
+        priceLowToHigh: Low Price to High
+        newProductsFirst: New Products First
+        promotions: Promotions
+    searchHistory:
+        header:
+            title: Search history
+            clear: Clear all
+    searchSuggestion:
+        search: Search
+    Brands: Brands
+    Stock: Stock
+    Promotion: Promotion
+    Price: Price
+    Category: Category
+    PriceRange: Price Range
+    product:
+        title: Product List
+        subtitle: Showing products
+        ofText: of
+        label:
+            sku: Code
+    button:
+        addToBasket: Add all items to the basket
+        trackDelivery: Track delivery
+        addToFavouriteButton: Add all items to favorite list
+        ctaBrowseCategory: Browse Categories
+    previous: Previous
+    next: Next
+    email: Email
+    phone: Phone number
+    account:
+        title: My account
+        label:
+            accountDetails: Account details
+            editDetails: Edit details
+            firstName: User first name
+            lastName: User last name
+            email: Email
+            phoneNumber: Phone number
+            newPhoneNumber: New mobile number
+            changePhoneNumber: Change your mobile number
+            verifyPhoneNumber: Verify your new number
+            tryAgain: Try again
+            enterPersonalDetails: Enter your personal details
+            yourEmail: Your email
+        button:
+            login: Login
+            createAccount: Create account
+            deleteMyAccount: Delete my account
+            deleteNowModalBtn: Delete now
+            changeEmail: Change email
+        message:
+            createAccountToCheckout: "To place an order, \nwe ask you to Login or \nto Create an account."
+            fieldIsMandatory: This field is mandatory
+            enterValidEmail: Enter a valid email address
+            cancelModalTitle: Are you sure you want to cancel?
+            cancelModalDescription: Any changes you made will not be saved
+            accountDetailsChanged: Your details was successfully changed
+            enterValidPhone: Enter a valid mobile number
+            verifyPhoneDescription: We just sent you an SMS with a code. Enter it to verify your phone.
+            noSms: Didn't receive an SMS?
+            tryAgainIn: in {{seconds}} seconds
+            phoneChangeError: Phone number could not be changed. Try again
+            phoneChangeSuccess: Your phone number was successfully changed
+            codeSentAgain: New verification code sent
+            codeInvalid: Code is incorrect
+            phoneAlreadyUsed: This phone number is already exist
+            emailAlreadyUsed: This email is already in use
+            accountCreatedSuccessfully: Account created successfully!
+            deleteModalDescription: Do you want to delete this address?
+            deleteAccountModalTitle: Are you sure you want to delete your account?
+            deleteAccountModalDescription: Any account information will be permanently deleted and will not be able to be recovered
+            accountNotAvailable: This account information cannot be accessed
+            accountDetailsChangedSuccessfully: Changed account details successfully!
+            accountPhoneNumberChangedSuccessfully: Changed phone number successfully!
+            accountDetailsChangedFailure: An error occurred while updating the data. Please try again
+            exisitingAccountWithEmailTitle: This email is already in use
+            alreadyExistPhoneNumber: User already exist with phone
+            inValidPhoneNumberFormat: Invalid phone number format
+            invalidEmailFormat: Invalid email format
+            incorrectPhone: Incorrect phone number. Please check again
+    point: Makro point
+    favoriteList: Favorite List
+    logout: Logout
+    orderHistory: Order History
+    makroProPoints: Makro PRO Points
+    contactUs: Contact Us
+    privacySettings: Privacy Settings
+    favouriteList: Favorite List
+    hide: Hide
+    readMore: Read more
+    readFullTermsAndConditionUpdated: Read full terms & condition updated
+    termsAndConditionAcceptanceMessage: I have read and accept all changes made to the terms & conditions
+    successMessage:
+        saveSuccessfully: Save Successfully
+        privacySettingUpdate: Privacy Setting Updated
+    errorMessage:
+        saveFail: Save Failed
+    termsAndConditions: Terms & Conditions
+    readAndAcceptTermsOfUse: I have read and accepted the <linkButton>Terms of use</linkButton>
+    termsAndConditionsChanges: We've updated our Terms & Conditions to reflect some recent improvements in our application.
+    privacyPolicyUpdated: Read a full privacy policy
+    expand: Expand
+    privacyNew: New!
+    updated: Updated!
+    privacySettingsSubtitle: Privacy settings can be adjusted here or later in the Profile section
+    privacySettingsChanges: We've updated our privacy settings to reflect some recent improvements in our application.
+    declinePrivacyWarning: By not accepting you agree not to receive communication regarding new products, special offers, discounts, and other benefits
+    declinePrivacyError: The absense of your consent may affect the additional products and services or promotions that will be offered to you by the Company in the future or you may not receieve any convenience or benefits that the company may contact you in other case, but does not affect existing contractual relationship with the company.
+    multiStore:
+        zipCode: Zipcode
+        selectZipCode: Select Zipcode
+        tooltipMessage: Provide the Zip Code for better shopping experience with available products
+        tooltipMessageForChangeZipcode: Enter the zip code that you want your order to be shipped to and we will update your basket.
+        loading: We are loading the product from a store based on your location
+        newZipCodeTitle: Provide your Zip Code & Sub District
+        newZipCodeSubtitle: Please input your zipcode, the products assortment will be refreshed accordingly.
+        someZipcodesWillBeAvailableInfo: '*Some zipcodes will be available soon, Review <0>delivery areas<0>>'
+        updateZipCodeTitle: Change your zip code?
+        updateZipCodeSubtitle: You can change your zip code here. Products assortment will be refreshed according to the location you enter.
+        warningTitle: Selecting different address might affect your basket
+        warningSubtitle: Some items are unable to deliver to this address at the moment, to continue might be affected your basket.
+        warningGoBack: Go Back
+        warningContinue: Continue & Review Basket
+        weAreUnableToDeliver: We are unable to deliver to your area
+        outsideAreaErrorInput: Your zipcode is outside of Makro PRO delivery area
+        warningChangeLocationWithOODPopupTitle: This address is out of Makro PRO’s delivery area
+        warningChangeLocationWithOODPopupDescription: Items in your basket will not be available for checkout
+        zipcodeIsNotSupportedByMakroPro: This zipcode is outside of MakroPRO delivery area
+        pleaseEnterValidZipcode: Please enter valid zip code
+    pageNotFound:
+        title: We’re sorry, the page is not found
+        subtitle: It has been removed or does not exist. Please try the buttons below
+        button:
+            home: Take me home
+            goBack: Go Back
+    accountLinkage:
+        title:
+            welcomeToMakroPro: Welcome to {{appName}}!
+            selectDefaultMakroCard: Select your default membership card
+            membershipCardNumber: Membership no.
+            membershipCard: Membership card
+            getSupport: Get support
+            welcomeToMakroProPoint: Welcome to Makro PRO Point
+        message:
+            numberCards_one: '{{count}} card'
+            numberCards_other: '{{count}} cards'
+            defaultMembershipCardUpdated: Default membership card has been updated
+            accountInfoLinked: You’re ready to go with your integrated information!.
+            personalInformation: Personal Information
+            shippingBillingAddress: Shipping and Billing Address
+            makroMembershipPoints: Makro Membership and Points
+            favouriteShopingList: Favorite/Shopping list
+            basket: Basket
+            orderHistory: Order history
+            phoneNumberForMultipleCard: Every Makro member cards that are associated with phone number <0>{{phoneNumber}}</0> will be listed here.
+            notCorrectMemberNumber: Not the correct member number?
+            cardSuccessfullyLinked: Your membership card and points are successfully linked.
+            point: '{{point, number}}'
+            pointPlural: '{{point, number}} points'
+            card: 'Card: {{cardNumber}}'
+            contactViaLineOrCall: Please contact us via line or call
+            contactLine: Line <0>{{lineAlias}}</0>
+            contactCall: Call <0>{{callNumber}}</0> and Press <1>{{pressNumber}}</1>
+            hereIsYourMembershipCard: Here is your membership card
+            phoneAssociatedWithWithCard: Your phone number is now associated with this Makro member card
+            benefit1: Up to 2.5% of your monthly order value
+            benefit2: Get special discounts on selected campaigns
+            benefit3: 1 Point = 1 ฿
+            eligibility: Eligibility to apply for program
+            eligibility1: Have a valid Makro Membership ID with a Tax ID number
+            eligibility2: Have made at least one order on Makro PRO app
+            mmcidDesc: Membership card(s) are associated with your account <strong>phone number and email</strong>.
+            nCardsAdded: '{{n}} card(s) added!'
+            mmcidNoCardDesc: You are not yet a Makro PRO member or missing membership card(s)
+            failedToFetchStore: Failed to identify the store branch from your zipcode and subdistrict.
+        label:
+            newCard: New card!
+        button:
+            continue: Continue
+            contactCustomerService: Contact customer service
+            setAsDefault: Set as default
+            switchMembershipCard: Switch membership card
+            switchMembershipCardMobile: Switch member
+            close: Close
+            askForHelp: Wrong card number or card missing? <linkButton>Ask for help</linkButton>
+            view: View
+            learnMore: Learn more
+    resetPassword:
+        title:
+            resetPassword: Reset password
+            createNewPassword: Create new password
+        message:
+            emailWithInstruction: We will send you an email with the instructions to reset your password
+            sendOtptoMail: An email with a OTP code was just sent to {{email}}
+            emailnotExist: Email does not exist
+            phoneNumberFound: We found your registered phone number :)
+            phoneNumberFoundMessage: For security reason, We sent OTP to your registered phone number {{maskedPhone}}
+            notMyNumber: This is not my phone number
+            validationContainsCharecters: Minimum of {{number}} characters
+            validationContainsNumber: Must contain {{number}} number
+            validationContainsUppercaseLatter: Must contain {{number}} uppercase letter
+            validationContainsSymbol: 'Must contain {{number}} special character (^ $ * @ # % & ?...)'
+            passwordDoesNotMutch: Password does not match
+            invalidPassword: Password is invalid
+            changePasswrodSuccessModalTitle: Password is changed
+            invalidCode: Invalid code
+            passwordHasBeenChanged: Your password has been changed successfully. You can now use your new password to sign in.
+            resetYourPasswordPopupTitle: Reset your password
+            resetYourPasswordPopupDescription: you can login with phone instead or reset your password in MakroClick and login again
+        notMyNumber:
+            title: Sorry, for inconvenience
+            subtitle: To reset your password and update information, Please contact to customer support team.
+        label:
+            email: Email Address
+            oldPassword: Old password
+            newPassword: New password
+            confirmNewPassword: Confirm new password
+        button:
+            updatePassword: Update password
+            getSupport: Get support
+            loginWithPhone: Login with phone
+            ressetPasswordInMakroClick: Reset password in MakroClick
+    comingSoon:
+        title: Coming Soon!
+        subtitle: This page is under development
+    language: Language
+    favourites:
+        addToFavouriteList: Add to favorite list
+        addedToFavouriteList: Added to favorite list
+    contactCS:
+        title:
+            contactForCardIssues: Contact customer service for your card issues
+        message:
+            missingCardDesc: In order for your membership cards to be reflected in your account, the phone number associated with the cards has to be the same one you registered in your account
+            stepNumber: Step {{number}}
+            step1: <strong>Contact customer service</strong> any day of the week via LINE or phone
+            step2: Once our customer service representative confirms all the changes have been successfully saved, you can refresh your membership card information.
+            call: 'Call: <0>{{callNumber}}</0> press {{pressNumber}}'
+        button:
+            contactCS: Contact customer service
+            refreshCardInfo: Refresh card information
+    downloadPrompt:
+        message: You are using small device. Continue in Makro Pro App for better view.
+        button: Install
+    maintenance:
+        title: We’ll be back shortly
+        subtitle: It will not take long to maintenance and serve you better.
+    newMMIDFlow:
+        becomeMember: Become a Makro member
+        joinProgram: Join Program now
+    orderPlaced: Order placed
+    orderPlaced2: Order placed!
+    orderPlacedDescription: We'll prepare your order and deliver it on time!
+    viewMyOrder: View my order
+    continueShopping: Continue shopping
+    paymentUnsuccessful: Payment Unsuccessful!
+    paymentUnsuccessfulDescription: We're sorry for the experience!
+    checkout: Checkout
+    basket: Basket
+    shippingAndDelivery: Shipping and delivery
+    payment:
+        pending: pending
+        success: success
+        failure: failure
+        expired: expired
+        notSuccessful: not successful
+    shippingAddress: Shipping address
+    newShippingAddress: New shipping address
+    newBillingAddress: New billing address
+    selectShippingAddress: No valid shipping address. Please create or edit an existing address.
+    completeEnteringMyAddress: Complete entering my address
+    billingAddress: Billing address
+    sameAsShippingAddress: Same as shipping address
+    fillMandatoryFields: Please fill in all the mandatory fields
+    taxIdLabel: Tax ID (Optional)
+    branchIdLabel: Branch ID (Optional)
+    delivery:
+        deliveryTime: Delivery Time
+        deliveryBetween: Delivery between
+        deliveryLocationMessage: Delivery handled by our 3rd party partner supplier. Delivery dates are estimated for shipments within Bangkok Metropolitan Region.
+        delveryCheckoutMessage: You can select the delivery date/time at check out
+        outOfZoneProduct: This item is unavailable in the area you selected
+        deliveryIn: Delivery in 24hr
+        deliveryWithin: Deliver within 3-5 days
+        orderBefore9pm: Order before 9PM
+        orderBefore11pm: Order before 11PM
+        fastDeliveryWithinTomorrow: ' today, fastest delivery within tomorrow from 8.00 AM - 8.00 PM.'
+        orderAfter9pm: Order after 9PM
+        orderAfter11pm: Order after 11PM
+        fastDeliveryInTwoDays: ' today, fastest delivery 2 days after order placed from 8.00 AM – 8.00 PM.'
+    deliveryDate: Delivery date
+    deliveryNotice: (Only applies to item delivered by Makro Pro)
+    numberOfSlots: '{{count}} timeslot'
+    numberOfSlots_other: '{{count}} timeslots'
+    numberOfSlots_zero: Full
+    deliveryTimeSlot: Delivery timeslot
+    selectDeliveryDate: Select delivery date to continue
+    noDeliverySlots: No delivery slots available.
+    deliverBy: Deliver by
+    deliveredBy: Delivered by
+    selectYourDeliverySlot: Select your delivery slot
+    slotFullyBooked: Selected slot is fully booked, please select another slot
+    slotUpdateFailed: Update delivery slot error
+    makroPro: Makro Pro
+    basketSummary: Basket summary
+    subtotal: Subtotal
+    pointSpent: Point Spent ({{count}})
+    total: Total
+    estimatedPointsToEarn: Estimated points to earn
+    goToPayment: Go to payment
+    zipcodeChangeInstruction_title: Please note that changing zip-code might affect your basket
+    zipcodeChangeInstruction_subtitle: To change your shipping address, follow 3 simple steps
+    zipcodeChangeInstruction_step1: Go to previous page and update the zip-code
+    zipcodeChangeInstruction_step2: Review your updated basket
+    zipcodeChangeInstruction_step3: Complete your order
+    goBackToPreviousPage: Go back to previous page
+    keepCurrentAddress: Keep current address
+    createMyAddress: Create my address
+    editMyAddress: Edit my address
+    discount: Discount
+    addShippingAddressSuccessMsg: Successfully added new shipping address!
+    editShippingAddressSuccessMsg: Successfully edit your shipping address!
+    addBillingAddressSuccessMsg: Successfully added billing address!
+    editBillingAddressSuccessMsg: Successfully edited your billing address!
+    promotionAppliedMsg: The subtotal amount has already been deducted from the applied promotions
+    switchShippingAddressSuccessMsg: Shipping address updated
+    switchBillingAddressSuccessMsg: Billing address updated
+    failedToSaveBecause: 'Failed to save because:'
+    firstNameIsRequired: first name is required
+    lastNameIsRequired: last name is required
+    addressIsRequired: address is required
+    phoneNumberIsRequired: phone number is required
+    zipCodeIsRequired: zip code is required
+    provinceIsRequired: province is required
+    districtIsRequired: district is required
+    invalidRegionCode: invalid Thai phone number
+    invalidPhoneNumber: phone number is not valid in region code
+    invalidZipCode: invalid Thai zip code
+    paymentIsProcessing: Your payment is processing
+    resumePayment: Resume payment
+    title: Orders
+    label:
+        name: Name
+        items: '{{itemsCount}} items'
+        itemsOrdered: '{{itemsCount}} items ordered'
+        itemsDelivered: '{{itemsCount}} items delivered'
+        deliveryAddress: Delivery address
+        billingAddress: Billing address
+        paymentInfo: Payment information
+        paymentMethod: Payment method
+        paidOn: Paid on
+        open: Open Order {{orderId}}
+        closed: Closed
+        orderPlaced: Order placed!
+        toBePacked: Order to be packed
+        packed: Order packed
+        paid: Order paid
+        deliveryAt: at
+        cancelled: Cancelled
+        status: Status
+        payBy: Pay by
+        toBePaid: To be paid by
+        unpaidOrders: Unpaid orders will be cancelled
+        seller: 'Seller: {{sellerName}}'
+        orderWithNumber: Order {{orderId}}
+        orderNumber: Order number
+        orderDetails: Order details
+        productList: Product List
+        payByDate: Pay before ​{{payByDate}} to complete order
+        paymentExpired: Your order was cancelled since time for payment has expired. Please make a new order.
+        orderCancelled: Order cancelled
+        orderCancelledBySeller: Cancelled by {{sellerName}}
+        orderCancelledByBuyer: Cancelled by buyer
+        orderPod: Your order is on the way, please prepare your payment when the order arrives.
+        all: All
+        unpaid: Unpaid
+        being_prepared: Being prepared
+        shipped: Shipped
+        delivered: Delivered
+        productNotAvailable: Sorry, this product has been discontinued
+        shipmentDetails: Shipment details
+        placedOn: Placed on
+        taxId: Tax ID
+        branchId: Branch ID
+        fulfilledBySellers: Fulfilled by {{sellersAmount}} Sellers
+        refundInProgress: Refund in progress
+        refunded: Refunded
+        subtotal: Subtotal
+        total: Total
+        discount: Discount
+        orderSummary: Order Summary
+        shippingFee: Shipping Fee
+        backToHistory: Back to order history
+        refundApproved: Refund Approved
+        vouchers: Vouchers
+    message:
+        loginRequiredTtile: Login to see your orders
+        loginRequired: In order to see your orders, please login.
+        empty: "After you've placed an order, \nit will be displayed here."
+        emptyOrderList: The order list is empty
+        explanationEmpty: After you've placed an order, it will be displayed here.
+        orderComplete: We’ll prepare your order and deliver it on time!
+        orderCompleteBanking: Please pay within 4 hours for your order. You can find payment information (QR code) on the order details page.
+        orderFailed: Order failed, please try again later.
+        itemsAddedToBasket: Items successfully added to the basket
+        scrollUpToViewOrder: Scroll up to view entire order
+        unsuccessfulPayment: Unsuccessful payment
+        productsCancelled: The products have been cancelled
+        noOrders: There are no orders yet
+        explanationNoOrders: You will see your order here when it is transferred to the corresponding status.
+        productRemovedFromAssortment: You can’t see information for this product because it was removed from our assortment.
+        paymentNotCompleted: Payment for this order hasn't been completed
+    bankInfo:
+        title:
+            overviewTitle: Bank account
+            overviewDescription: Add a default bank account number to easily receive refunds
+            consent: Saving bank account information
+            areYouSureAdd: Please confirm the addition of account number {{accountNumber}} to your bank account.
+        label:
+            bankName: Bank name
+            accountName: Bank account name as per bank records
+            accountNumber: Bank account number
+            selectBank: Select your bank
+            consent1: I hereby consent Siam Makro Public Company Limited (the “Company”) to collect, record, process and transfer my bank account information for the purpose of refunding the price of goods and services purchased through the Makro PRO application/website.
+            consent2: I represent and warrant that the bank account information provided to the Company is my true and correct bank account information, and it is not involved in any violation. In the event of breach in such represent and warranty, I hereby agree that I will solely be responsible for losses and damages and will hold the Company harmless.
+        message:
+            bankNameRequired: Bank name required
+            nameRequired: Account Name required
+            accountNumberRequired: Account number required
+            enterValidAccount: Enter valid account number
+            bankInfoSaved: Bank account saved successfully.
+            onlyEnglishAllowed: Account name must be in english
+        bankNameCodes:
+            '014': SIAM COMMERCIAL BANK PUBLIC COMPANY LTD.
+            '025': BANK OF AYUDHYA PUBLIC COMPANY LTD.
+            '002': BANGKOK BANK PUBLIC COMPANY LTD.
+            '030': GOVERNMENT SAVINGS BANK
+            '004': KASIKORNBANK PUBLIC COMPANY LIMITED
+            '006': KRUNG THAI BANK PUBLIC COMPANY LTD.
+            '011': TMBTHANACHART BANK PUBLIC COMPANY LIMITED
+            '024': UNITED OVERSEAS BANK (THAI) PUBLIC COMPANY LIMITED
+        bankNames:
+            BAY: BANK OF AYUDHYA PUBLIC COMPANY LTD.
+            BBL: BANGKOK BANK PUBLIC COMPANY LTD.
+            GSB: GOVERNMENT SAVINGS BANK
+            KBANK: KASIKORNBANK PUBLIC COMPANY LIMITED
+            KTB: KRUNG THAI BANK PUBLIC COMPANY LTD.
+            TTB: TMBTHANACHART BANK PUBLIC COMPANY LIMITED
+            SCB: SIAM COMMERCIAL BANK PUBLIC COMPANY LTD.
+            UOB: UNITED OVERSEAS BANK (THAI) PUBLIC COMPANY LIMITED
+    features_desc:
+        usePointsAsCash: Use points as cash
+        get_monthly_rewards: "Get monthly rewards based on\nyour Dry Food and Fresh Food\npurchases"
+        how_to_get_points: "Spend minimum 1,000 ฿ in an\norder for 1 point guaranteed"
+        campaign_sale: "Take part in exciting campaigns\nand exclusive promotions on the\napp to get even more points!"
+    achievementSlider:
+        month: August 2022
+        freshFoodTitle: Fresh Food Rewards
+        dryFoodTitle: Dry Food Rewards
+        jadhaiTitle: Jadhai Rewards (Monthly)
+        jadhaiTitleQuarterly: Jadhai Rewards (Quarterly)
+        tier: Tier
+        spent: Spent
+        spendToNextTierToEarnPoints: "Spend ฿{{needSpendSumToNextTier}} more to reach Tier {{nextTier}} benefits\nand start earning points"
+        spendToNextTier: Spend ฿{{needSpendSumToNextTier}} more to reach Tier {{nextTier}} benefits
+        topTierReachedCongrat: Yay! You reached the top tier this month
+        getPointsEndMonth: Get {{points}} points end of the month
+        keepSpending: Keep spending to get points
+        niceGetPoints: Nice! Get {{points}} points on {{date}}
+        didntReachMonthlyTarget: Sorry, you didn’t reach your monthly target.
+        tryNextQuarter: Try again next quarter.
+        monthSpending: '{{month}} spending'
+        totalQuarterSpending: Total quarter spending
+        modal:
+            titleDF: Dry food tier benefits
+            titleFF: Fresh food tier benefits
+            titleJD: Jadhai tier benefits
+            titleJDQuarterly: Jadhai tier benefits
+            desc: Spend more every month on selected items to get reward points. Points will remain valid the entire year and can be accumulated from doing regular monthly purchases.
+            rangeMinMax: '{{min}} - {{max}} ฿ spent'
+            rangeMinInfinite: '{{min}} ++ ฿ spent'
+            achievePercentage: '{{percent}}% points reward'
+            valueFixed: '{{points}} points reward'
+            valueMinMax: '{{min}}-{{max}} points'
+    months:
+        '0': January
+        '1': February
+        '2': March
+        '3': April
+        '4': May
+        '5': June
+        '6': July
+        '7': August
+        '8': September
+        '9': October
+        '10': November
+        '11': December
+    signUp:
+        label:
+            enterDetails: Enter your details
+            fullName: Full name
+            yourFullName: Your full name
+            firstname: First Name (without title)
+            lastname: Last Name
+            yourPhoneNumber: Your phone number
+            mobilePhoneNumber: Mobile phone number
+            enterPhoneNumber: Enter phone number
+            referralCode: Referral code (optional)
+            selectMyBusiness: Select my business
+            businessType: Business type
+        customerType:
+            individual: Individual
+            business: Business
+        message:
+            phoneNumberExistModalTitle: This phone number is already registered with us
+            phoneNumberExistModalDescriptionStart: Please proceed to login with
+            phoneNumberExistModalDescriptionEnd: if this phone number belongs to you.
+            existingAccountModalTitle: This is an existing account
+            existingAccountModalDescription: Account registered with this phone number or email already exist. Please try with different phone number or email.
+            termsOfUse: I confirm that I have read, understood and agreed to the <0>terms & conditions</0> and privacy policy regarding the processing of my personal data by the Company.
+            waitForSignup: Something went wrong with registration, please try again after 24 hour or contact us
+            allreadyHaveAccount: Allready have account?
+            fullNameInvalid: Invalid full name
+            firstNameInvalid: Invalid firstname
+            lastNameInvalid: Invalid lastname
+            missingBusinessType: Please choose business type
+            unexpectedFetchingBusinessTypesOccurred: Failed to display the list of business choices. Please refresh the page.
+            captchaVerificationFailed: Captcha verification failed
+        button:
+            continueToLogin: Continue to login
+            changePhoneNumber: Change phone number
+            loginWithPhoneNumber: Login with phone number
+            loginWithEmail: Login with email
+    confirmOTP:
+        message:
+            title: Enter OTP Code
+            titleSixDigit: Enter 6 Digit Code
+            sendEmailInfo: We have sent 6 digit code to your email {{email}}
+            sendEmailOrPhone: We have sent 6 digit code to your phone number or email.
+            sendInfo: A 6-digit OTP code has been sent as an SMS to {{phone}}. If the OTP is not received, please contact us <linkTrans>here</linkTrans> or via our Call Center at 1432, press 2
+            resendInfo: Resend code in
+            notReceiveCode: Did not receive code?
+            tryAgainLater: Try again later
+            invalidCode: Invalid code
+            codeHasExpired: Code has expired
+            verifyCodeAlert: Sorry, we cannot verify your code
+            verifyCodeMessage: You have verified invalid code more than 3 times. Please try again in 30 mins. We will let you know when available.
+            checkingAccountLoginAlert: Checking account login
+            checkingAccountLoginMessage: An invalid code was verified multiple times. Please try again in {{duration}} min.
+            sendSixDigitAndVerify: A 6-digit OTP code has been sent as an SMS to {{phone}}. If the OTP is not received, please verify your account is registered.
+            otpVerifiedLoginToContinue: OTP verified successfully! Login to continue.
+            registerAccountSuccessfully: Account has been registered successfully
+            noOfAttemptMsg: You have {{attempt}} attempts left
+        label:
+            resendCode: Resend code
+            verification: Verification
+            tryAgainIn: Try again in
+        button:
+            verify: Verify Code
+            verifyEmail: Verify Email
+            getSupport: Get support
+            goBack: Go Back
+    accountUpdate:
+        title:
+            registerEmail: Please register an email
+            registerPhone: Please register a phone number
+            verifyCode: Verify your code
+        message:
+            phoneDesc: This will allow us to contact you in case there is a problem with one of your orders, and you can login via phone number next time!
+            emailDesc: We will send all confirmations and notifications regarding your orders and payments to this email.
+        button:
+            confirm: Confirm
+            later: Maybe later
+            editEmail: Edit email address
+            editPhone: Edit phone number
+    about:
+        title: About this product
+    seller:
+        soldby: Sold By
+        caption: One stop place for all your horeca supplies and products.
+    specifications:
+        title: Specifications
+        totalVolume: Total volume
+        sku: SKU
+        expirationLimit: Expiration limit
+    storage:
+        storageInformation: Storage and Uses
+    wholesale:
+        slabprice: Slab price
+        buy: Buy
+        unit: unit
+        units: units
+        plusUnits: + units
+    feeBanner:
+        freeDelivery: Free delivery
+        reach: Reach
+        almostThereOnly: Almost there only
+        toGo: to go
+        andGet: and get
+        youGet: You get a
+        getFreeDelivery: Free delivery
+        congratulations: Congratulations!
+        currencyTHB: ฿
+    newAddToBasketFlow:
+        selectQuantity: Select quantity
+        quantity: Quantity
+        addedToCart: Added to basket
+        viewCart: View
+        addToMyCart: Add to basket ({{count}})
+    status:
+        toBeDelivered: Order {{orderId}} to be delivered
+        cancelled: Order {{orderId}} is
+        default: Order {{orderId}}
+        delivered: Order delivered
+        beingPreparedFull: Order is being prepared for shipment.
+        shippedFull: 'Order is shipped:'
+        shippedDeliveryComing: Order is shipped. Delivery will be coming soon.
+        unpaid: Check your e-mail for payment instructions, unpaid orders will be cancelled automatically.
+        waitingAcceptance: Waiting for Seller acceptance
+        waitingAcceptanceFull: "Waiting for order acceptance from the seller.\nIt might take up to "
+        waitingAcceptanceDaysFull: 2 days.
+        refundUnderReviewBuyer: Refund application is under review, it might take up to 2-3 days to process it inside our system.
+        refundApproved: Refund was partially approved, you can check out your refund amount below. Bank is processing, it might take up to 45 days.
+    stepperStatus:
+        payment: Payment
+        preparing: Preparing
+        inDelivery: In delivery
+        complete: Complete
+        request: Request
+        inReview: In Review
+        approval: Approval
+    tab:
+        all: All
+        unpaid: Unpaid
+        beingPrepared: Being prepared
+        shipped: Shipped
+        delivered: Delivered
+        cancelled: Cancelled
+        refundProcessing: Refund in progress
+        refunded: Refunded
+        closed: Closed
+    qr:
+        completePaymentBefore: Complete payment before
+        howPayment: How to make a payment
+        saveQr: Save QR code
+        paymentStep1: Save QR code to your phone and scan to process payment or share to others for purchase. Please complete within 4 hours
+        paymentStep2: Open mobile banking and select scan
+        paymentStep3: Import image from your phone
+        paymentStep4: Check your total amount and pay
+        paymentTo: Payment to
+        paymentCode: Payment code (Ref.1)
+        payAmount: Amount to pay
+        paymentValidTill: Payment valid till
+        imgSaved: Image saved into camera roll
+        payBefore: Please pay before {{payDate}}
+        mobileNo: Mobile Number (Ref.1)
+        amount: Amount (THB)

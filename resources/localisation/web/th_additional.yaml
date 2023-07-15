@@ -1,0 +1,61 @@
+web_additional:
+  basket:
+    add: เพิ่มในตะกร้า
+    noBasket: ไม่มีสินค้าในตะกร้า
+    button:
+      checkout: เช็คเอาท์
+      makePayment: ชำระเงิน
+      removeAndProceed: ลบและดำเนินการต่อ
+      goBackToBasket: กลับไปที่ตะกร้า
+    header:  ตะกร้า
+    makePayment:  ชำระเงิน
+    seller:
+      soldby: โดย
+  banner:
+    bannerNescafe: 'banner - PDP : เนสกาแฟ'
+    bannerInfo: 'banner-info'
+    bannerYoutube: 'Banner : External Link'
+    bannerCollection:  'banner collection : import SKU product by QA'
+  url:
+    partnerPromotion: promotion-by-partner
+  mainCategory:
+    fruiteVeggies: Fresh food อาหารสด
+    kitchenSupplies:  อุปกรณ์ครัวและของใช้แล้วทิ้ง
+  subCategory:
+    fruiteVeggies: ผักและผลไม้
+    containers:  ที่เก็บของ
+  search:
+    seeAll:  See all
+  global_text:
+    login:  login
+    search: search
+    loading: Loading
+    youtube:   www.youtube.com
+    makropro:  MakroPRO
+  homeCategory:
+    lastPromotion: โปรโมชั่นล่าสุด
+  timeslots:  ช่วงเวลา
+  2c2p:
+    verifyOTPHeader: Verify OTP
+    backToMerchant:  Back to Merchant
+    submit:  Submit
+  productlist:
+    label:
+      selectQuantity: เลือกจำนวน
+    button:
+      addToBasket:  เพิ่มลงตะกร้า
+  payment:
+    selectPaymentChannel: เลือกช่องทางการชำระเงิน
+    creditDebit: บัตรเครดิต / เดบิต
+    bankTransfer: โอนชำระเงินผ่านธนาคาร
+    trueMoneyWallet: ทรูมันนี่ วอลเล็ต
+    inputCreditData:  ใส่ข้อมูลบัตรเครดิต
+    payAmount:  ชำระเงิน {{amount}}
+    paymentWasDecline:  การชำระเงินของคุณถูกปฏิเสธ
+    backToMerchant: กลับไปที่ร้านค้า
+  checkout:
+    deliveryByMakroPro:  จัดส่งแล้วโดย Makro Pro
+    deliveredBy: จัดส่งโดย
+  orderhistory:
+    paymentCredit: 'ช่องทางการชำระเงิน: บัตรเครดิต/ บัตรเดบิต'
+    paymentSuccess: 'สถานะ: ชำระเงินเรียบร้อย'

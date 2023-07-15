@@ -1,0 +1,35 @@
+[Set0]
+tags = set0
+device_info = Mango01
+appium_port = 2003
+emulator_name = emulator-5580
+system_port = 5871
+version = 11
+remote_url = localhost
+
+[Set1]
+tags = set1
+device_info = Mango02
+appium_port = 2005
+emulator_name = emulator-5582
+system_port = 5878
+version = 11
+remote_url = localhost
+
+[Set2]
+tags = set2
+device_info = Mango03
+appium_port = 4601
+emulator_name = emulator-5554
+system_port = 5872
+version = 11
+remote_url = localhost
+
+[Set3]
+tags = set3
+device_info = Mango04
+appium_port = 4603
+emulator_name = emulator-5556
+system_port = 5879
+version = 11
+remote_url = localhost

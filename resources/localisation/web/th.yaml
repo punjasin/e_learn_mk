@@ -1,0 +1,807 @@
+web:
+    drawer:
+        downloadapp: ติดตั้งแอปพลิเคชัน
+        smalltext: ทุกวัน เวลา 06.00 น. - 20.00 น.
+    footerMenu:
+        faq: คำถามที่พบบ่อย
+        contactUs: ติดต่อเรา
+        makroProPoint: แม็คโครโปรพอยท์
+        privacySettings: การตั้งค่าความเป็นส่วนตัว
+        termsAndConditions: ข้อกำหนดและเงื่อนไข
+        joinMaknetAsSeller: เข้าร่วม Makro PRO เป็นผู้ขาย
+    copyRightContent: ลิขสิทธิ์ © 2023 บมจ. สยามแม็คโคร สงวนลิขสิทธิ์.
+    global:
+        hi: สวัสดี <0>{{name}}</0>
+        required: ข้อมูลที่จำเป็น
+        example: ตัวอย่าง
+        select: เลือก
+        done: สำเร็จ
+        cancel: ยกเลิก
+        confirm: ยืนยัน
+        remove: ยกเลิก
+        settings: ตั้งค่า
+        acceptAll: ยอมรับทั้งหมด
+        accept: ยอมรับ
+        next: ถัดไป
+        email: อีเมล
+        phone: เบอร์โทรศัพท์
+        ok: ตกลง
+        okay: ตกลง
+        delete: ลบ
+        save: บันทึก
+        noAndGoBack: ไม่
+        yesAndConfirm: ยืนยัน
+        verify: ยืนยัน
+        verifyNow: ยืนยันทันที
+        verfied: ตรวจสอบแล้ว
+        update: อัปเดต
+        in: ใน
+        products: สินค้า
+        items: รายการ
+        seeAll: ดูเพิ่มเติม
+        seeDetails: ดูรายละเอียด
+        apply: ตกลง
+        thankForShopping: ขอบคุณสำหรับการช้อปปิ้งที่
+        ourAssortment: การแบ่งประเภทของเรา
+        fresh: Fresh
+        call: โทร
+        backToHomePage: กลับไปหน้าหลัก
+        changeNow: เปลี่ยนเลย
+        soon: เร็วๆนี้
+        notDeliverable: ไม่สามารถจัดส่งได้
+        deliveryAreaBy: พื้นที่จัดส่ง <br/>โดย MakroPRO
+        message:
+            unknownError: ข้อผิดพลาดที่ไม่รู้จัก
+            serviceNotAvailable: ขออภัย {{appName}} ไม่สามารถใช้งานได้ในขณะนี้ กรุณาลองเข้าใหม่อีกครั้ง
+            somethingWentWrong: ขอโทษด้วย มีบางอย่างผิดพลาดในการโหลดข้อมูล
+            noInternet: ไม่มีสัญญาณ กรุณาเชื่อมต่อและลองใหม่อีกครั้ง
+            maxCharError: โปรดระบุไม่เกิน {{maximumChar}} ตัวอักษร
+            jailbreakDetected: 'กรุณาลองใช้อุปกรณ์เครื่องอื่น เนื่องจากแอปพลิเคชันไม่สามารถเปิดบนซอฟท์แวร์ในอุปกรณ์เครื่องนี้ได้ (code: ROOTED_DEV)'
+            wasProblem: เกิดเหตุขัดข้อง
+            updateRequired: กรุณาอัพเดท
+            downloadNewVersion: เพื่อใช้งาน กรุณาอัพเดทแอปพลิเคชันเวอร์ชันล่าสุด
+            httpLinkNotSupported: เกิดเหตุขัดข้อง ไม่สามารถเปิดเว็บเบราว์เซอร์ได้
+            serverError: ขออภัย {{appName}} ไม่สามารถใช้งานได้ในขณะนี้
+            comeBackLater: เรากำลังทำการแก้ไขอยู่ โปรดเข้ามาอีกครั้ง
+            securityAlert: เพื่อความปลอดภัยของคุณ
+            securityMessage: เพื่อดำเนินการต่อโปรดใช้โทรศัพท์ที่ไม่มีการดัดแปลงระบบ เพื่อความปลอยภัยของคุณแอป {{appName}} จะปิดตัวลง
+            loginToContinue: เข้าสู่ระบบเพื่อดำเนินการต่อ
+            sessionExpired: เซสชันการใช้งานหมดอายุแล้ว กรุณาเข้าสู่ระบบใหม่อีกครั้ง
+            noMembershipFound: ไม่พบสมาชิกแม็คโครของคุณ
+            noMembershipFoundSubtitle: "คุณต้องมีรหัสสมาชิกแม็คโครเพื่อเข้าร่วมแคมเปญ Makro PRO Points \n \n  ระบบสมัครสมาชิกออนไลน์จะพร้อมใช้บริการเร็วๆ นี้ \n หรือติดต่อฝ่ายบริการลูกค้า"
+            syncMakroClickToMakroPro: เข้าสู่ระบบด้วยเบอร์มือถือหรืออีเมล์ที่ลงทะเบียนไว้กับ MakroClick เพื่อเชื่อมต่อบัตรสมาชิกและรับ ประสบการณ์การช็อปที่ดีกว่า
+            invalidTaxId: Please fill in correct Tax ID format (10 or 13 digits in numeric)
+            invalidBranchId: Please fill in correct Branch ID with 5 digits in numeric
+        button:
+            updateApp: อัพเดท
+        edit: แก้ไข
+    seo:
+        title: สั่งซื้อออนไลน์ สินค้าหลากหลาย ราคาพิเศษจากแม็คโคร
+        description: 'บริการส่งวัตถุดิบ ของสด ของแห้ง สินค้าครบ รับประกันคุณภาพ สั่งได้ 24 ชม. ส่งตรงถึงร้าน จัดส่งรวดเร็ว ราคาสุดคุ้ม รับประกันคุณภาพ แบรนด์: aro, Savepak, Makro'
+        categoryDescription: ซื้อสินค้าประเภท {{categoryName}} ราคาถูก ผ่านช่องทางออนไลน์ ทั้งแบบขายส่งหรือจำนวนมาก บริการจัดส่งรวดเร็วภายในไม่กี่วัน
+    header:
+        home: หน้าหลัก
+        aboutus: เกี่ยวกับเรา
+        allcategories: ทั้งหมด
+        back: ย้อนกลับ
+        search: ค้นหาสินค้า
+        categories: หมวดหมู่สินค้า
+        promotions: โปรโมชั่น
+        earnPoints: แม็คโครโปรพอยท์
+        shopAll: สินค้าทุกหมวดหมู่
+        shopNow: เลือกสินค้า
+        seeAllSubCategory: ดูสินค้าทั้งหมด
+    menu:
+        noItemInList: ไม่พบรายการในลิสต์
+    login:
+        label:
+            forgotPassword: ลืมรหัสผ่าน
+            createAccount: สร้างบัญชี
+            password: รหัสผ่าน
+            login: เข้าสู่ระบบ
+            email: อีเมล
+            mobile: มือถือ
+        message:
+            welcome: Makro PRO ที่เดียว ครบทุกสินค้า!
+            dontHaveAnAccount: ไม่มีบัญชีผู้ใช้
+            oopsTryAgain: มีบางอย่างผิดพลาด โปรดลองอีกครั้ง
+            loginFailed: อีเมลหรือรหัสผ่านของคุณไม่ถูกต้อง กรุณาลองอีกครั้ง
+            methodToLogin: กรุณาเลือกวิธีเข้าสู่ระบบ
+            verifyingOTP: กำลังตรวจสอบรหัส OTP…
+            passwordIsRequired: โปรดระบุรหัสผ่าน
+            loginWithEmail: บัญชีนี้ไม่สามารถเข้าสู่ระบบผ่านเบอร์โทรศัพท์ได้ กรุณาเข้าสู่ระบบด้วยอีเมล
+            makroClickUserNotExistWithPhoneTitle: ไม่มีเบอร์โทรศัพท์ดังกล่าวในระบบ
+            makroClickUserNotExistWithEmailTitle: ไม่มีอีเมลท์ดังกล่าวในระบบ
+            weAreSorry: พวกเราขอโทษ
+            couldNotProceed: เราไม่สามารถดำเนินการต่อได้เนื่องจากเกิดข้อผิดพลาดที่ไม่คาดคิด กรุณาลองอีกครั้ง
+            iAgreeWith: ฉันยอมรับใน
+            loggedInSuccessfully: เข้าสู่ระบบสำเร็จ
+            hasNotVerified: บัญชีของคุณยังไม่ถูกยืนยันตัวตน กรุณายืนยันตัวตนด้วยช่องทางที่คุณใช้สมัครก่อนเริ่มใช้งาน
+            accountSetupSuccessfully: บัญชีของคุณพร้อมใช้งานแล้ว
+        button:
+            sendOTPCode: ส่งรหัส OTP
+    register: ลงทะเบียน
+    createAccount: สร้างบัญชี
+    labels:
+        outOfStock: สินค้าหมด
+        unavailable: นอกพื้นที่จัดส่ง
+        current: (ปัจจุบัน)
+    showMore: แสดงมากขึ้น
+    showLess: ดูน้อยลง
+    search:
+        label:
+            showAll: ดูเพิ่มเติม
+            flatDiscount: ลดราคา
+            viewAll: ดูเพิ่มเติม
+            inStockOnly: มีสินค้า
+            sort: เรียง
+            notFoundTitle: ขออภัย
+            filterProductsNotFound: ไม่พบข้อมูลตามตัวคัดกรอง
+            resultNotFound: ไม่พบข้อมูลจากการค้นหา
+        result: ผลการค้นหา
+        filter: กรอง
+        sortBy: เรียงตาม
+        clearfilter: ล้างตัวคัดกรอง
+        showResults: แสดงผล
+        relevance: ความใกล้เคียง
+        priceHighToLow: ราคาสูงไปต่ำ
+        priceLowToHigh: ราคาต่ำไปสูง
+        newProductsFirst: สินค้าใหม่ก่อน
+        promotions: โปรโมชั่น
+    searchHistory:
+        header:
+            title: ประวัติการค้นหา
+            clear: ลบ
+    searchSuggestion:
+        search: ค้นหา
+    Brands: แบรนด์
+    Stock: สต๊อก
+    Category: หมวดหมู่
+    Promotion: โปรโมชั่น
+    Price: ราคา
+    PriceRange: ช่วงราคา
+    product:
+        title: รายการสินค้า
+        subtitle: แสดงสินค้า
+        ofText: ของ
+        label:
+            sku: รหัส
+    button:
+        addToBasket: เพิ่มสินค้าทั้งหมดลงตะกร้า
+        trackDelivery: ติดตามการจัดส่ง
+        addToFavouriteButton: เพิ่มสินค้าทั้งหมดในรายการของฉัน
+        ctaBrowseCategory: หาจากหมวดหมู่สินค้า
+    previous: ก่อนหน้า
+    next: ต่อไป
+    email: อีเมล
+    phone: เบอร์โทรศัพท์
+    account:
+        title: บัญชีของฉัน
+        label:
+            accountDetails: รายละเอียด
+            editDetails: แก้ไข
+            firstName: ชื่อ
+            lastName: นามสกุล
+            email: อีเมล
+            phoneNumber: เบอร์โทรศัพท์
+            newPhoneNumber: เบอร์โทรศัพท์มือถือใหม่
+            changePhoneNumber: เปลี่ยนเบอร์โทรศัพท์มือถือ
+            verifyPhoneNumber: ยืนยันเบอร์โทรศัพท์ใหม่
+            tryAgain: ลองอีกครั้ง
+            enterPersonalDetails: ระบุข้อมูลส่วนตัว
+            yourEmail: อีเมล
+        button:
+            login: เข้าสู่ระบบ
+            createAccount: สร้างบัญชีใหม่
+            deleteMyAccount: ลบบัญชีของฉัน
+            deleteNowModalBtn: ลบบัญชีทันที
+            changeEmail: เปลี่ยนอีเมล
+        message:
+            createAccountToCheckout: เพื่อจะสั่งสินค้า เราขอให้คุณเข้าสู่ระบบ หรือสร้างบัญชีใหม่ก่อน
+            fieldIsMandatory: โปรดระบุ
+            enterValidEmail: โปรดใส่ข้อมูลให้ถูกต้อง
+            cancelModalTitle: คุณต้องการยกเลิก?
+            cancelModalDescription: ข้อมูลของคุณจะไม่ถูกบันทึก
+            accountDetailsChanged: บันทึกข้อมูลสำเร็จ
+            enterValidPhone: โปรดใส่เบอร์ให้ถูกต้อง
+            verifyPhoneDescription: โปรดระบุ หมายเลขยืนยันที่ได้รับผ่าน SMS
+            noSms: ไม่ได้รับ SMS?
+            tryAgainIn: ภายใน {{seconds}} วินาที
+            phoneChangeError: ไม่สามารถเปลี่ยนเบอร์โทรศัพท์ได้ โปรดลองอีกครั้ง
+            phoneChangeSuccess: เปลี่ยนเบอร์โทรศัพท์สำเร็จ
+            codeSentAgain: หมายเลขยืนยันถูกส่งผ่าน อีกครั้ง SMS
+            codeInvalid: รหัสยืนยันไม่ถูกต้อง
+            phoneAlreadyUsed: เบอร์โทรศัพท์นี้มีผู้ใช้งานแล้ว
+            emailAlreadyUsed: อีเมลนี้มีผู้ใช้งานแล้ว
+            accountCreatedSuccessfully: สร้างบัญชีเรียบร้อยแล้ว
+            deleteModalDescription: ต้องการจะลบที่อยู่นี้หรือไม่?
+            deleteAccountModalTitle: คุณแน่ใจหรือไม่ว่าต้องการลบบัญชีของคุณ?
+            deleteAccountModalDescription: ข้อมูลใดๆที่เกี่ยวกับบัญชีของคุณจะถูกลบอย่างถาวรและไม่สามารถกู้คืนบัญชีได้
+            accountNotAvailable: ไม่สามารถเข้าถึงข้อมูลบัญชีนี้ได้
+            accountDetailsChangedSuccessfully: เปลี่ยนรายละเอียดบัญชีเรียบร้อยแล้ว!
+            accountPhoneNumberChangedSuccessfully: เปลี่ยนเบอร์โทรศัพท์เรียบร้อยแล้ว!
+            accountDetailsChangedFailure: เกิดข้อผิดพลาดระหว่างการอัพเดทข้อมูล กรุณาลองใหม่อีกครั้ง
+            exisitingAccountWithEmailTitle: อีเมลนี้ถูกใช้ไปแล้ว
+            alreadyExistPhoneNumber: ผู้ใช้มีหมายเลขโทรศัพท์นี้แล้ว
+            inValidPhoneNumberFormat: รูปแบบหมายเลขโทรศัพท์ไม่ถูกต้อง
+            invalidEmailFormat: รูปแบบอีเมล์ไม่ถูกต้อง
+            limitExceeded: ทำรายการเกินจำนวนครั้งที่กำหนด กรุณาลองใหม่ภายหลัง
+            incorrectPhone: หมายเลขโทรศัพท์ไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง
+    point: แม็คโครพอยท์
+    favoriteList: รายการของฉัน
+    logout: ออกจากระบบ
+    orderHistory: ประวัติการสั่งซื้อ
+    makroProPoints: แม็คโครโปรพอยท์
+    contactUs: ติดต่อเรา
+    privacySettings: จัดการข้อมูลส่วนบุคคล
+    favouriteList: รายการโปรด
+    hide: ย่อ
+    readMore: อ่านเพิ่ม
+    readFullTermsAndConditionUpdated: อ่านข้อตกลงและเงื่อนไขทั้งหมด
+    termsAndConditionAcceptanceMessage: ฉันได้อ่านและยอมรับการเปลี่ยนแปลงข้อตกลงและเงื่อนไขแล้ว
+    successMessage:
+        saveSuccessfully: บันทึกข้อมูลสำเร็จ
+        privacySettingUpdate: อัปเดตการตั้งค่าความเป็นส่วนตัวสำเร็จ
+    errorMessage:
+        saveFail: บันทึกข้อมูลไม่สำเร็จ
+    termsAndConditions: เงื่อนไขการสมัครสมาชิก
+    readAndAcceptTermsOfUse: ฉันได้อ่านและยอมรับ <linkButton>ข้อกำหนดและเงื่อนไขการใช้งาน</linkButton>
+    termsAndConditionsChanges: เราได้อัพเดทข้อตกลงและเงื่อนไขเพื่อให้สอดคล้องการพัฒนาในแอปพลิเคชันของเรา
+    privacyPolicyUpdated: อ่านนโยบายความเป็นส่วนตัวทั้งหมด
+    expand: ขยาย
+    privacyNew: ใหม่!
+    updated: ปรับปรุง!
+    privacySettingsSubtitle: สามารถแก้ไขนโยบายความเป็นส่วนตัวได้ที่หน้านี้ หรือแก้ไขภายหลังที่หน้าบัญชีของฉันในแอปพลิเคชัน
+    privacySettingsChanges: เราได้อัพเดทนโยบายความเป็นส่วนตัวเพื่อให้สอดคล้องการพัฒนาในแอปพลิเคชันของเรา
+    declinePrivacyWarning: หากไม่ยอมรับ จะไม่ได้ทราบข้อมูลที่เกี่ยวกับสินค้าใหม่ โปรโมชั่น และสิทธิพิเศษต่างๆมากมาย
+    declinePrivacyError: การไม่ยอมรับนโยบายความเป็นส่วนตัว อาจจะทำให้พลาดโอกาสในการเข้าถึงสินค้า บริการ และโปรโมชั่น ที่บริษัทจะมอบให้แก่คุณ รวมถึงการไม่ได้รับความสะดวกในการที่บริษัทจะติดต่อคุณในเหตุการณ์ต่างๆ แต่จะไม่ส่งผลกระทบต่อความสัมพันธ์ตามสัญญาอื่นๆที่เกี่ยวข้องกับบนริษัท
+    multiStore:
+        zipCode: รหัสไปรษณีย์
+        selectZipCode: เลือกรหัสไปรษณีย์
+        tooltipMessage: ระบุรหัสไปรษณีย์เพื่อเลือกซื้อสินค้าที่มีอยู่ในสต๊อกได้ง่ายยิ่งขึ้น
+        tooltipMessageForChangeZipcode: ใส่รหัสไปรษณีย์ปลายทางที่คุณต้องการจัดส่งสินค้า เราจะได้อัพเดทตะกร้าของคุณ
+        loading: เรากำลังค้นหาสินค้าจากร้านค้าในพื้นที่ของคุณ
+        newZipCodeTitle: ระบุรหัสไปรษณีย์และตำบลของคุณ
+        newZipCodeSubtitle: กรุณาใส่รหัสไปรษณีย์สำหรับที่อยู่จัดส่ง รายการสินค้าจะมีการอัปเดตตามแม็คโครโปรที่ใกล้คุณ
+        someZipcodesWillBeAvailableInfo: '*พื้นที่บางแห่งจะให้บริการเร็วๆนี้ ดูพื้นที่ที่แม็คโครโปรให้บริการได้ที่ <0>พื้นที่ให้บริการ<0>>'
+        updateZipCodeTitle: ต้องการเปลี่ยนรหัสไปรษณีย์
+        updateZipCodeSubtitle: คุณสามารถเปลี่ยนรหัสไปรษณีย์ของคุณได้ที่นี่ สินค้าจะถูกแสดงผลใหม่ตามพื้นที่ที่คุณเลือก
+        warningTitle: การเลือกที่อยู่ใหม่อาจส่งผลกับสินค้าในตะกร้าของคุณ
+        warningSubtitle: สินค้าบางรายการไม่สามารถจัดส่งไปยังพื้นที่นี้ได้ การดำเนินการต่ออาจส่งผลกับสินค้าในตะกร้าของคุณ
+        warningGoBack: ย้อนกลับ
+        warningContinue: ดำเนินการต่อและรีวิวตะกร้า
+        weAreUnableToDeliver: เราไม่สามารถจัดส่งไปยังพื้นที่ของคุณได้
+        outsideAreaErrorInput: รหัสไปรษณีย์ของคุณอยู่นอกพื้นที่จัดส่งของแมคเนท
+        warningChangeLocationWithOODPopupTitle: ที่อยู่นี้ อยู่นอกพื้นที่จัดส่งของแมคเนท
+        warningChangeLocationWithOODPopupDescription: สินค้าในตะกร้าของคุณไม่สามารถทำการชำระเงินได้
+        zipcodeIsNotSupportedByMakroPro: รหัสไปรษณีย์อยู่นอกพื้นที่ให้บริการ
+        pleaseEnterValidZipcode: กรุณาใส่รหัสไปรษณีย์ที่ถูกต้อง
+    pageNotFound:
+        title: ขออภัย ไม่พบหน้าที่คุณต้องการ
+        subtitle: หน้านี้อาจถูกย้ายหรือลบไปแล้ว กรุณาลองปุ่มด้านล่าง
+        button:
+            home: ไปหน้าหลัก
+            goBack: กลับ
+    label:
+        name: ชื่อ
+        items: '{{itemsCount}} รายการ'
+        itemsOrdered: สั่งซื้อแล้ว {{itemsCount}} รายการ
+        itemsDelivered: จัดส่งแล้ว {{itemsCount}} รายการ
+        deliveryAddress: ที่อยู่จัดส่ง
+        billingAddress: ที่อยู่ออกใบกำกับภาษี
+        paymentInfo: ข้อมูลการชำระเงิน
+        paymentMethod: ช่องทางการชำระเงิน
+        paidOn: วันที่
+        open: คำสั่งซื้อ {{orderId}} ระหว่างดำเนินการ
+        closed: เสร็จสิ้น
+        orderPlaced: คำสั่งซื้อเรียบร้อย!
+        toBePacked: คำสั่งซื้อรอบรรจุ
+        packed: คำสั่งซื้อบรรจุแล้ว
+        paid: คำสั่งซื้อชำระเงินแล้ว
+        deliveryAt: เมื่อเวลา
+        cancelled: ถูกยกเลิก
+        status: สถานะ
+        payBy: ชำระภายใน
+        toBePaid: ชำระภายใน
+        unpaidOrders: คำสั่งซื้อที่ยังไม่ชำระเงินจะถูกยกเลิก
+        seller: 'ผู้ขาย: {{sellerName}}'
+        orderWithNumber: คำสั่งซื้อ {{orderId}}
+        orderNumber: เลขที่คำสั่งซื้อ
+        orderDetails: รายละเอียด
+        productList: รายการสินค้า
+        payByDate: ชำระก่อน ​{{payByDate}} เพื่อยืนยันคำสั่งซื้อของคุณ
+        paymentExpired: จ่ายเงินไม่สำเร็จ ออเดอร์ของคุณถูกยกเลิกโดยอัตโนมัติ โปรดสั่งซื้ออีกครั้ง
+        orderCancelled: คำสั่งซื้อ ถูกยกเลิก
+        orderCancelledBySeller: ถูกยกเลิกโดย {{sellerName}}
+        orderCancelledByBuyer: Cancelled by buyer
+        orderPod: คำสั่งซื้อของคุณกำลังถูกจัดเตรียมและจัดส่ง โปรดเตรียมชำระเงินเมื่อคำสั่งซื้อไปถึงมือคุณแล้ว
+        all: ทั้งหมด
+        unpaid: ต้องชำระเงิน
+        being_prepared: กำลังจัดเตรียม
+        shipped: กำลังจัดส่ง
+        delivered: จัดส่งสำเร็จ
+        productNotAvailable: ขออภัย สินค้าชิ้นนี้เลิกผลิตแล้ว
+        shipmentDetails: รายละเอียด
+        placedOn: วันที่สั่งซื้อ
+        taxId: เลขประจำตัวผู้เสียภาษี
+        branchId: เลขที่สาขา
+        fulfilledBySellers: จัดส่งโดย {{sellersAmount}} ผู้ขาย
+        refundInProgress: อยู่ระหว่างการคืนเงิน
+        refunded: คืนเงินสำเร็จ
+        subtotal: ยอดรวม
+        total: ราคารวม
+        discount: ส่วนลด
+        orderSummary: สรุปคำสั่งซื้อ
+        shippingFee: ค่าจัดส่ง
+        backToHistory: กลับไปดูประวัติการซื้อ
+        refundApproved: คำขอคืนเงินได้รับการอนุมัติแล้ว
+        vouchers: โค้ดส่วนลด
+    accountLinkage:
+        title:
+            welcomeToMakroPro: ยินดีต้อนรับสู่ {{appName}}
+            selectDefaultMakroCard: เลือกบัตรสมาชิกใบหลัก
+            membershipCardNumber: หมายเลขสมาชิก
+            membershipCard: บัตรสมาชิก
+            getSupport: ต้องการความช่วยเหลือ
+            welcomeToMakroProPoint: แมคโคร โปรพอยท์ ยินดีต้อนรับ
+        message:
+            numberCards_one: '{{count}} ใบ'
+            numberCards_other: '{{count}} ใบ'
+            defaultMembershipCardUpdated: อัพเดทบัตรสมาชิกหลักแล้ว
+            accountInfoLinked: ข้อมูลเหล่านี้ของคุณถูกเชื่อมต่อและพร้อมใช้งานแล้ว!
+            personalInformation: ข้อมูลส่วนตัว
+            shippingBillingAddress: ที่อยู่จัดส่งและที่อยู่สำหรับใบเสร็จรับเงิน
+            makroMembershipPoints: บัตรสมาชิกแมคโครและพอยท์
+            favouriteShopingList: รายการที่ชื่นชอบ
+            basket: ตะกร้าสินค้า
+            orderHistory: ประวัติการสั่งซื้อ
+            phoneNumberForMultipleCard: บัตรสมาชิกแม็คโครทุกใบที่ผูกกับเบอร์ <0>{{phoneNumber}}</0> จะถูกแสดงที่นี่
+            notCorrectMemberNumber: หมายเลขบัตรสมาชิกแม็คโครของคุณไม่ถูกต้อง?
+            cardSuccessfullyLinked: บัตรสมาชิกแม็คโครและคะแนนทั้งหมดได้ถูกโอนย้ายมาเป็นที่เรียบร้อยแล้ว
+            itemsAddedToBasket: สินค้าถูกเพิ่มลงตะกร้าเรียบร้อย
+            point: '{{point, number}}'
+            pointPlural: '{{point, number}} พอยท์'
+            card: 'บัตร: {{cardNumber}}'
+            contactViaLineOrCall: คุณสามารติดต่อเราผ่านทาง Line หรือทางโทรศัพท์
+            contactLine: เพิ่มเพื่อนทางไลน์ <0>{{lineAlias}}</0>
+            contactCall: โทรคุยกับเรา <0>{{callNumber}}</0> กด <1>{{pressNumber}}</1>
+            hereIsYourMembershipCard: บัตรสมาชิกแมคโครของคุณ
+            phoneAssociatedWithWithCard: เบอร์โทรศัพท์ของคุณถูกเชื่อมกับบัตรสมาชิกแมคโครแล้ว
+            benefit1: รับพอยท์สูงสุด 2.5% ของมูลค่าการสั่งซื้อ ต่อเดือนของคุณ
+            benefit2: รับส่วนลดพิเศษใน แคมเปญที่ร่วมรายการ
+            benefit3: 1 พอยท์  = 1 ฿
+            eligibility: สิทธิ์ในการสมัคร
+            eligibility1: ต้องมี Makro Member ID กับ Tax ID
+            eligibility2: มีคำสั่งซื้อในแม็คโครแม็กซ์ อย่างน้อย 1 รายการ
+            mmcidDesc: บัตรสมาชิกแมคโครจะถูกผูกเข้ากับเบอร์มือถือและอีเมล์ของคุณ
+            nCardsAdded: บัตรใหม่ {{n}} ใบ
+            mmcidNoCardDesc: คุณยังไม่เป็นสมาชิกบัตรแมคโครหรือไม่พบบัตรในระบบ
+            failedToFetchStore: ระบบเกิดข้อผิดพลาดในการค้นหาสาขาของแม็คโครจากรหัสไปรษณีย์และเขต/ตำบล
+        label:
+            newCard: บัตรใหม่!
+        button:
+            continue: เริ่มช็อปเลย
+            contactCustomerService: ติดต่อฝ่ายบริการลูกค้า
+            setAsDefault: ตั้งเป็นบัตรสมาชิกหลัก
+            switchMembershipCard: เปลี่ยนบัตรสมาชิก
+            switchMembershipCardMobile: เปลี่ยนสมาชิก
+            close: ปิด
+            askForHelp: หมายเลขบัตรสมาชิกไม่ถูกต้อง หรือบัตรไม่ครบ? <linkButton>ขอความช่วยเหลือ</linkButton>
+            view: ดูเลย
+            learnMore: เรียนรู้เพิ่มเติม
+    resetPassword:
+        title:
+            resetPassword: รีเซ็ตรหัสผ่าน
+            createNewPassword: สร้างรหัสผ่านใหม่
+        message:
+            emailWithInstruction: เราจะทำการส่งขั้นตอนการเปลี่ยนรหัสผ่านไปยังอีเมลของคุณ
+            sendOtptoMail: เราได้ส่งรหัส OTP ไปยังอีเมลของคุณที่ {{email}}
+            emailnotExist: ไม่พบอีเมลนี้ในระบบ
+            phoneNumberFound: เราเจอเบอร์โทรศัพท์ที่ได้ลงทะเบียนไว้ :)
+            phoneNumberFoundMessage: เพื่อความปลอดภัย เราได้ส่งรหัส OTP ไปยังหมายเลขโทรศัพท์ที่ได้ลงทะเบียนไว้ที่ {{maskedPhone}}
+            notMyNumber: นี่ไม่ใช่เบอร์โทรของฉัน
+            validationContainsCharecters: ต้องประกอบด้วย ตัวอักษรอย่างน้อย {{number}} ตัว
+            validationContainsNumber: ต้องประกอบด้วย หมายเลขอย่างน้อย {{number}} ตัว
+            validationContainsUppercaseLatter: ต้องประกอบด้วย ตัวอักษรพิมพ์ใหญ่อย่างน้อย {{number}} ตัว
+            validationContainsSymbol: 'ต้องประกอบด้วยตัวอักษรพิเศษอย่างน้อย {{number}} ตัว (^ $ * @ # % & ?...)'
+            passwordDoesNotMutch: รหัสผ่านใหม่ไม่ตรงกัน
+            invalidPassword: รหัสผ่านไม่ถูกต้อง
+            invalidCode: รหัส OTP ไม่ถูกต้อง
+            changePasswrodSuccessModalTitle: เปลี่ยนรหัสผ่านสำเร็จแล้ว !
+            passwordHasBeenChanged: คุณสามารถเข้าสู่ระบบด้วยรหัสผ่านใหม่ได้ทันที
+            resetYourPasswordPopupTitle: รีเซ็ตรหัสผ่าน
+            resetYourPasswordPopupDescription: คุณสามารถเข้าสู่ระบบโดยการใช้เบอร์โทรศัพท์แทน หรือรีเซ็ตรหัสผ่านที่แม็คโครคลิกแล้วลองเข้าสู่ระบบอีกครั้ง
+        label:
+            email: ที่อยู่อีเมล
+            oldPassword: รหัสผ่านปัจจุบัน
+            newPassword: รหัสผ่านใหม่
+            confirmNewPassword: ยืนยันรหัสผ่านใหม่
+        notMyNumber:
+            title: ขออภัยในความไม่สะดวก
+            subtitle: เพื่อทำการเปลี่ยนรหัสผ่านและแก้ไขข้อมูลของคุณ กรุณาติดต่อเจ้าหน้าที่ฝ่ายบริการลูกค้า
+        button:
+            updatePassword: ยืนยันการเปลี่ยนรหัสผ่าน
+            getSupport: ต้องการความช่วยเหลือ
+            loginWithPhone: เข้าสู่ระบบด้วยเบอร์โทรศัพท์
+            ressetPasswordInMakroClick: รีเซ็ตรหัสผ่านที่แม็คโครคลิก
+    comingSoon:
+        title: พร้อมแสดงผลเร็วๆนี้!
+        subtitle: หน้านี้กำลังอยู่ระหว่างการพัฒนา
+    language: ภาษา
+    favourites:
+        addToFavouriteList: เพิ่มเข้าในรายการโปรด
+        addedToFavouriteList: เพิ่มเข้าในรายการโปรดแล้ว
+    contactCS:
+        title:
+            contactForCardIssues: ติดต่อฝ่ายบริการลูกค้าเพื่อแก้ปัญหาบัตรสมาชิก
+        message:
+            missingCardDesc: เพื่อให้บัตรสมาชิกของคุณแสดงในบัญชีของคุณ เบอร์มือถือที่เชื่อมโยงกับบัตรจะต้องเป็นหมายเลขเดียวกับที่คุณลงทะเบียนในบัญชีของคุณ
+            stepNumber: ขั้นที่ {{number}}
+            step1: 'ติดต่อฝ่ายบริการลูกค้า ทุกวันผ่านทาง:'
+            step2: เมื่อฝ่ายบริการลูกค้าของเรายืนยันว่า บันทึกการเปลี่ยนแปลงทั้งหมดเรียบร้อยแล้ว คุณสามารถรีเฟรชข้อมูลบัตรสมาชิกของคุณได้
+            call: 'โทร: <0>{{callNumber}}</0> กด {{pressNumber}}'
+        button:
+            contactCS: ติดต่อฝ่ายบริการลูกค้า
+            refreshCardInfo: รีเฟรชข้อมูลบัตรสมาชิก
+    downloadPrompt:
+        message: คุณกำลังใช้งานโทรศัพท์ที่มี หน้าจอขนาดเล็ก ใช้งานต่อในแอ็ปแม็คโครโปร เพื่อการมองเห็นที่ดีขึ้น
+        button: ติดตั้ง
+    maintenance:
+        title: พวกเราจะกลับมาเร็วๆนี้
+        subtitle: ระบบกำลังปรับปรุงชั่วคราวเพื่อให้บริการที่ดียิ่งขึ้นให้กับคุณ
+    newMMIDFlow:
+        becomeMember: มาร่วมเป็นสมาชิก แม็คโคร
+        joinProgram: สมัครสมาชิกแม็คโครเลย!
+    orderPlaced: การสั่งซื้อสำเร็จแล้ว
+    orderPlaced2: การสั่งซื้อสำเร็จแล้ว!
+    orderPlacedDescription: เราจะจัดเตรียมรายการสินค้าของคุณและจัดส่งอย่างตรงเวลา!
+    viewMyOrder: ดูรายการสั่งซื้อ
+    continueShopping: เลือกสินค้าเพิ่มเติม
+    paymentUnsuccessful: การชำระเงินไม่สำเร็จ!
+    paymentUnsuccessfulDescription: ขออภัยในความไม่สะดวก
+    checkout: ทำการสั่งซื้อ
+    basket: ตะกร้าสินค้า
+    shippingAndDelivery: ที่อยู่และเวลาจัดส่ง
+    payment:
+        pending: รอชำระเงิน
+        success: ชำระเงินเรียบร้อย
+        failure: การชำระเงินไม่สมบูรณ์
+        expired: หมดเวลารอชำระเงิน
+        notSuccessful: ไม่สำเร็จ
+    shippingAddress: ที่อยู่สำหรับจัดส่ง
+    newShippingAddress: เพิ่มที่อยู่สำหรับจัดส่ง
+    newBillingAddress: เพิ่มที่อยู่สำหรับใบเสร็จรับเงิน
+    selectShippingAddress: ไม่มีที่อยู่จัดส่งที่ถูกต้อง โปรดสร้างหรือแก้ไขที่อยู่ที่มีอยู่
+    completeEnteringMyAddress: กรอกที่อยู่คุณให้เสร็จ
+    billingAddress: ที่อยู่สำหรับใบเสร็จรับเงิน
+    sameAsShippingAddress: ใช้ที่อยู่เดียวกับที่อยู่สำหรับจัดส่ง
+    fillMandatoryFields: กรุณากรอกข้อมูลในฟิลด์บังคับทั้งหมด
+    taxIdLabel: เลขประจำตัวผู้เสียภาษี (Optional)
+    branchIdLabel: รหัสสาขา (Optional)
+    delivery:
+        deliveryTime: เวลาจัดส่ง
+        deliveryBetween: จัดส่งระหว่าง
+        deliveryLocationMessage: สินค้าของคุณถูกจัดส่งโดยร้านค้าอื่นๆ ซึ่งวันที่จัดส่ง สินค้าเป็นการประเมิณพื้นที่ภายในกรุงเทพและ ปริมณฑล
+        delveryCheckoutMessage: เลือกวันและเวลาจัดส่งในขั้นตอนการสั่งซื้อ
+        outOfZoneProduct: สินค้านี้ ไม่สามารถจัดส่งได้ในพื้นที่ที่คุณเลือก
+        deliveryIn: จัดส่งภายใน 24 ชม
+        deliveryWithin: จัดส่งภายใน 3-5 วัน
+        orderBefore9pm: สั่งก่อน 21.00
+        orderBefore11pm: สั่งก่อน 23.00
+        fastDeliveryWithinTomorrow: ' เลือกเวลาจัดส่งเร็วสุดพรุ่งนี้เวลา 8.00 - 20.00น.'
+        orderAfter9pm: สั่งหลัง 21.00
+        orderAfter11pm: สั่งหลัง 23.00
+        fastDeliveryInTwoDays: ' เลือกเวลาจัดส่งเร็วสุด 2 วันถัดไปเวลา 8.00 – 20.00น.'
+    deliveryDate: วันจัดส่ง
+    deliveryNotice: (สำหรับสินค้าจาก Makro Pro เท่านั้น)
+    numberOfSlots: '{{count}} ช่วงเวลา'
+    numberOfSlots_other: '{{count}} ช่วงเวลา'
+    numberOfSlots_zero: เต็ม
+    deliveryTimeSlot: ช่วงเวลาจัดส่ง
+    selectDeliveryDate: เลือกวันจัดส่งเพื่อดำเนินการต่อ
+    noDeliverySlots: ช่วงเวลาจัดส่งเต็มแล้ว
+    deliverBy: จัดส่งโดย
+    deliveredBy: จัดส่งแล้วโดย
+    selectYourDeliverySlot: เลือกช่วงเวลาจัดส่ง
+    slotFullyBooked: ช่วงเวลาที่คุณเลือกเต็มแล้ว โปรดเลือกช่วงเวลาอื่น
+    slotUpdateFailed: อัพเดทช่วงเวลาจัดส่ง ไม่สำเร็จ
+    makroPro: Makro Pro
+    basketSummary: สรุปตะกร้า
+    subtotal: ยอดรวม
+    pointSpent: ส่วนลดคะแนนจากพอยท์ ({{count}})
+    total: ยอดชำระ
+    estimatedPointsToEarn: พอยท์ที่จะได้รับ
+    goToPayment: ไปหน้าชำระสินค้า
+    zipcodeChangeInstruction_title: การเปลี่ยนรหัสไปรษณีย์อาจมีผลต่อสินค้าในตะกร้าของคุณ
+    zipcodeChangeInstruction_subtitle: โปรดทำตาม 3 ขั้นตอนต่อไปนี้ เพื่อเปลี่ยนที่อยู่ในการจัดส่ง
+    zipcodeChangeInstruction_step1: ย้อนกลับไปและแก้ไขรหัสไปรษณีย์
+    zipcodeChangeInstruction_step2: ตรวจสอบรายการสินค้าในตะกร้า
+    zipcodeChangeInstruction_step3: ดำเนินการสั่งซื้อ
+    goBackToPreviousPage: ย้อนกลับไปหน้าที่แล้ว
+    keepCurrentAddress: ใช้ที่อยู่เดิม
+    createMyAddress: สร้างที่อยู่
+    editMyAddress: แก้ไขที่อยู่
+    discount: ส่วนลด
+    addShippingAddressSuccessMsg: เพิ่มที่อยู่สำหรับจัดส่งแล้ว
+    editShippingAddressSuccessMsg: แก้ไขที่อยู่สำหรับจัดส่งแล้ว
+    addBillingAddressSuccessMsg: เพิ่มที่อยู่สำหรับใบเสร็จรับเงินแล้ว
+    editBillingAddressSuccessMsg: แก้ไขที่อยู่สำหรับใบเสร็จรับเงินแล้ว
+    promotionAppliedMsg: ยอดรวมผ่านการหักส่วนลดจากโปรโมชั่นแล้ว
+    switchShippingAddressSuccessMsg: ที่อยู่ในการจัดส่งได้รับการแก้ไขแล้ว
+    switchBillingAddressSuccessMsg: ที่อยู่บนใบเสร็จได้รับการแก้ไขแล้ว
+    failedToSaveBecause: 'การบันทึกไม่สำเร็จเนื่องจาก:'
+    firstNameIsRequired: โปรดกรอก ชื่อ
+    lastNameIsRequired: โปรดกรอก นามสกุล
+    addressIsRequired: โปรดกรอก ที่อยู่
+    phoneNumberIsRequired: โปรดกรอก เบอร์โทรศัพท์
+    zipCodeIsRequired: โปรดกรอก รหัสไปรษณีย์
+    provinceIsRequired: โปรดกรอก จังหวัด
+    districtIsRequired: โปรดกรอก เขต
+    invalidRegionCode: เบอร์โทรศัพท์ไม่ถูกต้อง
+    invalidPhoneNumber: รหัสโทรศัพท์ไม่ถูกต้อง
+    invalidZipCode: รหัสไปรษณีย์ไม่ถูกต้อง
+    paymentIsProcessing: Your payment is processing
+    resumePayment: Resume payment
+    title: '''ำสั่งซื้อ'
+    message:
+        loginRequiredTtile: เข้าสู่ระบบเพื่อดูคำสั่งซื้อ
+        loginRequired: กรุณาเข้าสู่ระบบเพื่อใช้งาน รายการของฉัน
+        empty: คำสั่งซื้อของคุณจะปรากฏที่นี่ เมื่อสั่งซื้อสำเร็จ
+        emptyOrderList: ไม่มีรายการสินค้า
+        explanationEmpty: รายการสินค้าจะแสดงที่นี่หลังจากคุณสั่งซื้อสินค้า
+        orderComplete: เราจะเตรียมสินค้าและจัดส่งตามกำหนด!
+        orderCompleteBanking: กรุณาชำระเงินภายใน 4 ชั่วโมงนับจากนี้ คุณสามารถตรวจสอบรหัส QR สำหรับการชำระเงินที่เมนูคำสั่งซื้อของฉัน
+        orderFailed: คำสั่งซื้อไม่สำเร็จ กรุณาลองสั่งอีกครั้ง
+        itemsAddedToBasket: สินค้าถูกเพิ่มลงตะกร้าเรียบร้อย
+        scrollUpToViewOrder: เลื่อนขึ้นเพื่อดูคำสั่งซื้อทั้งหมด
+        unsuccessfulPayment: การชำระเงินไม่สำเร็จ
+        productsCancelled: รายการสินค้าถูกยกเลิก
+        noOrders: ยังไม่มีรายการคำสั่งซื้อขณะนี้
+        explanationNoOrders: คุณจะเห็นคำสั่งซื้อเมื่อมีคำสั่งซื้อที่ตรงตามเมนูสถานะที่คุณเลือก
+        productRemovedFromAssortment: คุณไม่สามารถดูรายละเอียดของสินค้าตัวนี้ เนื่องจากเราได้ลบออกจากระบบไปแล้ว
+        paymentNotCompleted: คำสั่งซื้อนี้ยังไม่ถูกชำระเงิน
+    bankInfo:
+        title:
+            overviewTitle: บัญชีธนาคาร
+            overviewDescription: เพิ่มบัญชีสำหรับรับเงินคืน
+            consent: การบันทึกข้อมูลบัญชีธนาคาร
+            areYouSureAdd: กรุณาตรวจสอบและยืนยันการเพิ่มเลขที่บัญชี {{accountNumber}} ในข้อมูลบัญชีธนาคาร
+        label:
+            bankName: ชื่อธนาคาร
+            accountName: ชื่อที่ระบุบนสมุดบัญชีธนาคาร
+            accountNumber: เลขที่บัญชี
+            selectBank: เลือกธนาคาร
+            consent1: ข้าพเจ้ายินยอมให้บริษัท สยามแม็คโคร จำกัด (มหาชน) (“บริษัทฯ”) เก็บ บันทึก ประมวลผลและนำส่งข้อมูลบัญชีธนาคารของข้าพเจ้า เพื่อวัตถุประสงค์ในการคืนเงินค่าสินค้าจากการซื้อสินค้าและบริการผ่านแอปพลิเคชั่น/เว็บไซต์แม็คโครโปร (Makro PRO)
+            consent2: ข้าพเจ้ารับรองว่าข้อมูลบัญชีธนาคารที่ให้ไว้แก่บริษัทฯเป็นข้อมูลบัญชีธนาคารของข้าพเจ้าที่ถูกต้องแท้จริงและไม่มีส่วนเกี่ยวข้องกับการกระทำความผิดใดๆ ในกรณีที่ไม่เป็นไปตามคำรับรองข้างต้น ข้าพเจ้าตกลงรับผิดชอบเป็นการส่วนตัวโดยไม่ให้บริษัทฯต้องได้รับความเสียหาย
+        message:
+            bankNameRequired: กรุณาระบุชื่อธนาคาร
+            nameRequired: กรุณาระบุชื่อบัญชี
+            accountNumberRequired: กรุณาระบุเลขที่บัญชี
+            enterValidAccount: กรุณากรอกเลขที่บัญชีที่ถูกต้อง
+            bankInfoSaved: บันทึกบัญชีธนาคารสำเร็จแล้ว
+            onlyEnglishAllowed: ชื่อบัญชีต้องเป็นภาษาอังกฤษ
+        bankNameCodes:
+            '014': ธนาคารไทยพาณิชย์ จำกัด (มหาชน)
+            '025': ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน)
+            '002': ธนาคารกรุงเทพ จำกัด (มหาชน)
+            '030': ธนาคารออมสิน
+            '004': ธนาคารกสิกรไทย จำกัด (มหาชน)
+            '006': ธนาคารกรุงไทย จำกัด (มหาชน)
+            '011': ธนาคารทหารไทยธนชาต จำกัด (มหาชน)
+            '024': ธนาคารยูโอบี จำกัด (มหาชน)
+        bankNames:
+            BAY: ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน)
+            BBL: ธนาคารกรุงเทพ จำกัด (มหาชน)
+            GSB: ธนาคารออมสิน
+            KBANK: ธนาคารกสิกรไทย จำกัด (มหาชน)
+            KTB: ธนาคารกรุงไทย จำกัด (มหาชน)
+            TTB: ธนาคารทหารไทยธนชาต จำกัด (มหาชน)
+            SCB: ธนาคารไทยพาณิชย์ จำกัด (มหาชน)
+            UOB: ธนาคารยูโอบี จำกัด (มหาชน)
+    features_desc:
+        get_monthly_rewards: "รับพอยท์สะสมรายเดือนเมื่อซื้อสินค้า\nประเภทอาหารแห้งหรืออาหารสด\nที่ร่วมรายการ สูงสุด 960 พอยท์"
+        how_to_get_points: "ทุกการสั่งซื้อครบ 1,000 บาท\nคุณจะได้รับ 1 พอยท์ทันที!"
+        campaign_sale: "ติดตามแคมเปญ\nและเตรียมรับพอยท์พิเศษที่มากขึ้น!\nจากแอปพลิเคชันของเรา"
+        usePointsAsCash: ใช้พอยท์เป็นส่วนลดแทนเงินสด
+    achievementSlider:
+        month: สิงหาคม 2022
+        freshFoodTitle: รางวัลจากการซื้ออาหารสด
+        dryFoodTitle: รางวัลจากการซื้ออาหารแห้ง
+        jadhaiTitle: รางวัลจากกิจกรรมจัดให้ (รายเดือน)
+        jadhaiTitleQuarterly: รางวัลจากกิจกรรมจัดให้ (ไตรมาส)
+        tier: ระดับ
+        spent: ซื้อไปแล้ว
+        spendToNextTierToEarnPoints: "ซื้อเพิ่มอีก ฿{{needSpendSumToNextTier}} เพื่อรับสิทธิประโยชน์ระดับที่\n{{nextTier}} และเริ่มรับพอยท์"
+        spendToNextTier: ซื้อเพิ่มอีก ฿{{needSpendSumToNextTier}} เพื่อรับสิทธิประโยชน์ระดับ {{nextTier}}
+        topTierReachedCongrat: ยินดีด้วย! คุณไปถึงระดับสูงสุดในเดือนนี้
+        getPointsEndMonth: สิ้นเดือนจะรับ {{points}} พอยท์
+        keepSpending: ซื้อเพิ่มอีกนิด รับพอยท์สิ้นไตรมาสนี้
+        niceGetPoints: รับ {{points}} พอยท์ วันที่ {{date}}
+        didntReachMonthlyTarget: ขออภัย ยอดใช้จ่ายรายเดือนของคุณไม่ถึง
+        tryNextQuarter: เกณฑ์ ลองใหม่อีกครั้งในไตรมาสหน้า
+        monthSpending: การซื้อ {{month}}
+        totalQuarterSpending: ยอดใช้จ่ายในไตรมาสนี้
+        modal:
+            titleDF: ประโยชน์ที่ได้จากระดับสมาชิก
+            titleFF: ประโยชน์ที่ได้จากระดับสมาชิก
+            titleJD: ประโยชน์ที่ได้จากระดับสมาชิก
+            titleJDQuarterly: ประโยชน์ที่ได้จากระดับสมาชิก
+            desc: สั่งซื้อสินค้าที่อยู่ในเงื่อนไขจำนวนมาก  เพื่อรับพอยท์สะสมมากขึ้น พอยท์สามารถใช้ได้ตลอดทั้งปี และคุณสามารถสะสมได้จากการซื้อสินค้ารายเดือน
+            rangeMinMax: ยอดสั่งซื้อ {{min}} - {{max}} ฿
+            rangeMinInfinite: ยอดสั่งซื้อ {{min}} ++ ฿
+            achievePercentage: ได้รับพอยท์ {{percent}}%
+            valueFixed: รับ {{points}} พอยท์
+            valueMinMax: '{{min}}-{{max}} พอยท์'
+    months:
+        '0': มกราคม
+        '1': กุมภาพันธ์
+        '2': มีนาคม
+        '3': เมษายน
+        '4': พฤษภาคม
+        '5': มิถุนายน
+        '6': กรกฎาคม
+        '7': สิงหาคม
+        '8': กันยายน
+        '9': ตุลาคม
+        '10': พฤศจิกายน
+        '11': ธันวาคม
+    signUp:
+        label:
+            enterDetails: กรุณากรอกข้อมูล
+            fullName: ชื่อ-นามสกุล
+            yourFullName: ชื่อ-นามสกุล
+            firstname: ชื่อ (ไม่รวมคำนำหน้า)
+            lastname: นามสกุล
+            yourPhoneNumber: หมายเลขโทรศัพท์
+            mobilePhoneNumber: หมายเลขโทรศัพท์มือถือ
+            enterPhoneNumber: หมายเลขโทรศัพท์
+            referralCode: โค้ดแนะนำ (ไม่บังคับ)
+            selectMyBusiness: เลือกธุรกิจของฉัน
+            businessType: ประเภทธุรกิจ
+        customerType:
+            individual: บุคคลทั่วไป
+            business: ธุรกิจ
+        message:
+            phoneNumberExistModalTitle: มีบัญชีที่ใช้หมายเลขโทรศัพท์นี้อยู่แล้ว
+            phoneNumberExistModalDescriptionStart: กรุณาเข้าสู่ระบบด้วยหมายเลขโทรศัพท์
+            phoneNumberExistModalDescriptionEnd: หากหมายเลขโทรศัพท์นี้เป็นของคุณ
+            existingAccountModalTitle: คุณมีบัญชีผู้ใช้อยู่แล้ว
+            existingAccountModalDescription: มีบัญชีที่ถูกสร้างโดยใข้หมายเลขโทรศัพท์หรืออีเมลนี้แล้ว กรุณาใส่โทรศัพท์หรืออีเมล์อื่น
+            termsOfUse: ข้าพเจ้ายืนยันว่าได้อ่านและทำความเข้าใจรวมถึงตกลงให้บริษัทฯ สามารถประมวลผลข้อมูลของข้าพเจ้าภายใต้ <0>เงื่อนไขการสมัครสมาชิก</0> และนโยบายความเป็นส่วนตัวของบริษัทฯ ได้
+            waitForSignup: เกิดข้อผิดพลาดบางอย่างในการลงทะเบียนของคุณ กรุณาลองอีกครั้งหลังจาก 24 ชั่วโมงหรือติดต่อเรา
+            allreadyHaveAccount: มีบัญชีอยู่แล้ว?
+            fullNameInvalid: ชื่อเต็มไม่ถูกต้อง
+            firstNameInvalid: ชื่อไม่ถูกต้อง
+            lastNameInvalid: นามสกุลไม่ถูกต้อง
+            missingBusinessType: กรุณาระบุประเภทธุรกิจ
+            unexpectedFetchingBusinessTypesOccurred: ไม่สามารถแสดงตัวเลือกประเภทธุรกิจได้ กรุณารีเฟรชหน้าจอใหม่
+            captchaVerificationFailed: การตรวจสอบ Captcha ล้มเหลว
+        button:
+            continueToLogin: เข้าสู่ระบบด้วยหมายเลขโทรศัพท์
+            changePhoneNumber: เปลี่ยนหมายเลขโทรศัพท์
+            loginWithPhoneNumber: เข้าสู่ระบบด้วยหมายเลขโทรศัพท์
+            loginWithEmail: เข้าสู่ระบบด้วยอีเมล
+    confirmOTP:
+        message:
+            title: กรุณาใส่รหัส OTP
+            titleSixDigit: กรุณาใส่รหัส OTP
+            sendEmailInfo: เราได้ส่งรหัส 6 หลักไปยังอีเมลของคุณแล้ว {{email}}
+            sendEmailOrPhone: เราได้ส่งรหัส 6 หลักไปยังเบอร์โทรศัพท์ หรืออีเมลของคุณแล้ว
+            sendInfo: เราได้ส่งข้อความรหัส OTP ยืนยัน 6 หลัก ไปยังหมายเลขโทรศัพท์ {{phone}} หากไม่ได้รับรหัส SMS กรุณาติดต่อฝ่ายบริการลูกค้า <linkTrans>ที่นี่</linkTrans> หรือ โทร. 1432 กด 2
+            resendInfo: ส่งรหัสอีกครั้งใน
+            notReceiveCode: คุณได้รับรหัสหรือไม่?
+            tryAgainLater: ลองใหม่อีกครั้ง
+            invalidCode: รหัส OTP ไม่ถูกต้อง
+            codeHasExpired: รหัสหมดอายุ
+            verifyCodeAlert: ขออภัย เราไม่สามารถยืนยันรหัสของคุณ
+            verifyCodeMessage: คุณยืนยันรหัสที่ไม่ถูกต้องมากกว่า 3 ครั้ง กรุณาลองอีกครั้งในอีก 30 นาที เราจะแจ้งให้คุณทราบเมื่อพร้อมให้บริการ
+            checkingAccountLoginAlert: ตรวจสอบการเข้าสู่ระบบบัญชี
+            checkingAccountLoginMessage: คุณใช้รหัสยืนยันไม่ถูกต้องหลายครั้ง โปรดลองอีกครั้งใน {{duration}} นาที
+            sendSixDigitAndVerify: รหัส OTP 6 หลักถูกส่งไปยัง SMS ที่เบอร์ {{phone}} หากไม่ได้รับรหัส OTP กรุณาตรวจสอบบัญชีของคุณว่าได้ทำการลงทะเบียนแล้ว
+            otpVerifiedLoginToContinue: ยืนยัน OTP สำเร็จ! เข้าสู่ระบบเพื่อดำเนินการต่อ
+            registerAccountSuccessfully: สร้างบัญชีผู้ใช้งานใหม่สำเร็จ
+            noOfAttemptMsg: สามารถลองใหม่ได้อีก {{attempt}} ครั้ง
+        label:
+            resendCode: ขอรหัสอีกครั้ง
+            verification: ยืนยันตัวตน
+            tryAgainIn: ลองอีกครั้ง ใน
+        button:
+            verify: ตรวจสอบรหัส
+            getSupport: ต้องการความช่วยเหลือ
+            verifyEmail: ตรวจสอบอีเมล
+            goBack: กลับ
+    accountUpdate:
+        title:
+            registerEmail: กรุณาลงทะเบียนอีเมลของคุณ
+            registerPhone: กรุณาลงทะเบียนเบอร์โทรศัพท์ของคุณ
+            verifyCode: ยืนยันรหัสของคุณ
+        message:
+            phoneDesc: การลงทะเบียนจะช่วยให้เราติดต่อคุณได้ในกรณีที่การสั่งซื้อมีปัญหา และช่วยให้คุณเข้าสู่ระบบด้วยเบอร์โทรศัพท์ได้ในครั้งต่อไป
+            emailDesc: เราจะส่งข้อมูลการยืนยันและคำแจ้งเตือนเกี่ยวกับการสั่งซื้อและการชำระเงินไปยังอีเมลนี้
+        button:
+            confirm: ยืนยัน
+            later: ไว้คราวหลัง
+            editEmail: แก้ไขอีเมล
+            editPhone: แก้ไขเบอร์โทรศัพท์
+    about:
+        title: เกี่ยวกับสินค้า
+    seller:
+        soldby: จัดจำหน่ายโดย
+        caption: One stop place for all your horeca supplies and products.
+    specifications:
+        title: รายละเอียด
+        totalVolume: น้ำหนักรวมสุทธิ
+        sku: รหัส
+        expirationLimit: วันที่หมดอายุและการเก็บรักษา
+    storage:
+        storageInformation: การเก็บรักษาและวิธีการปรุง
+    wholesale:
+        slabprice: ราคา ซื้อเยอะ ยิ่งคุ้ม
+        buy: ซื้อ
+        unit: หน่วย
+        units: หน่วย
+        plusUnits: ' หน่วยขึ้นไป'
+    feeBanner:
+        freeDelivery: จัดส่งฟรี
+        reach: เมื่อซื้อถึง
+        almostThereOnly: เกือบแล้ว ขาดเพียง
+        toGo: ''
+        andGet: จะได้รับ
+        youGet: คุณได้รับ
+        getFreeDelivery: ค่าส่งฟรี
+        congratulations: ยินดีด้วย!
+        currencyTHB: ฿
+    newAddToBasketFlow:
+        selectQuantity: เลือกจำนวน
+        quantity: จำนวน
+        addedToCart: เพิ่มในตะกร้าแล้ว
+        viewCart: ดูตะกร้า
+        addToMyCart: เพิ่มลงตะกร้า ({{count}})
+    status:
+        toBeDelivered: คำสั่งซื้อ {{orderId}} อยู่ขณะจัดส่ง
+        cancelled: คำสั่งซื้อ {{orderId}}
+        default: คำสั่งซื้อ {{orderId}}
+        delivered: คำสั่งซื้อ จัดส่งสำเร็จ
+        beingPreparedFull: คำสั่งซื้อกำลังถูกจัดเตรียมเพื่อจัดส่ง
+        shippedFull: 'คำสั่งซื้อกำลังถูกจัดส่ง:'
+        shippedDeliveryComing: คำสั่งซื้อกำลังถูกจัดส่ง ท่านจะได้รับสินค้าเร็วๆ นี้
+        unpaid: โปรดตรวจสอบอีเมลสำหรับขั้นตอนการชำระเงิน หากไม่ชำระเงินภายในกำหนด คำสั่งซื้อจะถูกยกเลิกโดยอัตโนมัติ
+        waitingAcceptance: รอการตอบรับจากผู้ขาย
+        waitingAcceptanceFull: 'รอการตอบรับจากผู้ขาย อาจใช้เวลาประมาณ '
+        waitingAcceptanceDaysFull: 2 วัน
+        refundUnderReviewBuyer: คำขอคืนเงินของคุณกำลังถูกพิจารณา และอาจต้องใช้เวลา 2-3 วันทำการในการดำเนินการ
+        refundApproved: คำขอคืนเงินได้รับการอนุมัติบางส่วน คุณสามารถตรวจสอบยอดการคืนเงินได้ด้านล่าง ธนาคารกำลังดำเนินการโอนเงินคืนให้คุณ โดยอาจใช้เวลา 45 วัน
+    stepperStatus:
+        payment: ชำระเงิน
+        preparing: จัดเตรียมคำสั่งซื้อ
+        inDelivery: จัดส่ง
+        complete: สำเร็จแล้ว
+        request: ส่งคำขอ
+        inReview: ประเมินคำขอ
+        approval: ปิดคำขอ
+    tab:
+        all: ทั้งหมด
+        unpaid: ต้องชำระเงิน
+        beingPrepared: กำลังจัดเตรียม
+        shipped: กำลังจัดส่ง
+        delivered: จัดส่งสำเร็จ
+        cancelled: ถูกยกเลิก
+        refundProcessing: อยู่ระหว่างการคืนเงิน
+        refunded: คืนเงินสำเร็จ
+        closed: เสร็จสิ้น
+    qr:
+        completePaymentBefore: กรุณาชำระเงินภายใน
+        howPayment: ชำระเงินอย่างไร ?
+        saveQr: บันทึก QR Code
+        paymentStep1: บันทึก QR Code ในโทรศัพท์ของคุณและสแกนเพื่อดำเนินการชำระเงินภายใน 4 ชั่วโมง
+        paymentStep2: เปิดแอพพลิเคชั่นของธนาคารที่คุณเลือกและเลือกเมนู’สแกน
+        paymentStep3: เลือกรูปภาพ QR Code ที่บันทึกไว้ในโทรศัพท์ของคุณ
+        paymentStep4: ตรวจสอบยอดชำระและดำเนินการชำระเงิน
+        paymentTo: ชำระเงินไปยัง
+        paymentCode: รหัสการชำระเงิน (Ref.1)
+        payAmount: จำนวนเงินที่ต้องชำระ
+        paymentValidTill: 'กรุณาชำระเงินภายใน '
+        imgSaved: บันทึกรูปภาพในโทรศัพท์ของคุณแล้ว
+        payBefore: กรุณาจ่ายก่อนวันที่ {{payDate}}
+        mobileNo: เบอร์โทรศัพท์ (Ref.1)
+        amount: ยอดชำระ (บาท)

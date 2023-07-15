@@ -1,0 +1,177 @@
+pipeline {
+   agent { label 'mac_server_05'}
+   environment {
+      EMULATOR_NAME= 'Mango'
+      JOB_GIT_URL= 'https://gitlab.com/doppiotech/dumbledore.git'
+      JOB_GIT_BRANCH= 'main'
+      GIT_CREDENTIAL= 'jenkins_makro_sso'
+      APP_VER = "${APP_VERSION}"
+      RP_ENDPOINT ='http://10.88.9.127:8080'
+      RP_UUID = '497f76de-ed96-4c75-96b3-73900e628ab8'
+      RP_LAUNCH = 'superadmin_TEST_EXAMPLE'
+      RP_PROJECT= 'maknet-automation'
+
+      REPORT_TYPE= 'robot'
+      HOST_NAME='http://report.doppio-tech.com'
+      REPORT_SEVER_PATH= "$WORKSPACE/output.xml"
+   }
+   stages {
+      stage('KILL ALL appium and simulator') {
+         when {
+            expression { params.RUN_ON_BROWSER_STACK == false }
+         }
+         steps{            
+            script{
+               try {
+                  echo "Stoping all emulator"
+                  common = load "${WORKSPACE}/jenkinsfiles/common.groovy"
+                  common.stop_android_emulator()
+                  sh label: '', script: 'xcrun simctl shutdown all'
+               } catch (err) {
+                  echo "kill : not enough arguments"
+               }
+            }
+            script{
+               try {
+                  echo "STOP APPIUM SERVER"
+                  common = load "${WORKSPACE}/jenkinsfiles/common.groovy"
+                  common.stop_appium()
+               } catch (err) {
+                  echo "kill : not enough arguments"
+               }
+            }
+         }
+      }
+      stage('START APPIUM PORT') {
+         when {
+            expression { params.RUN_ON_BROWSER_STACK == false }
+         }
+         steps {
+            script{
+               echo "Start Appium Port.."
+               common = load "${WORKSPACE}/jenkinsfiles/common.groovy"
+               common.start_appium()
+            }         
+         }
+      }
+      stage('Start Emulator') {
+         when {
+            expression { params.RUN_ON_BROWSER_STACK == false }
+         }
+         steps{
+            script{
+               echo "Start emulator.."
+               common = load "${WORKSPACE}/jenkinsfiles/common.groovy"
+               common.start_android_emulator(EMULATOR_NAME)
+            }
+         }
+      }      
+      stage('RUN_TEST') {
+         when {
+            expression { params.RUN_ON_BROWSER_STACK == false }
+         }
+         steps {
+            script{
+                  String retryprefix = "--prerunmodifier DataDriver.rerunfailed:output.xml  --output rerun.xml -r rerunreport.html"
+                  echo "testing against version : Android${APP_VERSION}.apk"
+
+                  try {
+                     sh "pabot --pabotlib --pabotlibport 0 --processes 4 --resourcefile ./resources/devices/android_farm_value_set.dat -v app:'/Users/doppiotech/Documents/MaknetApp/${APP_VERSION}.apk' -v doppio_farm:True -v platform:android -v chromedriverExecutable:None -v browserstack:False -i ${env.INCLUDE} -e ${env.EXCLUDE} -v lang:en ./tests/mobile"
+                     sh 'echo "finish running 1st round"'
+                  }  catch (err) {       //if test failed
+                  def max_retry = 1
+                  def needRetry = true
+                  for(int i =0; i<max_retry; i++){
+                     if (needRetry){
+                        try {
+                           echo "Running retry logic ${i}"
+                           sh "pabot --pabotlib --pabotlibport 0 --processes 4 --resourcefile ./resources/devices/android_farm_value_set.dat ${retryprefix}  -v app:'/Users/doppiotech/Documents/MaknetApp/${APP_VERSION}.apk' -v doppio_farm:True -v platform:android -v chromedriverExecutable:None  -v browserstack:False -v lang:en ./tests/mobile"
+                           needRetry = false
+                        }
+                        catch (err2){
+                           echo "Nothing need to implement"
+                        }
+                        try {
+                           sh 'rebot -r final_report -o final_report --merge output.xml  rerun.xml'
+                        }
+                        catch (err3) {
+                           echo "Nothing need to implement"
+                        }
+                        try {
+                           sh """
+                           echo 'Merged result done'
+                           mv report.html ${i}_report.html
+                           mv output.xml ${i}_output.xml
+                           mv final_report.xml output.xml
+                           mv final_report.html report.html
+                           echo 'Rename result done'
+                           """
+                        }
+                        catch (err4){
+                           echo "nothing to rename"
+                        }
+                     }
+                  }
+               }
+            robot(
+               outputPath: './',
+               outputFileName: 'output.xml',
+               reportFileName: 'report.html',
+               logFileName: 'log.html',
+               disableArchiveOutput: false,
+               passThreshold: 100.0,
+               unstableThreshold: 100.0,
+               otherFiles: '*.png,*.jpg'
+            )
+            script {
+               common = load "${WORKSPACE}/jenkinsfiles/common.groovy"
+               common.notify_result_to_slack("#makro-mini","doppio-tech.com:8080")
+            }
+         }
+      }
+      post {
+         always {       
+            script {
+                  if ("${JOB_NAME}" == "Makro_Click/makro_pro_android_en") {
+                     common = load "${WORKSPACE}/jenkinsfiles/common.groovy"
+                     common.notify_result_to_dumbledore_v2("${WORKSPACE}/report.html","${WORKSPACE}/output.xml")
+                     common.doppio_report()
+                  }
+               }
+            script {
+               try {
+                  echo "Stoping all emulator"
+                  common = load "${WORKSPACE}/jenkinsfiles/common.groovy"
+                  common.stop_android_emulator()
+                  sh label: '', script: 'xcrun simctl shutdown all'
+               } catch (err) {
+                  echo "kill : not enough arguments"
+               }
+            }
+            script{
+               // clean workspace
+               echo "Clean Workspace"
+               cleanWs()
+            }
+            }
+         }
+      }
+      stage('Run Test On Browserstack') {
+         when {
+            expression { params.RUN_ON_BROWSER_STACK == true }
+         }
+         steps {
+            script {
+               common = load "${WORKSPACE}/jenkinsfiles/browserstack/browserstack.groovy"
+               common.runtest_browser_stack(2,RP_ENDPOINT,RP_UUID,RP_LAUNCH,RP_PROJECT,"./tests/mobile",True,"android","en",True)
+            }
+         }
+         post {
+            always {        
+               echo "Clean Workspace"
+               cleanWs()
+            }
+         }
+      }
+   }
+}

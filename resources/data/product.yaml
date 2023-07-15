@@ -1,0 +1,47 @@
+list_product:
+  'Automation SOD':
+    3P_1: Automation SOD 1   
+    3P_2: Automation SOD 2
+    3P_3: Automation SOD 3
+    3P_4: Automation check sod
+    3P_5: automate check sod 2
+  'Automation FBM':
+    3P_1: Automation FBM 1
+    3P_2: Automation FBM 2
+    3P_3: automate check fbm 2
+    3P_4: Automation check FBM
+    3P_5: Coconut FBM
+  'Sure Chemical Supply Co.,Ltd':
+    3P:   'Dshow น้ํายาปรับผ้านุ่ม สีชมพู ขนาด 3800มล. ( Fabric Softener )'
+    3P_9: 'Dshow น้ำยาปรับผ้านุ่ม สีฟ้า ขนาด 3800มล. ( Fabric Softener )'
+    3P_12: 'Dshow น้ํายาถูพื้น และ เคลือบเงา ขนาด 3800มล. 2 แกลลอน ( Floor Shiny )'
+    3P_13: 'Dshow น้ำยาถูพื้น ขนาด 3800มล. 2 แกลลอน ( Floor Cleaner )'
+    3P_14: 'Dshow น้ำยาซักผ้า สีแดง ขนาด 800มล. ( Laundry Detergent )'
+  'GORNTAWAN CO., LTD.':
+    3P_3: 'กรตะวัน กล่องใส่อาหาร 1 ช่อง สีใส ขนาด 750 ml.(แพ็ค 50 ใบ)'
+    3P_4: 'กรตะวัน ถ้วยน้ำจิ้มเหลี่ยม ขนาด 2 oz(แพ็ค 100 ใบ)'
+    3P_10: 'กรตะวัน ถ้วยกลมใส่อาหาร ทรงแบน สีดำ ขนาด 700 ml.(แพ็ค 50 ใบ)'
+  'Commercial Test 1P MAKRO':
+    1P_1: 'เนเชอเรล น้ํามันคาโนล่าผสมน้ํามันทานตะวัน 1 ลิตร'
+    1P_2: 'Big Pack มาย เฟรนช์ฟรายส์แช่แข็ง เส้นตรง ขนาด 10 มม. แพ็ค 2 กิโลกรัม x 6 แพ็ค'
+    1P_3: 'รวมรส น้ําปลาผสม 300 มล. x 6 ขวด'
+    1P_4: 'ทาโร ปลาสวรรค์ รสเข้มข้น 6 กรัม x 12 ซอง'
+    1P_5: 'แม่ครัว ซอสหอยนางรม 2500 มล.'
+    1P_6: 'มองต์เฟลอ น้ําแร่ ขนาด 1500 มล. แพ็ค 6 ขวด'
+    1P_6_barcode: '8851530133063'
+    1P_7: 'โบนัส น้ํามันปาล์มถัง 27 ลิตร'
+    1P_8: 'ไวตามิ้ลค์ น้ํานมถั่วเหลือง สูตรกลมกล่อม ทูโก 300 มล. แพ็ค 12 ขวด'
+  'Doppio-tech':
+    3P_1: Dog Collar ปลอกคอหมา
+    3P_2: dog suit-sushi
+    3P_3: dog suit-chef
+    3P_4: dog suit-carrot
+    3P_5: 'ที่นอนสัตว์เลี้ยง4 out of stock forever'
+    3P_6 :  'กระปุกหมา ironman for refund testing'
+  '1P Makro ST08':
+    1P_9: 'ตราฉัตร ข้าวหอมปทุมธานี 45 กก.'
+
+product_seller:
+  - Automation SOD
+  - Automation FBM
+  - Doppio-tech

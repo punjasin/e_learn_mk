@@ -1,0 +1,12 @@
+global_timeout                    : 20s
+chrome_browser                    : chrome
+noWaitTimeout                     : 0s
+shortTimeout                      : 5s
+minTimeout                        : 10s
+halfTimeout                       : 30s
+longTimeout                       : 60s
+brieftimeout                      : 1s
+smallTimeout                      : 3s
+maknet_url                        : https://maknet-webapp.mango-qa.siammakro.cloud/
+pickpack_url                      : https://pickpackoms-uat.makroclickdev.com/
+123_portal_url                    : https://uat.123.co.th/GenericPaymentSimulator/simulator.aspx

@@ -1,0 +1,36 @@
+***Settings***
+Variables       ../../localisation/mobile/${lang}.yaml
+Variables       ../../localisation/mobile/${lang}_additional.yaml
+
+*** Variables ***
+${onboarding.txt_online_marketplace}       chain=**/XCUIElementTypeStaticText[`label == "${mobile['onboarding']['label']['titleSlide1']}"`]
+${onboarding.cvp_title}                    chain=**/XCUIElementTypeStaticText[`label == "${mobile['onboarding']['label']['titleSlide1']}"`]
+${onboarding.btn_skip}                     chain=**/XCUIElementTypeOther[`label == "${mobile['onboarding']['button']['skip']}" AND accessible == 1`]
+${onboarding.privacy_title}                chain=**/XCUIElementTypeStaticText[`label == "${mobile['privacy']['privacyPolicy']}"`]
+${onboarding.btn_accept_cookie}            chain=**/XCUIElementTypeOther[`label == "${mobile_additional['button']['accept_all']}"`]
+${onboarding.btn_start_shopping}           chain=**/XCUIElementTypeOther[`label == "${mobile['onboarding']['button']['goShopping']}"`]
+${onboarding.txt_cvp_content}              chain=**/XCUIElementTypeStaticText[`label == "{{content}}"`]
+${onboarding.txt_contains_cvp_content}     chain=**/XCUIElementTypeStaticText[`label CONTAINS "{{content}}"`]                                                       
+${onboarding.needs_of_entrepreneurs}       chain=**/XCUIElementTypeStaticText[`label == "${mobile['onboarding']['label']['titleSlide1']}"`]
+${onboarding.skip}                         chain=**/XCUIElementTypeOther[`label == "${mobile['onboarding']['button']['skip']}" AND accessible == 1`]
+${onboarding.next_step}                    chain=**/XCUIElementTypeOther[`label == "${mobile['global']['next']}"`][{{step}}]
+${onboarding.txt_start}                    xpath=//XCUIElementTypeOther[@name="${mobile['onboarding']['button']['getStarted']}" and @visible="true"] 
+${onboarding.txt_back}                     chain=**/XCUIElementTypeOther[`label == "${mobile['onboarding']['button']['back']}" AND accessible == 1`]
+${onboarding.txt_start_order}              accessibility_id=${mobile['onboarding']['button']['goShopping']}
+${onboarding.txt_create_new_account}       chain=**/XCUIElementTypeOther[`label == "${mobile['onboarding']['button']['createAccount']}"`]
+${onboarding.txt_privacy_policy}           chain=**/XCUIElementTypeStaticText[`label == "${mobile['privacy']['privacyPolicy']}"`]
+${onboarding.txt_all_accept}               chain=**/XCUIElementTypeOther[`label == "${mobile['global']['acceptAll']}"`]
+${onboarding.txt_setting}                  chain=**/XCUIElementTypeOther[`label == "${mobile['global']['settings']}"`]
+${onboarding.btn_next}                     chain=**/XCUIElementTypeButton[`label == "${mobile['global']['next']}"`]
+${onboarding.input_contact_name}           chain=**/XCUIElementTypeTextField[`label CONTAINS "${mobile['address']['label']['contactFirstName']}"`]
+${onboarding.input_company_name}           chain=**/XCUIElementTypeTextField[`label CONTAINS "${mobile['address']['label']['businessName']}"`]
+${onboarding.input_email}                  chain=**/XCUIElementTypeTextField[`label CONTAINS "${mobile['global']['email']}"`]
+${onboarding.phone_number_input}           chain=**/XCUIElementTypeTextField[`label == "${mobile['address']['label']['contactNumber']}"`]
+${onboarding.checkbox_false_category}      chain=**/XCUIElementTypeSwitch[`label CONTAINS "{{category}}"`]
+${onboarding.checkbox_true_category}       chain=**/XCUIElementTypeSwitch[`label CONTAINS "{{category}}" AND value="1"`]
+${onboarding.navigate_to_next_question}    chain=**/XCUIElementTypeButton[`label == "Navigate to next question"`]
+${onboarding.after_ok}                     chain=**/XCUIElementTypeOther[`label CONTAINS "${mobile_additional['onboarding']['after_ok']}"`]
+${onboarding.link}                         chain=**/XCUIElementTypeLink[`label == "{{link}}"`]/XCUIElementTypeStaticText[`label == "{{link}}"`]
+${onboarding.btn_ok}                       chain=**/XCUIElementTypeButton[`label == "${mobile['global']['ok']}"`]
+${onboarding.txt_main_content_consent}     chain=**/XCUIElementTypeStaticText[`label CONTAINS "${mobile['privacy']['privacyModalDesc']}"`]
+${onboarding.txt_next}                     xpath=//XCUIElementTypeOther[@name="${mobile['global']['next']}" and @visible="true"]

@@ -1,0 +1,34 @@
+makropro_db:
+  catalog_data_service:
+    host: marketplace-aurora-pg-cluster.cluster-cpd7igeo1hlz.ap-southeast-1.rds.amazonaws.com
+    database: marketplace
+    user: marketplace
+    password: 925311261e27c5696e648d32845b58c20e6687f2
+    port: 5432
+  user_service:
+    host: marketplace-user-aurora-pg-cluster.cluster-cpd7igeo1hlz.ap-southeast-1.rds.amazonaws.com
+    database: users
+    user: users
+    password: 55d3b9855bc648ecda0f0f63c9f5ac720149d202
+    port: 5432
+  loyalty:
+    host: marketplace-read-write-instance.cpd7igeo1hlz.ap-southeast-1.rds.amazonaws.com
+    database: loyalty
+    user: loyalty
+    password: d6a15a8a54a8a3684b1213de9c2a262bae3b1232
+    port: 5432
+  product_service:
+    host: marketplace-aurora-pg-cluster.cluster-cpd7igeo1hlz.ap-southeast-1.rds.amazonaws.com
+    database: product
+    user: product
+    password: yZt!Z7JCCRfgUWPt_K3-LiHWqpWgiqbM.Ydo7wn8RLDw!rBAJmyDpJ
+    port: 5432
+makro_ocsuat_db:
+  connect_db:  "'ocsadm/ocsadm@10.6.39.30:1521/OCSUAT'"
+
+db_api_module:
+  postgres:    psycopg2
+  oracle:      cx_Oracle
+
+db_time:
+  short_timeout:  10s

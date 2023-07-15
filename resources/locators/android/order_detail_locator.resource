@@ -1,0 +1,48 @@
+***Settings***
+Variables       ../../localisation/mobile/${lang}.yaml
+Variables       ../../localisation/mobile/${lang}_additional.yaml
+
+*** Variables ***
+${order_detail.txt_seller_name}                    xpath=//android.view.ViewGroup[@content-desc="order"]/android.widget.TextView[@text="${mobile['order']['label']['seller']}"]
+${order_detail.txt_product_name}                   xpath=//android.view.ViewGroup[contains(@content-desc,"basket_list_item")]//android.widget.TextView[@text="{{product_name}}"]
+${order_detail.txt_product}                        xpath=//android.widget.TextView[contains(@text, '{{product}}')]
+${order_detail.txt_quantity}                       xpath=//android.widget.TextView[@text='{{product}}']/following-sibling::android.widget.TextView[@text='{{quantity}}']
+${order_detail.txt_product_total}                  xpath=//android.widget.TextView[@text='{{product}}']/following-sibling::android.view.ViewGroup/android.widget.TextView
+${order_detail.txt_payment_type}                   xpath=//android.widget.TextView[contains(@text, '{{payment_type}}')]
+${order_detail.txt_payment_status}                 xpath=//android.widget.TextView[contains(@text, '{{payment_status}}')]
+${order_detail.basket_list_item}                   xpath=//android.view.ViewGroup[contains(@content-desc,"basket_list_item")]
+${order_detail.basket_list_item_1}                 xpath=(//android.view.ViewGroup[contains(@content-desc,"basket_list_item")])[1]
+${order_detail.txt_add_all_to_basket}              xpath=//android.widget.TextView[@text='${mobile['order']['button']['addToBasket']}']
+${order_detail.basket_list_item_textview}          xpath=(//android.view.ViewGroup[contains(@content-desc,"basket_list_item")]//android.widget.TextView[2])[1]
+${order_detail.txt_basket_list_item}               //android.view.ViewGroup[contains(@content-desc,"basket_list_item")]
+${order_detail.basket_list_item_textview_index}    xpath=(//android.view.ViewGroup[contains(@content-desc,"basket_list_item")])[{{i}}]/android.widget.TextView
+${order_detail.txt_total}                          xpath=//android.widget.TextView[@text='${mobile_additional['order']['label']['total']}']
+${order_detail.txt_pay_within}                     xpath=//android.widget.TextView[contains(@text,'${mobile['order']['label']['payBy']}')]
+${order_detail.txt_pay_within_date}                xpath=//android.widget.TextView[@text='${mobile_additional['order']['label']['pay_within_date']}']
+${order_detail.txt_status_seller_name}             xpath=//android.view.ViewGroup[@content-desc="order"]/android.widget.TextView[@text='{{status}}']/following-sibling::android.widget.TextView[@text='${mobile['order']['label']['seller']}']
+${order_detail.txt_seller_name_status}             xpath=//android.view.ViewGroup[@content-desc="order"]/android.widget.TextView[@text='${mobile['order']['label']['seller']}']/following-sibling::android.view.ViewGroup/android.widget.TextView[contains(@text,'{{status}}')]
+${order_detail.txt_seller}                         xpath=//android.view.ViewGroup[@content-desc="order"]/android.widget.TextView[contains(@text,"${mobile['order']['label']['seller']}")]
+${order_detail.txt_status_timeline}                xpath=//android.view.ViewGroup[@content-desc='status_timeline']/following-sibling::android.view.ViewGroup/android.widget.TextView[contains(@text,'{{status}}')]
+${order_detail.txt_status_order}                   xpath=//android.widget.TextView[@text='${mobile['order']['label']['seller']}']/ancestor::android.view.ViewGroup[@content-desc="order"]//android.widget.TextView[@text='{{status}}']
+${order_detail.txt_order_cancel}                   xpath=//android.widget.TextView[@text='${mobile['order']['label']['orderCancelled']}']
+${order_detail.txt_payment_unsuccess}              xpath=//android.widget.TextView[@text='${mobile['order']['message']['unsuccessfulPayment']}']
+${order_detail.tacking_delivery}                   xpath=//android.widget.TextView[@text='${mobile['order']['button']['trackDelivery']}']
+${order_detail.icon_button}                        xpath=(//android.view.ViewGroup[@content-desc="icon_button"])[1]
+${order_detail.txt_status}                         xpath=//android.widget.TextView[@text='{{status}}']
+${order_detail.txt_order_date}                     xpath=//android.widget.TextView[contains(@text, '${mobile['order']['label']['placedOn']}')]
+${order_detail.txt_deivery_date}                   xpath=//android.widget.TextView[contains(@text, '{{deivery_date}}')]
+${order_detail.txt_total_textview}                 xpath=//android.widget.TextView[@text='${mobile_additional['order']['label']['total']}']/following-sibling::android.widget.TextView
+${order_detail.txt_address_textview}               xpath=//android.widget.TextView[@text='${mobile['order']['label']['deliveryAddress']}']/following-sibling::android.widget.TextView[1]
+${order_detail.txt_add_all_to_my_list}             xpath=//android.widget.TextView[@text='${mobile['order']['button']['addToFavouriteButton']}']
+${order_detail.txt_address}                        xpath=//android.widget.TextView[contains(@text, '{{address}}')]
+${order_detail.favourite_heart_unfilled_icon}      xpath=//android.widget.TextView[@text='{{product_name}}']//following-sibling::android.view.ViewGroup/android.view.ViewGroup[@content-desc="favourite_heart_unfilled_icon"]
+${order_detail.favourite_heart_filled_icon}        xpath=//android.widget.TextView[@text='{{product_name}}']//following-sibling::android.view.ViewGroup/android.view.ViewGroup[@content-desc="favourite_heart_filled_icon"]
+${order_detail.txt_cannot_add_all}                 xpath=//android.widget.TextView[@text="${mobile_additional['order']['message']['addedUnavailablePopupTitle']}"]
+${order_detail.txt_ok}                             xpath=//android.widget.TextView[@text='${mobile['global']['ok']}']
+${order_detail.order_number_cancel}                xpath=//android.widget.TextView[contains(@text, '{{order_number}}')]/following-sibling::android.widget.TextView[@text="${mobile['order']['label']['cancelled']}"]
+${order_detail.order_cancel_product}               xpath=//android.widget.TextView[@text='${mobile['order']['message']['productsCancelled']}']
+${order_detail.canceled}                           xpath=//android.widget.TextView[@text='${mobile['order']['label']['orderCancelled']}']
+${order_detail.txt_order_delivered}                xpath=//android.widget.TextView[@text='${mobile['order']['status']['delivered']}']
+${order_detail.txt_delivered_label}                xpath=//android.widget.TextView[@text='${mobile['order']['label']['delivered']}']
+${order_detail.txt_seller_fullname}                xpath=//android.widget.TextView[contains(@text,"${mobile_additional['order']['message']['seller']}")]
+${order_detail.txt_total_price}                    xpath=//android.view.ViewGroup[@content-desc="basket_summary_section_total_field"]/android.widget.TextView[2]

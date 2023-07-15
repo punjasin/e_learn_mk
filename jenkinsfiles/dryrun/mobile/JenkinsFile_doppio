@@ -1,0 +1,52 @@
+pipeline {
+    agent { label 'mac_server_05_dryrun'}
+    environment {
+      run_processes = '5'
+   }
+    post {
+      failure {
+        updateGitlabCommitStatus name: 'dryrun', state: 'failed'
+      }
+      success {
+        updateGitlabCommitStatus name: 'dryrun', state: 'success'
+      }
+    }
+    stages {
+        stage('android') {
+            steps {
+                echo 'Dryrun Android'
+                sh "pabot --pabotlib --pabotlibport 0 --processes ${run_processes} --dryrun -v env:uat -v platform:android --outputdir testResultAndroid ./tests/mobile"
+            }
+            post {
+            always {
+               echo "Publish Robot Framework test results"
+               robot logFileName: 'log.html', outputFileName: 'output.xml', outputPath: './testResultAndroid', reportFileName: 'report.html'
+               }
+            }
+        }
+        stage('ios') {
+            steps {
+                echo 'Dryrun iOS'
+                sh "pabot --pabotlib --pabotlibport 0 --processes ${run_processes} --dryrun -v env:uat -v platform:ios --outputdir testResultIos ./tests/mobile"
+            }
+                     post {
+            always {
+               echo "Publish Robot Framework test results"
+               robot logFileName: 'log.html', outputFileName: 'output.xml', outputPath: './testResultIos', reportFileName: 'report.html'
+               }
+            }
+        }
+        stage('rebot') {
+            steps {
+                echo "rebot report"
+                sh "rebot --outputdir ./testResultAll -o output.xml testResultIos/output.xml testResultAndroid/output.xml"
+            }
+            post {
+            always {
+               echo "Publish Robot Framework test results"
+               robot logFileName: 'log.html', outputFileName: 'output.xml', outputPath: './testResultAll', reportFileName: 'report.html'
+               }
+            }        
+        }
+    }
+}

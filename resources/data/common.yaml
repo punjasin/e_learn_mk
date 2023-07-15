@@ -1,0 +1,341 @@
+device_language_th: th
+shortNumberScroll: 3
+swipeMediumScroll  : 30
+swipeLongScroll: 0.8
+swipeLongScroll2: 2
+swipeShortScroll: 0.4
+swipe_50: 50
+swipe_70: 70
+category_scroll: 15
+minNumberScroll    : 1
+shortNumberScroll  : 3
+longNumberScroll   : 20
+globalNumberScroll : 10
+duration_30s       : 30000 
+duration_10s       : 10000
+platform_list:
+  android: android
+  ios: ios
+
+scroll_direction:
+  top:  Top
+  bottom: Bottom
+  left: Left
+  right:  Right
+
+default:
+  address_name: 1, เทส
+  minimum_order: '999'
+  ood_zipcode: 96000
+  price_unit: ฿
+  qty_basket: '1'
+  qty_favorite: '1'
+  email_timeout: 180
+
+payment:
+  123_portal:
+    AgentCode:
+      KBANK: KBANK
+    ChannelCode:
+      IMB: IMB
+  banktransfer:
+    bank_name: ธ. กสิกรไทย จำกัด (มหาชน)
+    email: mango.automate@gmail.com
+    payername: Poon
+    phone: 66022578276
+  creditcard_cc:
+    cardholder: Poon
+    cardnumber: 5555555555554444
+    cvv: 123
+    email: mango.automate@gmail.com
+    expiredate: 1243
+    otp: 123456
+  creditcard_cc_2:
+    credit_holder_name: Poon
+    credit_number: 4111111111111111
+    credit_cvv: 123
+    email: mango.automate@gmail.com
+    credit_expiry: 1243
+    otp: 123456
+  payment option:
+    BT: BT
+    CC: CC
+  truemoney:
+    email: mango.automate@gmail.com
+    otp: 123456
+    payername: Poon
+    truewallet: 66830443596
+
+address slot:
+  address_1: 1
+  address_2: 2
+  address_3: 3
+
+mobile_data:
+  number1: 0633873553
+  number2: 0656803375
+  number3: 0656804154
+  thai_country_code: '+66'
+  thai_start_mobile_number: '0'
+
+pickpack:
+  email: pickpack
+  password: password
+  pickpack status:
+    status_cancelled: cancelled
+    status_delivered: delivered
+    status_packed: packed
+    status_ready: ready for pack
+    status_shipped: shipped
+  picpack zone:
+    makro_zone: Makro
+  ship_package_value: 10126
+  prefix_pickpack_makro: 840
+
+seller_name:
+  1P_basket_seller: Makro PRO
+  1P_shop: Commercial Test 1P MAKRO test new
+  1P: Maknet
+  1P Mirakl: Mango
+  3P_consignment: Niyom Charon Panich Company Limited
+  3P_SOD: GORNTAWAN CO., LTD.
+  3P_FBM: Sure Chemical Supply Co.,Ltd
+  3P_FBM_new: Doppio Tech
+  3P_BEEF: Beefgogogo
+  3P_FBM_AUTOMATE: Automation FBM
+  3P_SOD_AUTOMATE: Automation SOD
+  3P_fruitgogogo: Fruitgogogo
+
+store_code:
+  3p: 3P
+  st4: '804'
+  st8: 08
+  
+multistore_data:
+  draft_product_value: draft
+  non_support_zipcode: 96000
+  samaedam_zipcode: 10150
+  store4_zipcode: 10100
+  store8_zipcode: 10210
+  phuetudom_zipcode:  12150
+  bangplasoi_zipcode:  20000
+  store04_zipcode: 10120
+  bangkhlo_subdistrict:
+    th: บางโคล่
+    en: Bang Khlo
+  samaedam_subdistrict:
+    th: แสมดำ
+    en: Samae Dam
+  store4_subdistrict:
+    th: ตลาดน้อย
+    en: Talat Noi
+  store8_subdistrict:
+    th: สนามบิน
+    en: Sanam Bin
+  phuetudom_subdistrict:
+    th: พืชอุดม
+    en: Phuet Udom
+  bangplasoi_subdistrict:
+    th: บางปลาสร้อย
+    en: Bang Pla Soi
+
+user:
+  userforFavourite_scenario:
+    email: favourite1@yopmail.com
+    password: 1234567890
+  userforLogin_data:
+    email: mango.automate@gmail.com
+    firstname: Mango
+    lastname: Automate
+    password: Doppio123*
+  userforOrdercancelled:
+    email: ordercancelled@yopmail.com
+    password: 1234567890
+  userforTestpoint1:
+    email: testpoint1@yopmail.com
+    password: 1234567890
+  userforNew_address:
+    email: mangoautomate2@yopmail.com
+    password: Doppio123*
+    shipping_addr1: NewShipAddr1
+    shipping_firstname: NewShipFirstname
+    shipping_lastname: NewShipLastname
+    shipping_phone: 0123456789
+    shipping_zipcode_store4: 10100
+  userforOrder_history:
+    user1:
+      email:      mango.2.automate@gmail.com
+      password:   Doppio123*
+    user2:
+      email:     automate23@gmail.com
+      password:  123456789
+    user3:
+      email:      automate.1124@gmail.com
+      password:   1234567890
+    user4:
+      email:      automate.9812@gmail.com
+      password:   1234567890
+    user5:
+      email:      automationtest415@gmail.com
+      password:   1234567890
+    user6:
+      email:      orderhistory97@gmail.com
+      password:   1234567890
+  userforBasket_orderhistory:
+    email: automate23@gmail.com
+    password: 123456789
+  register_info:
+    first_name: Automate
+    last_name: Testing
+    none_email: '-'
+    email: automate@maknet.com
+    password: '1234567890'
+  email_info:
+    sender_address: maknet-noreply-qa@siammakro.co.th
+  regression:
+    firstname:        Mango
+    lastname:         Automate
+    phone:            092 257 8276
+    email:            mango.automate@gmail.com
+    password:         Doppio123*
+    invalid_email:            test111@yopmail.com
+    invalid_password:         11111111
+
+favourite:
+  listname50: ทดสอบข้อจำกัดของการตั้งชื่อรายการที่ชอบจำนวน 50ตัว
+  listname51:  ทดสอบข้อจำกัดของการตั้งชื่อรายการที่ชอบจำนวน 50ตัวว
+  listnameEN1: A list
+  listnameEN2: Z list
+  listnameTH1: ก ลิสต์
+  listnameTH2: ฮ ลิสต์
+  listnameNUM: 1 ลิสต์  
+  listname1:   1
+
+basket_data:
+  point: '1'
+
+filter_sub_type:
+  brand_2: Automate
+  brand_3: Catgogogo
+  brand_4: SINGHA
+  brand_5: ROCK MOUNTAIN
+  discount: ลดราคา
+  range_price_2: 0.00 ฿ - 500.00 ฿
+  category_1: Loyalty Collection
+  category_2: variant title contain notcontain
+  category_3: regression status
+
+result_brand:
+  brand_4: Singha
+  brand_5: Rock Mountain
+
+moremenu:
+  privacy_seller_url: https://store.shopmaknet.com/pages/privacy-policy-seller
+
+sort_type:
+  newest: RECENTLY_ADDED
+  price_high_to_low: PRICE_DESC
+  price_low_to_high: PRICE_ASC
+  promotion: PROMOTIONS
+  relevant: RELEVANCE
+
+voucher_data:
+  email: mango.for.reset+voucher2@gmail.com
+  password: 1234567890
+  voucher1:
+    voucher_name: FIX50MIN499FORAUTOMATE
+    voucher_value: '50.00'
+
+amount_quantity:
+  decrease_amount_1: '1'
+  decrease_amount_2: '2'
+  increase_amount_1: '1'
+  increase_amount_2: '2'
+  adjust_amount: '5'
+  adjust_amount_max: 1000
+  product_qty_display_1: '2'
+  product_qty_display_2: '1'
+  product_qty_display_3: '5'
+  product_qty_display_5:  '3'
+  add_quantity: 1000
+
+searching:
+  many topic keyword: นม
+  many topic product category: คาร์เนชั่น นมข้นจืด 405 กรัม x 48 กระป๋อง
+  many topic product title: ตราหมี นมสด 140 มล. x 12 กระป๋อง
+  mixed_TH_EN_keyword: aero ลูกเกด
+  mixed_TH_EN_product: เอโร่ ลูกเกดดํา 1000 กรัม
+  slab_price_TH_EN_keyword: โกกิ เกล็ดขนมปัง
+  slab_price_TH_EN_product: โกกิ เกล็ดขนมปัง 1000 กรัม
+  mixed_TH_EN_special_keyword: ชุดแมว (Cat clothing)
+  mixed_TH_EN_special_product: ชุดแมว (Cat clothing) {{On sale}}
+  non-related keyword: คอมพิวเตอร์
+  synonym keyword: น้ำมันหอย
+  synonym product: ตราแม่ครัว ซอสหอยนางรม 600 มล. x 3 ขวด
+  keyword_collection_name: Loyalty Collection
+  keyword_curation: Nescafe
+  keyword_outofstock: ที่นอน out
+  keyword_product_name: กาแฟ
+  keyword_promotion: ชุดหมา
+  keyword_relate_lower: dog
+  keyword_relate_th: หมา
+  keyword_synonym: น้ํามันหอย
+  keyword_fruit_product: fruitgogogo องุ่น
+  product_dog_discounted: ชุดหมาผลไม้
+  keyword_cat_product: แมว
+  keyword_dog_product:
+    en: dog
+    th: หมา
+  keyword_product_1: ผักชี 300 กรัม
+  keyword_product_2: Banana FBM
+  keyword_product_3: Apple sod
+  keyword_product_4: product 3PSOD2211M02
+  keyword_product_4: โซดา
+
+product_data:
+  1P: เอโร่ เม็ดมะม่วงหิมพานต์ 2000 กรัม
+  1P_5: มูชิ ตู้ลิ้นชักเก็บของ 4 ชั้น สีเทา
+  1P_7: คิง น้ำมันรำข้าว 1 ลิตร x 1 ขวด
+  3P: Dshow น้ำยาปรับผ้านุ่ม สีชมพู ขนาด 3800มล. ( Fabric Softener )
+  3P_11: ชุดหมาฮาโลวีน
+  3P_3: กรตะวัน กล่องใส่อาหาร 1 ช่อง สีใส ขนาด 750 ml.(แพ็ค 50 ใบ)
+  0408_product: เนสกาแฟ กาแฟพร้อมดื่ม เอสเปรสโซ โรสต์ 180 มล. แพ็ค 30 กระป๋อง
+  fruit_product: องุ่นเคียวโฮ Automate
+  product_cat: Rabbit ชุดกระต่ายสีฟ้า แมวชอบ
+  product_dog: Jerky เจอร์กี้ ขนมหมา แมวก็ชอบ เพราะรสไก่
+  product1: Dog Collar ปลอกคอหมา
+  product2: ชุดแฟนซีน้องหมา-ซูชิ
+  product3: ชุดแฟนซีน้องหมา-แครอท
+  product4: ชุดแฟนซีน้องหมา-เชฟ
+  slab_price_product: ซีพี เบค่อน 500 กรัม
+  product16: ที่นอนสัตว์เลี้ยง automate
+  product_from_suspended_shop: มอซซาเรลลา ชีสขูด 40+ (ตราอาร์ลา)
+  Pet_accessories_product:
+    main_category: Pet Accessories
+    product_name: ไอศกรีมฮาเกนดาส 4ถ้วย haagen dazs 1P Automate
+    product_qty: 99
+    product_qty_exceed: 100000000
+    sub_category: Don't touch automation item
+  product_offer:
+    product_name: Automation FBM
+    3P_fbm_18: 3P_fbm_18
+  product_store4: Bonus palm oil refuse 1 lit x 12
+  product_store8: เรียลไทย กะทิขวด 100% 2000 มิลลิลิตร
+  makro_brand:
+    brand1: MAKRO
+    brand2: ARO
+
+Deep_appAlias:  DeepLinkTester
+Deep_appAct:    org.thewheatfield.android.deeplinks.MainActivity
+Deep_appPack:   org.thewheatfield.android.deeplinks
+
+feedback_data:
+  thumbs-down: Thumbs-down
+  thumbs-up: Thumbs-up
+  feedback-good: colorful app
+  feedback-bad:  hard to use
+
+kyc:
+  business_name: QA Business
+  mobile_no: 012345678
+  name: QA automate
